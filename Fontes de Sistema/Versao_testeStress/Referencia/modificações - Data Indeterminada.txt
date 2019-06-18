@@ -1,0 +1,48 @@
+ClientePadrao
+  - clsSettings
+    - Criada a propriedade Cargo.
+  - DGTECMaskedTextBox
+    - Melhorias no posicionamento do cursor conforme o usuário vai preenchendo o controle.
+    - Implementada a notificação de modificação ao frmPadrao quando a propriedade IndCausaVerificacaoSaida é True.
+  - DGTECDateComboBox
+    - Controle novo no ClientePadrao.
+    - Os atalhos "+" e "-", dependendo da posição do cursor, adicionam ou subtraem dia, mês ou ano.
+  - DGTECDateBox
+    - Os atalhos "+" e "-", dependendo da posição do cursor, adicionam ou subtraem dia, mês ou ano.
+  - frmLogin
+    - Passa a preencher também o cargo do usuario logado.
+    - O botão cancelar retorna DialogResult.Cancel, de forma que podemos cancelar qualquer eventos após o Login quando este não é completo.
+
+EntidadePadrao
+  - BaseEntidade
+    - Criado o método PreencherDadosUsuario que serve para preencher as propriedades da BaseEntidade em lugares onde não possível ler estes dados do arquivo UsuarioLogado.xml (BLL do servidor, por exemplo).
+    - Foram criadas também as propriedades UsuarioLOG, UsuarioSO, NomeMaquina. A propriedade UsuarioLOG (um dos parâmetros do método PreencherDadosUsuario) deve conter o codigo do usuario logado no sistema. 
+
+SegEntidade
+  - SegurancaNET
+    - Incluído o método NomeUsuario que recebe como parâmetro o código do usuário do Sistema de Segurança e retorna o nome completo.
+
+ServicosDados
+  - ServicoDadosOracle
+    - O campo CODUSER da package globais passou a ser preenchido com o campo LoginAutent da EstruturaIdentificacaoUsuario.
+
+UCControles
+  - DGTECEndereco
+    - Melhorias nas pesquisas de cep e de endereco.
+    - Validação do campo Bairro. Exibe um form com uma grid contendo os bairros cujo o nome contenham o texto digitado no campo.
+  - DGTECCEP
+    - Melhorias nas pesquisas de cep e de endereco.
+  - frmAjudaCEP
+    - Melhorias nas pesquisas de cep e de endereco.
+  - DGTECAdvogado
+    - Correção de bug ao setar a propriedade IndPesquisaComFicha em modo design.
+
+UCEntidade
+  - EntEndereco
+     - Classe nova no UCEntidade. Possui métodos de consulta de CEP por string ou por um objeto EstCEP.  Estes métodos retornam uma EstEndereco com: CEP, Nome do logradouro*, EstPais, EstUnidadeFederacao, EstCidade, EstBairro* e EstTipoLogradouro* (* se o CEP não for único para a localidade). As estruturas internas à classe EstEndereco são preenchidas com dados do UC.
+     
+WebServicePadrao
+  - BaseWebService
+    - Foram criados dois métodos novos: RegistrarUsuario e RegistrarSistema. O método anterior (RegistraUsuario), continua existindo para manter compatibilidade. O ideal é que todos alterem para RegistrarUsuario e, assim que a segurança de WebServices estiver completamente disponível, modificar para RegistrarSistema. A diferença entre estes métodos é que o RegistrarSistema faz autenticação no Sistema de Segurança e possui um parâmetro a mais que é o código do usuário que fez login no sistema, para que apareça o nome correto no log do Oracle.
+    - Implementado o método Autorizado, que recebe como parâmetro o nome do WebMethod a ser executado e retorna 4 possíveis resultados do Enum RespostaAutorizacao: Autorizado, NaoAutorizado, NaoLogado e SessaoDesabilitada. Esse é o método que deve ser executado para verificar se um determinado sistema pode ou não acessar um método do WebService.
+    - Será necessário incluir no WebService uma key no appSettings chamada "SegWebService", contendo a url do WebService de Segurança que o sistema irá acessar.

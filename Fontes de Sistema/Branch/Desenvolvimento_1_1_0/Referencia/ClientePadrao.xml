@@ -1,0 +1,586 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ClientePadrao
+</name>
+</assembly>
+<members>
+<member name="M:ClientePadrao.DGTECCodNome.#ctor">
+	<summary>
+ Inicia uma nova instância da classe <see cref="T:ClientePadrao.DGTECCodNome"/>.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.HabilitadoEm">
+	<summary>
+ Indica em que <see cref="T:ClientePadrao.DGTECTipoEstadoForm.EstadoForm"/> o controle estará habilitado.
+ </summary>
+	<returns>Um inteiro que indica em que estados do <see cref="T:ClientePadrao.frmPadrao"/> o controle estará habilitado.</returns>
+	<remarks>
+ Se o valor for igual <c>0</c> então a habilitação/desabilitação do controle fica a cargo 
+ do desenvolvedor.
+ </remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.Pesquisa">
+	<summary>
+ Indica se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.DGTECTipoEstadoForm.EstadoForm"/> for igual a
+ <see cref="F:ClientePadrao.DGTECTipoEstadoForm.EstadoForm.efPesquisaHabilitada"/>.
+ </summary>
+	<value><c>True</c> se habilitado no estado <i>Pesquisa</i>; <c>False</c> caso contrário.</value>
+	<returns>Um booleano indicando se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.frmPadrao"/> entrar no estado
+ <i>Pesquisa Habilitada</i>.</returns>
+</member><member name="P:ClientePadrao.DGTECCodNome.Novo">
+	<summary>
+ Indica se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.DGTECTipoEstadoForm.EstadoForm"/> for igual a
+ <see cref="F:ClientePadrao.DGTECTipoEstadoForm.EstadoForm.efNovo"/>.
+ </summary>
+	<value><c>True</c> se habilitado no estado <i>Novo</i>; <c>False</c> caso contrário.</value>
+	<returns>Um booleano indicando se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.frmPadrao"/> entrar no estado
+ <i>Novo</i>.</returns>
+</member><member name="P:ClientePadrao.DGTECCodNome.Inclusao">
+	<summary>
+ Indica se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.DGTECTipoEstadoForm.EstadoForm"/> for igual a
+ <see cref="F:ClientePadrao.DGTECTipoEstadoForm.EstadoForm.efInclusao"/>.
+ </summary>
+	<value><c>True</c> se habilitado no estado <i>Inclusão</i>; <c>False</c> caso contrário.</value>
+	<returns>Um booleano indicando se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.frmPadrao"/> entrar no estado
+ <i>Inclusão</i>.</returns>
+</member><member name="P:ClientePadrao.DGTECCodNome.Alteracao">
+	<summary>
+ Indica se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.DGTECTipoEstadoForm.EstadoForm"/> for igual a
+ <see cref="F:ClientePadrao.DGTECTipoEstadoForm.EstadoForm.efAlteracao"/>.
+ </summary>
+	<value><c>True</c> se habilitado no estado <i>Alteração</i>; <c>False</c> caso contrário.</value>
+	<returns>Um booleano indicando se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.frmPadrao"/> entrar no estado
+ <i>Alteração</i>.</returns>
+</member><member name="P:ClientePadrao.DGTECCodNome.Exclusao">
+	<summary>
+ Indica se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.DGTECTipoEstadoForm.EstadoForm"/> for igual a
+ <see cref="F:ClientePadrao.DGTECTipoEstadoForm.EstadoForm.efExclusao"/>.
+ </summary>
+	<value><c>True</c> se habilitado no estado <i>Exclusão</i>; <c>False</c> caso contrário.</value>
+	<returns>Um booleano indicando se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.frmPadrao"/> entrar no estado
+ <i>Exclusão</i>.</returns>
+</member><member name="P:ClientePadrao.DGTECCodNome.Consulta">
+	<summary>
+ Indica se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.DGTECTipoEstadoForm.EstadoForm"/> for igual a
+ <see cref="F:ClientePadrao.DGTECTipoEstadoForm.EstadoForm.efConsulta"/>.
+ </summary>
+	<value><c>True</c> se habilitado no estado <i>Consulta</i>; <c>False</c> caso contrário.</value>
+	<returns>Um booleano indicando se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.frmPadrao"/> entrar no estado
+ <i>Consulta</i>.</returns>
+</member><member name="P:ClientePadrao.DGTECCodNome.InclusaoEmBloco">
+	<summary>
+ Indica se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.DGTECTipoEstadoForm.EstadoForm"/> for igual a
+ <see cref="F:ClientePadrao.DGTECTipoEstadoForm.EstadoForm.efInclusaoEmBloco"/>.
+ </summary>
+	<value><c>True</c> se habilitado no estado <i>Inclusão Em Bloco</i>; <c>False</c> caso contrário.</value>
+	<returns>Um booleano indicando se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.frmPadrao"/> entrar no estado
+ <i>Inclusão Em Bloco</i>.</returns>
+</member><member name="P:ClientePadrao.DGTECCodNome.AlteracaoEmBloco">
+	<summary>
+ Indica se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.DGTECTipoEstadoForm.EstadoForm"/> for igual a
+ <see cref="F:ClientePadrao.DGTECTipoEstadoForm.EstadoForm.efAlteracaoEmBloco"/>.
+ </summary>
+	<value><c>True</c> se habilitado no estado <i>Alteração Em Bloco</i>; <c>False</c> caso contrário.</value>
+	<returns>Um booleano indicando se o controle estará ou não habilitado quando o <see cref="T:ClientePadrao.frmPadrao"/> entrar no estado
+ <i>Alteração Em Bloco</i>.</returns>
+</member><member name="T:ClientePadrao.DGTECCodNome.EstiloCodNome">
+	<summary>
+ Especifica se o campo de descrição do DGTECCodNome será um DGTECTextBox ou um DGTECComboBox.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ClientePadrao.DGTECCodNome.TipoPesquisaCodNome">
+	<summary>
+ Especifica o tipo da pesquisa realizada no controle.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:ClientePadrao.DGTECCodNome.Selecionado">
+	<summary>
+ Evento disparado quando o controle é preenchido com um código válido.
+ </summary>
+	<remarks>O evento pode ser disparado de quatro formas:
+ <ol>
+			<li>preenchendo a propriedade <see cref="P:ClientePadrao.DGTECCodNome.Codigo"/> - Neste caso, o evento 
+ é disparado se existir uma descrição correspondente;</li>
+			<li>selecionando um item da combo;</li>
+			<li>se a pesquisa por descrição retornar somente um registro - Para isso é preciso
+ que a propriedade <see cref="P:ClientePadrao.DGTECCodNome.IndSelecUnicoAutom"/> esteja setada para
+ <c>True</c>;</li>
+			<li>selecionando um item da grid do <see cref="T:ClientePadrao.frmAjuda"/>.</li>
+		</ol>
+	</remarks>
+</member><member name="E:ClientePadrao.DGTECCodNome.NaoSelecionado">
+	<summary>
+ Evento disparado quando o controle estava preenchido com um código válido e este, 
+ de alguma forma, foi apagado.
+ </summary>
+	<remarks>O evento pode ser disparado se:
+ <ol>
+			<li>a propriedade <see cref="P:ClientePadrao.DGTECCodNome.Codigo"/> for apagada;</li>
+			<li>o controle for limpo;</li>
+			<li>o texto da descrição for alterado;</li>
+		</ol>
+ É importante ressaltar que a troca do código por outro válido não dispara este evento.
+ </remarks>
+</member><member name="E:ClientePadrao.DGTECCodNome.AjudaClick">
+	<summary>
+ Evento disparado com o clique do botão <b>"?"</b>.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:ClientePadrao.DGTECCodNome.ComboKeyPress">
+	<summary>
+ Evento disparado quando a tecla <c>Enter</c> é pressionada.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks>
+ Só é disparado quando a propriedade <see cref="P:ClientePadrao.DGTECCodNome.Estilo"/> está <i>setada</i> 
+ para <see cref="F:ClientePadrao.DGTECCodNome.EstiloCodNome.ecnCombo"/>.
+ </remarks>
+</member><member name="E:ClientePadrao.DGTECCodNome.TextChanged">
+	<summary>
+ Evento disparado quando a propriedade <see cref="P:ClientePadrao.DGTECCodNome.Text"/> é alterada.
+ </summary>
+	<param name="sender">Que objeto disparou o evento.</param>
+	<param name="e">Parâmetros do evento.</param>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.SelecaoNoFocoDescr">
+	<summary>
+ Indica como se dará a seleção da descrição quando o controle tomar foco. Por padrão todo o texto é selecionado quando o controle estiver em modo de texto e em modo de combo não interfere na seleção deixando o Framework decidir.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.SelecaoNoFocoCodigo">
+	<summary>
+ Indica como se dará a seleção do código quando o controle tomar foco. Por padrão todo o código é selecionado.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.PesquisaComEnter">
+	<summary>
+ Indica se o controle vai realizar uma pesquisa ao pressionar a tecla "Enter". 
+ </summary>
+	<value><c>True</c> se a tecla "Enter" realiza pesquisa; <c>False</c> caso contrário.</value>
+	<returns>Boolean</returns>
+	<remarks>Só é válido quando o CodNome está no estilo ecnCombo.</remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.MostraDescr">
+	<summary>
+ Indica se o controle vai mostrar os campos <b>código</b> e <b>descrição</b>.
+ </summary>
+	<value><c>False</c> se somente o botão <b>"?"</b> deve estar visível; <c>True</c> 
+ caso contrário.</value>
+	<returns>Um booleano indicando se os campo <b>código</b> e <c>descrição</c> estarão 
+ visíveis.</returns>
+	<remarks>Estando só o botão <b>"?"</b> visível a única forma de preencher o controle é 
+ através de suas propriedades. Isso é muito útil quando precisamos de outros filtros que 
+ não a descrição para a realizar a pesquisa.</remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.NomeCampo">
+	<summary>
+ Define um nome para ser usado no tratamento de erros do controle.
+ </summary>
+	<value>String que define o nome do campo.</value>
+	<returns>O nome do campo.</returns>
+	<remarks>NomeCampo é extraído de <see cref="P:ClientePadrao.DGTECCodNome.LabelAssociado"/>, caso exista. Se
+ esta propriedade for setada, o nome que passa a valer é o que foi digitado. Para retornar 
+ ao que era antes basta passar "" para esta propriedade.</remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.MoveLabel">
+	<summary>
+ Indica se o <see cref="P:ClientePadrao.DGTECCodNome.LabelAssociado"/> vai se mover junto com o controle.
+ </summary>
+	<value><c>True</c> se o <see cref="P:ClientePadrao.DGTECCodNome.LabelAssociado"/> deve se mover junto
+ com o controle; <c>False</c> caso contrário.</value>
+	<returns>Um booleano indicando se o label associado ao controle irá se mover junto com 
+ ele.</returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndCausaVerificacaoSaida">
+	<summary>
+ Indica se uma alteração de dados no controle vai causar verificação de dados a gravar no 
+ form.
+ </summary>
+	<value><c>True</c> se o controle causa alteração no form; <c>False</c> caso 
+ contrário.</value>
+	<returns>Um booleano indicando se o controle causa alteração no form.</returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.LabelAssociado">
+	<summary>
+ Define o <see cref="T:ClientePadrao.DGTECLabel"/> associado ao controle.
+ </summary>
+	<value><see cref="T:ClientePadrao.DGTECLabel"/></value>
+	<returns>Um label associado ao controle.</returns>
+	<remarks>Associar um label ao controle automatiza algumas propriedades, como 
+ <see cref="P:ClientePadrao.DGTECCodNome.NomeCampo"/>, e algumas funções como mover o label que estiver
+ associado junto ao controle e desabilitar o label quando o controle estiver 
+ desabilitado.</remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndCampoObrigatorio">
+	<summary>
+ Indica se o preenchimento do controle é obrigatório.
+ </summary>
+	<value><c>True</c> se o controle deve ser preenchido. <c>False</c> caso o contrário.</value>
+	<returns>Um booleano indicando se o controle deve ser preenchido.</returns>
+	<remarks>Ao executar o método <see cref="M:ClientePadrao.frmPadrao.VerificaPendencias(System.Object)"/> do 
+ <see cref="T:ClientePadrao.frmPadrao"/>, se esta propriedade estiver setada para <c>True</c> e o controle 
+ não estiver preechido, aparece uma mensagem dizendo que "O campo 
+ <see cref="P:ClientePadrao.DGTECCodNome.NomeCampo"/> deve ser preenchido." e foco vai imediatamente para o
+ controle.</remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.CodigoParam">
+	<summary>
+ Define os parâmetros que devem ser passados para a pesquisa por código.
+ </summary>
+	<value>Array de objetos contendo os parâmetros necessários para a pesquisa por 
+ código.</value>
+	<returns>Um array de objetos contendo os parâmtros necessários para a pesquisa por 
+ código.</returns>
+	<example>
+ Abaixo segue um exemplo de como setar esta propriedade:
+ <code>
+ codNome1.CodigoParam = new Object() {"parametro", 2, True}
+ </code>
+	</example>
+</member><member name="P:ClientePadrao.DGTECCodNome.DescrParam">
+	<summary>
+ Define os parâmetros que devem ser passados para a pesquisa por descrição.
+ </summary>
+	<value>Array de objetos contendo os parâmetros necessários para a pesquisa por 
+ descrição.</value>
+	<returns>Um array de objetos contendo os parâmtros necessários para a pesquisa por 
+ descrição.</returns>
+	<example>
+ Abaixo segue um exemplo de como setar esta propriedade:
+ <code>
+ codNome1.DescrParam = new Object() {"parametro", 2, True}
+ </code>
+	</example>
+</member><member name="P:ClientePadrao.DGTECCodNome.funcaoPesquisaPorCodigo">
+	<summary>
+ Função responsável por realizar a pesquisa por código.
+ </summary>
+	<value>Delegate do tipo <see cref="T:ClientePadrao.DGTECCodNome.PesquisaPorCodigoDelegate"/></value>
+	<example>Abaixo segue um exemplo de como setar esta propriedade.
+ <code>
+ Public Sub SetaPropriedadesCodNome()
+     codNome.funcaoPesquisaPorCodigo = AddressOf PesqPorCodigo
+ End Sub
+ 
+ Private Function PesqPorCodigo(ByVal str As String, ByVal values As Object()) As String
+     ' Seu código
+ End Function
+ </code>
+	</example>
+</member><member name="P:ClientePadrao.DGTECCodNome.funcaoPesquisaPorDescricao">
+	<summary>
+ Função responsável por realizar a pesquisa por descrição.
+ </summary>
+	<value>Delegate do tipo <see cref="T:ClientePadrao.DGTECCodNome.PesquisaPorDescricaoDelegate"/></value>
+	<example>Abaixo segue um exemplo de como setar esta propriedade.
+ <code>
+ Public Sub SetaPropriedadesCodNome()
+     codNome.funcaoPesquisaPorDescricao = AddressOf PesqPorDescr
+ End Sub
+ 
+ Private Function PesqPorDescr(ByVal str As String, ByVal values As Object()) As DataSet
+     ' Seu código
+ End Function
+ </code>
+	</example>
+</member><member name="P:ClientePadrao.DGTECCodNome.Codigo">
+	<summary>
+ Recebe ou retorna o código referente a uma determinada tabela.
+ </summary>
+	<value>String com o código selecionado ou a ser pesquisado.</value>
+	<returns>Uma string com o código selecionado.</returns>
+	<remarks>Esta propriedade retorna uma string vazia se o código que estiver sendo passada 
+ para ela não existir.<par/>Ao digitar no campo código, se este já estiver preenchido com um 
+ código válido, o evento <see cref="E:ClientePadrao.DGTECCodNome.NaoSelecionado"/> é disparado.</remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.Descr">
+	<summary>
+ Retorna a descrição correspondente ao código preenchido.
+ </summary>
+	<value>String com a descrição correspondente ao código.</value>
+	<returns>Uma string com a descrição válida.</returns>
+	<remarks>Se o código não existe, retorna uma String vazia.</remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.Text">
+	<summary>
+ Recebe ou retorna o texto do campo descrição.
+ </summary>
+	<value>String contendo a descrição a ser pesquisada.</value>
+	<returns>Uma string contendo o texto contido no campo descrição.</returns>
+	<remarks>Se o controle estiver preenchido com um código válido e a propriedade Text for 
+ alterada, o evento <see cref="E:ClientePadrao.DGTECCodNome.NaoSelecionado"/> é disparado.</remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.CaixaDescr">
+	<summary>
+ Recebe ou retorna o tipo de caixa do campo descrição.
+ </summary>
+	<value><see cref="F:ClientePadrao.TipoTextBoxEnum.enNormal"/>, para exibir o texto da mesma forma que está
+ sendo digitado; <see cref="F:ClientePadrao.TipoTextBoxEnum.enAlta"/>, para exibir o texto e caixa alta; 
+ <see cref="F:ClientePadrao.TipoTextBoxEnum.enBaixa"/>, para exibir o texto em caixa baixa; 
+ <see cref="F:ClientePadrao.TipoTextBoxEnum.enInicialAlta"/>, para exibir o texto com a primeira letra em 
+ maiúsculo.</value>
+	<returns><see cref="T:ClientePadrao.TipoTextBoxEnum"/></returns>
+	<remarks>Como esta propriedade não está implementada no DGTECComboBox, ela só está 
+ funcionando plenamente quando a propriedade <see cref="P:ClientePadrao.DGTECCodNome.Estilo"/> = 
+ <see cref="F:ClientePadrao.DGTECCodNome.EstiloCodNome.ecnTexto"/>.</remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.Estilo">
+	<summary>
+ Recebe ou retorna o tipo do campo descrição.
+ </summary>
+	<value><see cref="F:ClientePadrao.DGTECCodNome.EstiloCodNome.ecnCombo"/>, para que o campo descrição seja um 
+ <see cref="T:ClientePadrao.DGTECComboBox"/>; <see cref="F:ClientePadrao.DGTECCodNome.EstiloCodNome.ecnTexto"/> para que o campo descrição
+ seja um <see cref="T:ClientePadrao.DGTECTextBox"/>.</value>
+	<returns><see cref="T:ClientePadrao.DGTECCodNome.EstiloCodNome"/></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndBotaoHelp">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndCodHabilitado">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.EnabledBotaoHelp">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndCodigoAlfabetico">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndCompletaZeros">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndDescrHabilitada">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndMostraAjudaAutom">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndMostraCodigo">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.PesqSubstrObrig">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.PesqSubstrObrigAjuda">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndPesquisaAoDigitar">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndSelecUnicoAutom">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndVerificaDescr">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.LarguraCodigo">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.MaxLengthDescricao">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.NumDigitosCodigo">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.TipoPesquisa">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECCodNome.IndPesAjuIniMaius">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ClientePadrao.DGTECCodNome.IndicaBuscaTelaAjuda(System.String,ClientePadrao.DGTECCodNome.TipoPesquisaCodNome)">
+	<summary>
+ Preenche o dataset para exibição da janela de busca de resultados da combo pelo método ExibeTelaAjuda
+ </summary>
+	<param name="StrBusca"></param>
+	<param name="TipoPesquisa"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ClientePadrao.DGTECCodNome.ExibeTelaAjuda">
+	<summary>
+ Exibe tela de ajuda para busca de resultados. Deve-se antes indicar a string e tipo de busca pelo método IndicaBuscaTelaAjuda
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ClientePadrao.DGTECCodNome">
+	<summary>
+ Controle de pesquisa que recebe um código e retorna uma descrição, ou retorna um conjunto 
+ de descrições <i>parecidas</i> com a descrição digitada.
+ </summary>
+	<remarks>
+ É importante que as propriedades <see cref="P:ClientePadrao.DGTECCodNome.funcaoPesquisaPorCodigo"/> e 
+ <see cref="P:ClientePadrao.DGTECCodNome.funcaoPesquisaPorDescricao"/> estejam devidamente <i>setadas</i> 
+ para que a pesquisa seja feita corretamente.
+ </remarks>
+	<example>
+ Este exemplo mostra como estas propriedades são <i>setadas</i>.
+ <code>
+ Public Sub SetaPropriedadesCodNome()
+     codNome.funcaoPesquisaPorCodigo = AddressOf PesqPorCodigo
+     codNome.funcaoPesquisaPorDescricao = AddressOf PesqPorDescr
+ End Sub
+ 
+ Private Function PesqPorCodigo(ByVal str As String, ByVal values As Object()) As String
+     ' Seu código
+ End Function
+ 
+ Private Function PesqPorDescr(ByVal str As String, ByVal values As Object()) As DataSet
+     ' Seu código
+ End Function
+ </code>
+	</example>
+</member><member name="P:ClientePadrao.DGTECComboBox.SelecaoNoFoco">
+	<summary>
+ Indica como se dará a seleção do texto quando o controle tomar foco. Por padrão não interfere na seleção deixando o Framework decidir.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.clsSettings.MatriculaRH">
+	<summary>
+ Retorna matrícula do usuário conforme armazenado no sistema de RH
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.clsSettings.IDUsuario">
+	<summary>
+ Retorna ID do usuário conforme indicado no sistema de segurança
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECDataGridViewCheckBox.HabilitaMostraMarcadas">
+	<summary>
+ Indica se o controle vai incluir a opção de mostrar apenas as linhas marcadas.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.frmPadrao.Ativando">
+	<summary>
+ Propriedade que indica se o form está sendo ativado pela primeira vez
+ Esta propriedade deve ser verificada no Activated do form herdado.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ClientePadrao.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ClientePadrao.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:ClientePadrao.TipoSelecaoNoFoco.NaoInterfereNaSelecao">
+	<summary>
+ Não interfere deixando que o padrão do DOT.NET prevaleça. 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ClientePadrao.TipoSelecaoNoFoco.SelecionaTudo">
+	<summary>
+ Seleciona todo o conteúdo do controle.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ClientePadrao.TipoSelecaoNoFoco.PosicionaCursorAoFinal">
+	<summary>
+ Posiciona o cursor ao final do controle não selecionando nada.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ClientePadrao.TipoSelecaoNoFoco">
+	<summary>
+ Tipos de selecão que o controle pode realizar em seu conteudo quando na tomada de foco do controle
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECTextBox.SelecaoNoFoco">
+	<summary>
+ Indica como se dará a seleção do texto quando o controle tomar foco. Por padrão todo o texto é selecionado.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ClientePadrao.DGTECTextBox.numCasasInteiras">
+	<summary>
+ Número máximo de dígitos inteiros permitidos na digitação de números dentro do controle quando em modo de entrada monetária TipoDado = TipoDadoEnum.enMoeda
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ClientePadrao.DGTECTextBox.FormataNumeroMoeda(System.String,System.Int32,System.Int32@,System.String,System.String)">
+	<summary>
+ Formata numero contido em uma string usando um quantitativo determinado de casas decimais. A variável pos
+ conterá a posição do cursor e como retorno a nova posição de forma que 
+ o cursor possa ser reposicionado corretamente após a reformatação do número. 
+ O separador de milhar e decimal são opcionais sendo definidos como "." e "," respectivamente caso não informados.
+ </summary>
+	<param name="Numero"></param>
+	<param name="NumDecimais"></param>
+	<param name="pos"></param>
+	<param name="SeparadorDecimal"></param>
+	<param name="SeparadorMilhar"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ClientePadrao.DGTECTextBox">
+	<summary>
+ Este componente tem como objetivo criar uma caixa de texto padrão que aceita qualquer 
+ tipo de caracter e faz validações básicas.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

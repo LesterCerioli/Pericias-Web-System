@@ -1,0 +1,646 @@
+/*************************************************************
+*
+*************************************************************/
+.modalBackground
+{
+    background-color: Gray;
+    -moz-opacity: 0.7;
+}
+
+.progressoAtualizacao
+{
+    position: absolute;
+    left: 45%;
+    width: 200px;
+    height: 80px;
+    font-family: verdana;
+    font-size: 12px;
+    color: black;
+    vertical-align: middle;
+    border: 2px solid #CCCCCC;
+    text-align: center;
+    z-index: 10001;
+    top: 30%;
+    background-color: #EFE6D6;
+    font-weight: bold;
+}
+
+/* Para preencher uma tela toda com a div para que o usuário nao possa clicar em nenhum outro campo enquanto aguarda */
+.fundoDesabilitado
+{
+    z-index: 10000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../IMAGENS/semi-transparent.gif);
+}
+
+.coluna1Movimento
+{
+    width: 150px;
+}
+
+/**************************************************************
+* FORMATAÇÃO DA TABELA UTILIZADA NAS MENSAGENS DO FORM DEFAULT
+***************************************************************/
+.tabela-msg th
+{
+    /* Titulo do formulário*/
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #efefef;
+    border: 1px solid #000000;
+    vertical-align: middle;
+    text-align: left;
+    height: 30px;
+}
+.tabela-msg td
+{
+    /* corpo do formulário*/
+    background-color: #A8C9EA;
+    border: 1px solid #000000;
+}
+.tabela-msg td th
+{
+    /* corpo do formulário*/
+    background-color: #2C73BA;
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+}
+.tabela-msg td td
+{
+    /* campos do formulário*/
+    font-family: verdana;
+    vertical-align: middle;
+    font-size: 10px;
+    color: #000000;
+    background-color: #DFEFFF;
+    text-align: left;
+    border: 0px;
+    height: 25px;
+}
+/********************************************************************
+* FIM - FORMATAÇÃO DA TABELA UTILIZADA NAS MENSAGENS DO FORM DEFAULT
+*********************************************************************/
+/*Textbox Watermark*/
+
+.unwatermarked
+{
+    height: 13px;
+    width: 148px;
+}
+
+.watermarked
+{
+    height: 13px;
+    width: 150px;
+    padding: 2px 0 0 2px;
+    border: 1px solid #BEBEBE;
+    background-color: #F0F8FF;
+    color: gray;
+}
+
+
+/********************************************************************
+* FORMATAÇÃO DO COMPENENTE TABCONTROL DO AJAX TOOL KIT
+*********************************************************************/
+/* Conteudo das Abas */
+
+.abasAjax .ajax__tab_header
+{
+    font-family: verdana,tahoma,helvetica;
+    font-size: 11px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #D6CCBD;
+    text-align: left;
+    height: 24px;
+}
+
+/* Espaçamento entre as abas */
+
+.abasAjax .ajax__tab_outer
+{
+    padding-right: 10px; /*height: 24px;*/
+    border-bottom-style: none;
+    border-bottom-width: 0;
+}
+
+.abasAjax .ajax__tab_inner
+{
+    border-style: solid;
+    border-width: 4px 1px 0px 1px;
+    border-color: #D6CCBD;
+    padding-left: 5px;
+    background-color: #FBF8F0;
+    color: #777777;
+}
+
+.abasAjax .ajax__tab_tab
+{
+    padding: 4px;
+    margin: 0; /*height: 12px;*/
+}
+
+.abasAjax .ajax__tab_hover .ajax__tab_outer
+{
+}
+
+.abasAjax .ajax__tab_hover .ajax__tab_inner
+{
+    background-color: #EFE6D6;
+    color: #515151;
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-top-color: #D6CCBD;
+}
+
+.abasAjax .ajax__tab_hover .ajax__tab_tab
+{
+}
+
+.abasAjax .ajax__tab_active .ajax__tab_outer
+{
+}
+
+.abasAjax .ajax__tab_active .ajax__tab_inner
+{
+    background-color: #EFE6D6;
+    color: #515151;
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-top-color: #D6CCBD;
+}
+
+.abasAjax .ajax__tab_active .ajax__tab_tab
+{
+}
+
+.abasAjax .ajax__tab_body
+{
+    font-family: verdana,tahoma,helvetica;
+    font-size: 10pt;
+    border-left: 1px solid #D6CCBD;
+    border-right: 1px solid #D6CCBD;
+    border-bottom: 1px solid #D6CCBD;
+    padding: 8px;
+    background-color: #EFE6D6;
+}
+
+/*************************************************************
+* CLASSES PARA ESTILO DA GRID
+*************************************************************/
+.selecao-grid
+{
+    /* Texto da Paginção da Grid*/
+    font-family: Verdana;
+    font-size: 11px;
+    background-color: #D6CCBD;
+}
+
+.texto-paginacao-grid
+{
+    /* Texto da Paginção da Grid*/
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    color: #C00000;
+    background-color: #EFE6D6;
+    border: 1px solid #000000;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.titulo-grid
+{
+    /* Titulo das Colunas da Grid*/
+    font-family: verdana;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #000;
+    background-color: #EFE6D6;
+    text-align: center;
+    height: 25px;
+    border-right: #D6CCBD 1px solid;
+    border-top: #D6CCBD 1px solid;
+    border-left: #D6CCBD 1px solid;
+    border-bottom: #D6CCBD 1px solid;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    margin: 2px;
+    padding-top: 3px;
+}
+
+.conteudo-grid
+{
+    /* campos do formulário*/
+    font-family: verdana;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #000000;
+    background-color: #FBF8F0;
+    text-align: left;
+    border-spacing: 5;
+    border-right: #D6CCBD 1px solid;
+    border-top: #D6CCBD 1px solid;
+    border-left: #D6CCBD 1px solid;
+    border-bottom: #D6CCBD 1px solid;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin: 2px;
+}
+
+.grid-vazio
+{
+    border: 0px;
+    height: 25px; /*font-weight: bold;*/
+    text-align: center;
+    color: Red;
+}
+
+/*************************************************************
+* FIM - CLASSES PARA ESTILO DA GRID
+*************************************************************/
+.calendario .ajax__calendar_container
+{
+    background-color: #3E5E6D;
+    border: solid 1px #004000;
+    z-index: 1010;
+}
+
+.calendario .ajax__calendar_header /*formatação do cabeçalho*/
+{
+    background-color: #FBF8F0;
+    margin-bottom: 3px;
+    border: solid 1px #004000;
+}
+
+.calendario .ajax__calendar_title /*formatação do texto que encontra-se no cabeçalho*/
+{
+    color: black;
+}
+
+.calendario .ajax__calendar_body /*formatação interna de onde se encontra o calendário(onde estão os dias do respectivo mês)*/
+{
+    background-color: white;
+    border: solid 1px #004000;
+}
+
+.calendario .ajax__calendar_dayname /*formatação da descrição dos dias da semana*/
+{
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    color: #3E5E6D;
+}
+
+.calendario .ajax__calendar_day /*formatação dos dias do mês*/
+{
+    text-align: center;
+    color: black;
+}
+
+.calendario .ajax__calendar_hover .ajax__calendar_day
+{
+    color: #3E5E6D;
+    font-weight: bold;
+}
+
+.calendario .ajax__calendar_hover .ajax__calendar_month /*formatação para quando passar mause sobre um determinado mês*/
+{
+    color: red;
+}
+
+.calendario .ajax__calendar_hover .ajax__calendar_year /*formatação para quando passar o mause sobre um determinado ano*/
+{
+    color: red;
+}
+
+.calendario .ajax__calendar_active /*formatação do dia, quando já possui uma data no textbox de controle*/
+{
+    border: 1px solid #3D5764;
+    background-color: #A3BCC9;
+    font-weight: bold;
+}
+
+.calendario .ajax__calendar_today /*destaque para a data atual(Today)*/
+{
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.calendario .ajax__calendar_other .ajax__calendar_day
+{
+    color: #C0C0C0;
+}
+
+.calendario .ajax__calendar_hover .ajax__calendar_today /*formatação para quando passar o mouse sobre a data atual(Today)*/
+{
+    color: #FFFFFF;
+}
+
+.calendario .ajax__calendar_hover .ajax__calendar_title /*formatação para quando passar o mouse sobre o texto do título*/
+{
+    color: red;
+}
+
+.caixaTexto
+{
+    font-family: Verdana;
+    font-size: 11px;
+    color: #000000;
+    border: 1px solid #7C7C7C;
+}
+
+#content101 input, select, textarea
+{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #333;
+    border: 1px solid #333;
+    top: -1px;
+    left: 1px;
+    width: 496px;
+    height: 23px;
+}
+
+.modalTitle
+{
+    font-size: 12px;
+    border: solid 1px #D6CCBD;
+    background-color: #EFE6D6;
+    color: #000;
+    font-weight: bold;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.modalTitle p
+{
+    vertical-align: middle;
+}
+
+.modalQuestion
+{
+    background-color: #EFE6D6;
+    padding: 3px;
+    margin: 2px;
+    border: solid 1px #D6CCBD;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+    overflow: auto;
+    display: run-in;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+
+.divSombra
+{
+    background-color: #888888;
+    width: 425px;
+    height: 110px;
+    z-index: 10001;
+    _filter: alpha(opacity=70);
+    _opacity: 0.7;
+}
+
+.modalPopup2
+{
+    /*text-align: -moz-center;*/
+    vertical-align: middle;
+    background-image: url(../IMAGENS/semi-transparent.gif);
+    _width: expression(screen.width);
+    _height: expression(screen.height);
+    width: 100%;
+    height: 1024px;
+    z-index: 10000;
+    position: absolute;
+    top: 0px;
+    left: 0px; /*bottom: auto;*/
+    background-repeat: repeat;
+    background-position: left top;
+}
+
+.modalPopup
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    _height: expression(screen.height);
+    height: 1024px;
+    background-color: #667;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+}
+
+/*
+ * Barra de navegacao superior (azul) - FSW em 19/02/2016
+ */
+#navigation.welcome
+{
+    position: relative;
+}
+#navigation .welcome-message
+{
+    color: #FFF;
+    font-size: 12px;
+    line-height: 30px;
+    margin-left: 5px;
+}
+#navigation .welcome-message span
+{
+    font-weight: bold;
+}
+.welcome-environment
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #F00;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.corpo-form th
+{
+    /* Titulo do formulário*/
+    font-size: 11px;
+    height: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #455069;
+    border: 0px solid #000000;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.corpo-form td
+{
+    /* corpo do formulário*/
+    font-size: 11px;
+    background-color: #f4f4f4;
+    border: 0px solid #000000;
+}
+
+.corpo-form td td
+{
+    /* corpo do formulário*/
+    font-size: 11px;
+    background-color: #f4f4f4;
+    border: 0px solid #000000;
+}
+
+.modalDialog
+{
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+/*
+.modalDialog:target
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+*/
+
+.modalDialog > div
+{
+    width: 480px;
+    height: 150px;
+    position: relative;
+    margin: 10% auto;
+    border-radius: 5px; /*background: #fff;*/
+    /*background-color: #FFFFCC;*/
+    background-color: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.modalDialog2 > div
+{
+    width: 480px;
+    height: 150px;
+    position: relative;
+    margin: 10% auto;
+    border-radius: 5px; /*background: #fff;*/
+    /*background-color: #E8E8E8;*/
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+#bordaTitulo
+{
+    background-color: transparent;
+    color: #000000;
+    line-height: 25px;
+    position: absolute;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    width: 430px;
+    height: 25px;
+    top: -0.5px;
+    left: -10 px;
+    opacity: 1;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+}
+
+.close
+{
+    background: red;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -0.5px;
+    top: -0.5px;
+    text-align: center;
+    width: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover
+{
+    background: #808080;
+}
+
+#divDocumento
+{
+    width: 380px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -190px;
+    position: absolute;
+}
+
+#corpoConfirmDialog
+{
+    width: 380px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -190px;
+    position: absolute;
+}
+
+.modalBackground
+{
+    /*background-color: ;*/
+    top: 0px !important;
+    left: 0px !important;
+    position: absolute !important;
+    z-index: 1 !important;
+}
+.modalPopup
+{
+    /*background-color: #E8E8E8;*/
+    padding: 3px;
+    z-index: 10001;
+}

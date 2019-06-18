@@ -1,0 +1,3 @@
+UCControles.DLL
+	Aumento do comprimento do controle de tipo de logradouro em ctlEndereco
+	Ordenação alfabética no controle de tipo de logradouro em ctlEndereco

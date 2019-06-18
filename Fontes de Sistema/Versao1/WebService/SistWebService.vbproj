@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9ABFE09-8574-4824-B1F6-555648C188D7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WebService</RootNamespace>
+    <AssemblyName>WebService</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebService.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebService.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EstruturaPadrao, Version=2.1.0.0, Culture=neutral, PublicKeyToken=4ca6b644e7fd006f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencia\EstruturaPadrao.dll</HintPath>
+    </Reference>
+    <Reference Include="ServicoDados, Version=2.1.2.0, Culture=neutral, PublicKeyToken=686f958e5ef6af10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencia\ServicoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utilitarios, Version=2.0.0.0, Culture=neutral, PublicKeyToken=04bda0a2b6f22093, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencia\Utilitarios.dll</HintPath>
+    </Reference>
+    <Reference Include="WebServicePadrao, Version=2.2.0.0, Culture=neutral, PublicKeyToken=73e0387a5ac1c3d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencia\WebServicePadrao.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WS.asmx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseBal.vb" />
+    <Compile Include="DALADVOGADO.vb" />
+    <Compile Include="DALASSUNTO.vb" />
+    <Compile Include="DALASSUNTOGRUPO.vb" />
+    <Compile Include="DALATRIBUICAO.vb" />
+    <Compile Include="DALATRIBUICAOORGAO.vb" />
+    <Compile Include="DALCATEGORIAVAGAJUIZ.vb" />
+    <Compile Include="DALCODIGOCLASSIFICACAO.vb" />
+    <Compile Include="DALCOMARCA.vb" />
+    <Compile Include="DALFILAREMESSA.vb" />
+    <Compile Include="DALFUNCIONARIO.vb" />
+    <Compile Include="DALGRUPOLOCALIZACAOORGAO.vb" />
+    <Compile Include="DALGUIAREMESSA.vb" />
+    <Compile Include="DALGUIAREMOCOLO.vb" />
+    <Compile Include="DALJUIZ.vb" />
+    <Compile Include="DALLOTE.vb" />
+    <Compile Include="DALLOTEOCOLO.vb" />
+    <Compile Include="DALMOVIMENTO.vb" />
+    <Compile Include="DALNURC.vb" />
+    <Compile Include="DALORGAO.vb" />
+    <Compile Include="DALORGAOJUIZ.vb" />
+    <Compile Include="DALPERSONAGEM.vb" />
+    <Compile Include="DALOCOLO.vb" />
+    <Compile Include="DALPROVIMENTOJUIZ.vb" />
+    <Compile Include="DALREGIAOESTADO.vb" />
+    <Compile Include="DALREGIAOJUDICIARIA.vb" />
+    <Compile Include="DALSETOROCOLO.vb" />
+    <Compile Include="DALSIGILOORGAO.vb" />
+    <Compile Include="DALSIGILOUSUARIO.vb" />
+    <Compile Include="DALTIPOASSUNTOGRERJ.vb" />
+    <Compile Include="DALTIPOASSUNTOMOVIMENTO.vb" />
+    <Compile Include="DALTIPOCLASSIFICACAOPROCESSO.vb" />
+    <Compile Include="DALTIPODESIGNACAOJUIZ.vb" />
+    <Compile Include="DALTIPODOCUMENTO.vb" />
+    <Compile Include="DALTIPOINSCRICAOADVOGADO.vb" />
+    <Compile Include="DALTIPOMOVIMENTO.vb" />
+    <Compile Include="DALTIPOMOVMAGISTRADO.vb" />
+    <Compile Include="DALTIPOORGAO.vb" />
+    <Compile Include="DALTIPOORGAOORIGINARIO.vb" />
+    <Compile Include="DALTIPOOUTROSJULGADOS.vb" />
+    <Compile Include="DALTIPOPARTE.vb" />
+    <Compile Include="DALTIPOOCOLO.vb" />
+    <Compile Include="DALTIPOPROVIMENTOJUIZ.vb" />
+    <Compile Include="DALTIPOQUALIFICACAOPERSONAGEM.vb" />
+    <Compile Include="DALTIPOREMMAGISTRADO.vb" />
+    <Compile Include="DALTIPOSIGILOOCOLO.vb" />
+    <Compile Include="DALTIPOSITUACAOADVOGADO.vb" />
+    <Compile Include="DALTIPOTRAMITACAO.vb" />
+    <Compile Include="WS.asmx.vb">
+      <DependentUpon>WS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidade\Entidade.vbproj">
+      <Project>{5DFCFB80-8FE7-42C0-9443-AB4B9E6FB8BF}</Project>
+      <Name>Entidade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ORAOLEDBLib">
+      <Guid>{0BB9AFD1-51A1-11D2-BB7D-00C04FA30080}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1799</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

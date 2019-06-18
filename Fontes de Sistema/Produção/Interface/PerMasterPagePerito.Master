@@ -1,0 +1,272 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="PerMasterPagePerito.master.vb" Inherits="Interface.PERMasterPagePerito" %>
+
+<%@ Register Assembly="ClienteWebPadrao" Namespace="ClienteWebPadrao" TagPrefix="cc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<title>Sistema de Gerenciamento de Perícias </title>
+<head id="Head1" runat="server">
+
+    <script language="javascript" type="text/javascript">
+
+        loading = function () {
+
+            //document.getElementById("loading99").setAttribute("style","display:inline");
+            document.getElementById("loading99").style.cssText = "display:inline"
+
+        }
+
+        loaded = function () {
+            //document.getElementById("loading99").removeAttribute("style");
+            document.getElementById("loading99").style.cssText = "display:none"
+
+        }
+
+    </script>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="Cache-Control" content="must-revalidate" />
+    <title>Portal de Magistrados e Servidores | Cadastro de Pretensão de Lotação
+        
+    </title>
+    <!-- Arquivos Genericos -->
+    <link rel="stylesheet" type="text/css" href="http://portaltj.tjrj.jus.br/importacao-portal/css" />
+    <script type="text/javascript" src="http://portaltj.tjrj.jus.br/importacao-portal/script"></script>
+    <script language="javascript" type="text/javascript" src="http://www.tjrj.jus.br/js_funcoes/max_min_font_size2.js"></script>
+    
+
+    <link href="CSS/estilo_pericias.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body onload = "loaded()" onunload="loading()" onbeforeunload ="loading()">
+   <!-- <div style="display:inline;" id="loading99" class="carrega"><img alt="" src="loading6.gif" height="90" width="90"/></div> !-->
+   <div style="display:none;" id="loading99" class="carrega"><img alt="" src="loading6.gif" height="90" width="90"/></div>
+    
+    <div id="tudo">   
+        <!-- Topo Padrao -->
+         <% Server.Execute("includes_tj/tpl_topo.html")%>
+        <!-- /Topo Padrao -->
+    
+        <!-- /Topo Padrao -->
+        <div id="navigation" class="welcome">
+            <div id="navegador-horiz-limpo">
+                <span class="welcome-message">Seja Bem-Vindo
+                    <asp:Label ID="lblNomeUsuario" runat="server">
+                    </asp:Label></span>
+            </div>
+            <asp:Label ID="lblAmbiente" runat="server" CssClass="welcome-environment">
+            </asp:Label>
+        </div>
+        <div id="container">
+         
+                
+            
+            <div id='navegador' class='naveg-vertical navegador'>
+                <div class='titulo'>
+                    <div class="conteudo">
+                       <a href="Index.aspx">Perícias Judiciais - Versão 2.0.3</a></div>
+                </div>
+                <ul class="layouts level-1">
+                    <li class="layouts level-1" id="L1" runat="server">
+                        <div class="conteudo">
+                            <a href="Principal.aspx" class="bold-white-estrela">Página Principal</a><a class="icone"></a></div>
+                    </li>
+                    <li class="layouts level-1 open " id="DIPEJ" runat="server">
+                        <div class="conteudo  open ">
+                            <a href="Principal.aspx" title="Peritos, clique para expandir ou recolher o menu.">
+                                Peritos</a><a href="#" title="Peritos (ícone), clique para expandir ou recolher o menu."
+                                    class=" open  icone "></a></div>
+                        <ul class="layouts level-2 menu collapsible">
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="frmCadastrarPerito.aspx">Cadastro</a><a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="frmAnotacoes.aspx">Anotações do Perito</a><a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="frmConsPerProc.aspx">Consulta Processos do Perito</a><a class=" icone "></a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="layouts level-1 open " id="Auxiliares" runat="server">
+                        <div class="conteudo  open ">
+                            <a href="Principal.aspx" title="Tabelas Auxiliares, clique para expandir ou recolher o menu.">
+                                Tabelas Auxiliares</a><a href="#" title="Tabelas Auxiliares (ícone), clique para expandir ou recolher o menu."
+                                    class=" open  icone "></a></div>
+                        <ul class="layouts level-2 menu collapsible">
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="frmEspecialidade.aspx">Especialidades</a> <a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="frmProfissao.aspx">Profissão</a><a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2 ultimo ">
+                                <div class="conteudo ">
+                                    <a href="frmOrgaoPer.aspx">Órgãos Profissionais</a> <a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2 ultimo ">
+                                <div class="conteudo ">
+                                    <a href="frmTiposDeAnotacoes.aspx">Tipos de Anotações</a>  <a class=" icone "></a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="layouts level-1 open " runat="server" id="Nomeacao">
+                        <div class="conteudo  open ">
+                            <a href="#"
+                                title="Serventia, clique para expandir ou recolher o menu.">
+                                Serventia</a><a href="#" title="Serventia, clique para expandir ou recolher o menu."
+                                    class=" open  icone "></a></div>
+                        <ul class="layouts level-2 menu collapsible">
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="frmPeritoDCP.aspx">Nomeação do Perito na Serventia</a><a
+                                        class=" icone "></a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="layouts level-1 open " id="Perito" runat="server">
+                        <div class="conteudo  open ">
+                            <a href="#" title="Profissional Perito, clique para expandir ou recolher o menu.">
+                                Profissional Perito</a><a href="#" title="Profissional Perito (ícone), clique para expandir ou recolher o menu."
+                                    class=" open  icone "></a></div>
+                        <ul class="layouts level-2 menu collapsible">
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="frmaceitacao.aspx">Aceitação/Recusa de Nomeação.</a><a class=" icone "></a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="layouts level-1 open ">
+                        <div class="conteudo  open ">
+                            <a href="#" title="Internet, clique para expandir ou recolher o menu.">
+                                Internet</a><a href="#" title="Internet (ícone), clique para expandir ou recolher o menu."
+                                    class=" open  icone "></a></div>
+                        <ul class="layouts level-2 menu collapsible">
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="frmPreCadastroPeritoExt.aspx">Pré-Cadastro On Line do Perito</a><a class=" icone "></a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="layouts level-1 open ">
+                        <div class="conteudo  open ">
+                            <a href="#" title="RAD, clique para expandir ou recolher o menu.">
+                                RADS</a><a href="#" title="RAD (ícone), clique para expandir ou recolher o menu."
+                                    class=" open  icone "></a></div>
+                        <ul class="layouts level-2 menu collapsible">
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="http://www.tjrj.jus.br/intrav2/siga/rotina_admin/dgjur/pdf/rad_dgjur_031.pdf">DGJUR-031 Indicar Peritos</a><a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="http://www.tjrj.jus.br/intrav2/siga/rotina_admin/dgjur/pdf/rad_dgjur_032.pdf">DGJUR-032 Pagamentos dos Peritos</a><a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="http://www.tjrj.jus.br/intrav2/siga/rotina_admin/dgjur/pdf/rad_dgjur_033.pdf">DGJUR-033 Perícias Acidentárias</a><a class=" icone "></a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="layouts level-1 open ">
+                        <div class="conteudo  open ">
+                            <a href="#" title="Atos, clique para expandir ou recolher o menu.">
+                                Atos</a><a href="#" title="Atos (ícone), clique para expandir ou recolher o menu."
+                                    class=" open  icone "></a></div>
+                        <ul class="layouts level-2 menu collapsible">
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE44&PORTAL=1&LAB=BIBxWEB&AMB=INTRA&SUMULAxTJ=&TRIPA=198^2009^24&PAL=&JUR=ESTADUAL&ANOX=2009&TIPO=198&ATO=24&START=">Aviso TJ nº 24/2009 (Cadastramento de Peritos)</a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=198^2009^31&PAL=&JUR=ESTADUAL&ANOX=2009&TIPO=198&ATO=31&START=">Aviso TJ nº 31/2009 (Auxílio pericial)</a><a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=141^2009^231&PAL=&JUR=ESTADUAL&ANOX=2009&TIPO=141&ATO=231&START=">Aviso CGJ nº 231/2009 (cumprimento de prazo nas perícias)</a> <a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE44&PORTAL=1&LAB=BIBxWEB&AMB=INTRA&SUMULAxTJ=&CHECKSUMULA=&TRIPA=50^2011^3&PAL=&JUR=ESTADUAL&ANOX=&TIPO=50&ATO=3&START=&DGCON=">Resolução CM nº 03/2011</a> <a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=50^2003^2&PAL=&JUR=ESTADUAL&ANOX=2003&TIPO=50&ATO=2&START=">Resolução nº 02/2003 (perícia nas ações acidentárias)</a> <a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=50^2004^2&PAL=&JUR=ESTADUAL&ANOX=2004&TIPO=50&ATO=2&START=">Resolução nº 02/2004 (modifica valor dos honorários nas ações acidentárias)</a> <a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=50^2006^20&PAL=&JUR=ESTADUAL&ANOX=2006&TIPO=&ATO=20&START=">Resolução nº 20/2006 (perícias com Justiça Gratuita)</a><a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=50^2006^21&PAL=&JUR=ESTADUAL&ANOX=2006&TIPO=&ATO=21&START=">Resolução nº 21/2006 (perícias com Justiça Gratuita em ações de interdição)</a><a class=" icone "></a></div>
+                            </li>
+                            <li class="layouts level-2">
+                                <div class="conteudo ">
+                                    <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=50^2008^12&PAL=&JUR=ESTADUAL&ANOX=2008&TIPO=&ATO=12&START=">Resolução nº 12/2008 (altera o anexo VI da Res. 20/2006)</a><a class=" icone "></a></div>
+                            </li>
+                        </ul>
+                    </li>
+                     <li class="layouts level-1" id="Li1" runat="server">
+                        <div class="conteudo">
+                            <a href="http:\\www.tjrj.jus.br">Sair</a><a class="icone"></a></div>
+                    </li>
+
+                
+                </ul>
+            </div>
+
+        
+                <!-- /Menu Lateral -->
+
+                <!-- Barra de Acessibilidade -->
+                <div id="content-barra" style="clear: none;">
+                    <a href="javascript:decreaseFontSize();">
+                        <img src="http://www.tjrj.jus.br/imagens/ico-font-menos.gif" alt="diminuir fonte" /></a>
+                    <a href="javascript:defaultFontSize();">
+                        <img src="http://www.tjrj.jus.br/imagens/ico-font-default.gif" alt="normalizar fonte" /></a>
+                    <a href="javascript:increaseFontSize();">
+                        <img src="http://www.tjrj.jus.br/imagens/ico-font-mais.gif" alt="aumentar fonte" /></a>
+                </div>
+                <!-- /Barra de Acessibilidade -->
+
+                <div id="content">
+                    <div id="conteudo">
+                        <asp:ContentPlaceHolder ID="Tela" runat="server">
+                            <!-- AQUI DEVERÁ SER INCLUÍDO TODO O CONTEÚDO DA PÁGINA -->
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+        </div>    
+        <!-- Fim da div#container -->
+        <!-- Início DIV do Rodapé do Sistema -->
+        <% Server.Execute("includes_tj/tpl_rodape.html")%>
+        <!-- Fim DIV do Rodapé do Sistema -->
+    </div>
+    <iframe name="pgPrint" id="pgPrint" width="600" height="100" style="visibility: hidden">
+    </iframe>
+</body>
+</html>
+
+ 

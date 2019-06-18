@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D69E5B05-4361-4901-9435-5A4AF8B6633F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Interface</RootNamespace>
+    <AssemblyName>Interface</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>%24/PERICIAS/Fontes de Sistema/Versao_testeStress/Interface</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://tjerj266:8080</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Interface.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Interface.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencia\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ClienteWebPadrao, Version=1.0.3453.23351, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencia\ClienteWebPadrao.dll</HintPath>
+    </Reference>
+    <Reference Include="DGTECCertDigital, Version=1.1.1.0, Culture=neutral, PublicKeyToken=cc49f5c2d0b868cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencia\DGTECCertDigital.dll</HintPath>
+    </Reference>
+    <Reference Include="DGTECGEDARDOTNET, Version=1.4.0.0, Culture=neutral, PublicKeyToken=a75c9479bd5b78a5, processorArchitecture=MSIL">
+      <HintPath>..\Referencia\DGTECGEDARDOTNET.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EstruturaPadrao, Version=2.1.0.0, Culture=neutral, PublicKeyToken=4ca6b644e7fd006f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencia\EstruturaPadrao.dll</HintPath>
+    </Reference>
+    <Reference Include="SegurancaWeb, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencia\SegurancaWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="ServicoDadosODPNET, Version=1.0.0.0, Culture=neutral, PublicKeyToken=10f57d494efad3dc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencia\ServicoDadosODPNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="Utilitarios, Version=2.0.0.0, Culture=neutral, PublicKeyToken=04bda0a2b6f22093, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencia\Utilitarios.dll</HintPath>
+    </Reference>
+    <Reference Include="WebServicePadrao, Version=2.3.0.0, Culture=neutral, PublicKeyToken=73e0387a5ac1c3d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referencia\WebServicePadrao.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="calendario.asp" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PagMenu.aspx.designer.vb">
+      <DependentUpon>PagMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMenu.aspx.vb">
+      <DependentUpon>PagMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAnotacaoDCP.aspx.designer.vb">
+      <DependentUpon>frmAnotacaoDCP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnotacaoDCP.aspx.vb">
+      <DependentUpon>frmAnotacaoDCP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BasePage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="calendario.aspx.designer.vb">
+      <DependentUpon>calendario.aspx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="calendario.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtlData1.ascx.designer.vb">
+      <DependentUpon>CtlData1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtlData1.ascx.vb">
+      <DependentUpon>CtlData1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataSetPer.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmComarcaPer.aspx.designer.vb">
+      <DependentUpon>frmComarcaPer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmComarcaPer.aspx.vb">
+      <DependentUpon>frmComarcaPer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmEscolherPerito.aspx.designer.vb">
+      <DependentUpon>frmEscolherPerito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEscolherPerito.aspx.vb">
+      <DependentUpon>frmEscolherPerito.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmGravaCurriculum.aspx.designer.vb">
+      <DependentUpon>frmGravaCurriculum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmGravaCurriculum.aspx.vb">
+      <DependentUpon>frmGravaCurriculum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDocsNecessarios.aspx.designer.vb">
+      <DependentUpon>frmDocsNecessarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocsNecessarios.aspx.vb">
+      <DependentUpon>frmDocsNecessarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrgaoPer.aspx.designer.vb">
+      <DependentUpon>frmOrgaoPer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgaoPer.aspx.vb">
+      <DependentUpon>frmOrgaoPer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPeritoDCP.aspx.designer.vb">
+      <DependentUpon>frmPeritoDCP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPeritoDCP.aspx.vb">
+      <DependentUpon>frmPeritoDCP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPreCadastroPeritoExt.aspx.designer.vb">
+      <DependentUpon>frmPreCadastroPeritoExt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreCadastroPeritoExt.aspx.vb">
+      <DependentUpon>frmPreCadastroPeritoExt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmProfissao.aspx.designer.vb">
+      <DependentUpon>frmProfissao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfissao.aspx.vb">
+      <DependentUpon>frmProfissao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTiposDeAnotacoes.aspx.designer.vb">
+      <DependentUpon>frmTiposDeAnotacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTiposDeAnotacoes.aspx.vb">
+      <DependentUpon>frmTiposDeAnotacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmExibirFoto.aspx.designer.vb">
+      <DependentUpon>frmExibirFoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmExibirFoto.aspx.vb">
+      <DependentUpon>frmExibirFoto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmCadastrarPerito.aspx.designer.vb">
+      <DependentUpon>frmCadastrarPerito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastrarPerito.aspx.vb">
+      <DependentUpon>frmCadastrarPerito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmEspecialidade.aspx.designer.vb">
+      <DependentUpon>frmEspecialidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEspecialidade.aspx.vb">
+      <DependentUpon>frmEspecialidade.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PerMasterPage.master.designer.vb">
+      <DependentUpon>PerMasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="PerMasterPage.master.vb">
+      <DependentUpon>PerMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerMasterPageExt.master.designer.vb">
+      <DependentUpon>PerMasterPageExt.master</DependentUpon>
+    </Compile>
+    <Compile Include="PerMasterPageExt.master.vb">
+      <DependentUpon>PerMasterPageExt.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerMasterPagePerito.Master.designer.vb">
+      <DependentUpon>PerMasterPagePerito.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PerMasterPagePerito.Master.vb">
+      <DependentUpon>PerMasterPagePerito.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.aspx.designer.vb">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.aspx.vb">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAutorizaRec.aspx.designer.vb">
+      <DependentUpon>frmAutorizaRec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAutorizaRec.aspx.vb">
+      <DependentUpon>frmAutorizaRec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDeclaraRec.aspx.designer.vb">
+      <DependentUpon>frmDeclaraRec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeclaraRec.aspx.vb">
+      <DependentUpon>frmDeclaraRec.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmDadosDosPeritos.aspx.designer.vb">
+      <DependentUpon>frmDadosDosPeritos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosDosPeritos.aspx.vb">
+      <DependentUpon>frmDadosDosPeritos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmDeclaracaoPsicRes.aspx.designer.vb">
+      <DependentUpon>frmDeclaracaoPsicRes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeclaracaoPsicRes.aspx.vb">
+      <DependentUpon>frmDeclaracaoPsicRes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmAgendaAcidentaria.aspx.designer.vb">
+      <DependentUpon>frmAgendaAcidentaria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgendaAcidentaria.aspx.vb">
+      <DependentUpon>frmAgendaAcidentaria.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmReqInscCadPerDipej.aspx.designer.vb">
+      <DependentUpon>frmReqInscCadPerDipej.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmReqInscCadPerDipej.aspx.vb">
+      <DependentUpon>frmReqInscCadPerDipej.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmConsProcPer.aspx.designer.vb">
+      <DependentUpon>frmConsProcPer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsProcPer.aspx.vb">
+      <DependentUpon>frmConsProcPer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAnotacoes.aspx.designer.vb">
+      <DependentUpon>frmAnotacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnotacoes.aspx.vb">
+      <DependentUpon>frmAnotacoes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmOficioSubstituicao.aspx.designer.vb">
+      <DependentUpon>FrmOficioSubstituicao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOficioSubstituicao.aspx.vb">
+      <DependentUpon>FrmOficioSubstituicao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAceitacao.aspx.designer.vb">
+      <DependentUpon>frmAceitacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAceitacao.aspx.vb">
+      <DependentUpon>frmAceitacao.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frmConsPerProc.aspx.designer.vb">
+      <DependentUpon>frmConsPerProc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsPerProc.aspx.vb">
+      <DependentUpon>frmConsPerProc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRads.aspx.designer.vb">
+      <DependentUpon>frmRads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmRads.aspx.vb">
+      <DependentUpon>frmRads.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmGravaFoto.aspx.designer.vb">
+      <DependentUpon>FrmGravaFoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGravaFoto.aspx.vb">
+      <DependentUpon>FrmGravaFoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teste.aspx.designer.vb">
+      <DependentUpon>teste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teste.aspx.vb">
+      <DependentUpon>teste.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DataSetPer.xsc">
+      <DependentUpon>DataSetPer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPer.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetPer.xss">
+      <DependentUpon>DataSetPer.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="PagMenu.aspx" />
+    <Content Include="PerMasterPageExt.master" />
+    <Content Include="bgCarrega.png" />
+    <Content Include="frmAnotacaoDCP.aspx" />
+    <Content Include="frmComarcaPer.aspx" />
+    <Content Include="frmEscolherPerito.aspx" />
+    <Content Include="frmGravaCurriculum.aspx" />
+    <Content Include="frmDocsNecessarios.aspx" />
+    <Content Include="frmOrgaoPer.aspx" />
+    <Content Include="frmPeritoDCP.aspx" />
+    <Content Include="frmPreCadastroPeritoExt.aspx" />
+    <Content Include="frmProfissao.aspx" />
+    <Content Include="frmTiposDeAnotacoes.aspx" />
+    <Content Include="frmExibirFoto.aspx" />
+    <Content Include="Imagens\animacao_carregando.gif" />
+    <Content Include="Imagens\animacao_carregando_barra.gif" />
+    <Content Include="Imagens\Brasao_oficial.gif" />
+    <Content Include="Imagens\btn_help.gif" />
+    <Content Include="Imagens\bt_editar.gif" />
+    <Content Include="Imagens\bt_excluir2.gif" />
+    <Content Include="Imagens\favicon.ico" />
+    <Content Include="Imagens\fundo_paginas.jpg" />
+    <Content Include="Imagens\ico_inicial.jpg" />
+    <Content Include="Imagens\ico_sair.jpg" />
+    <Content Include="Imagens\img_aviso.gif" />
+    <Content Include="Imagens\img_calendario.gif" />
+    <Content Include="Imagens\img_erro.gif" />
+    <Content Include="Imagens\img_form.gif" />
+    <Content Include="Imagens\img_info.gif" />
+    <Content Include="Imagens\img_lupa.gif" />
+    <Content Include="Imagens\img_result_busca.gif" />
+    <Content Include="Imagens\img_rodape.jpg" />
+    <Content Include="Imagens\img_sucesso.gif" />
+    <Content Include="Imagens\imprimir_ico.gif" />
+    <Content Include="Imagens\LOGO_TJRJ.gif" />
+    <Content Include="Imagens\next.gif" />
+    <Content Include="Imagens\novo_logo_peq_cor_fundo_transp.GIF" />
+    <Content Include="Imagens\novo_logo_peq_cor_fundo_transpBranco.png" />
+    <Content Include="Imagens\prev.gif" />
+    <Content Include="Imagens\semi-transparent.gif" />
+    <Content Include="Imagens\seta_anterior.gif" />
+    <Content Include="Imagens\seta_proximo.gif" />
+    <Content Include="Imagens\shim.gif" />
+    <Content Include="Imagens\Substituição.JPG" />
+    <Content Include="Imagens\tblInfDireito.JPG" />
+    <Content Include="Imagens\tblInfEsquerdo.JPG" />
+    <Content Include="Imagens\tblInfMeio.JPG" />
+    <Content Include="Imagens\tblLinha1Direito.JPG" />
+    <Content Include="Imagens\tblLinha1Esquerdo.JPG" />
+    <Content Include="Imagens\tblLinhaDireito.JPG" />
+    <Content Include="Imagens\tblLinhaEsquerdo.JPG" />
+    <Content Include="Imagens\tblSupDireito.JPG" />
+    <Content Include="Imagens\tblSupEsquerdo.JPG" />
+    <Content Include="Imagens\tblSupMeio.JPG" />
+    <Content Include="Imagens\toolbar\calendar.gif" />
+    <Content Include="Imagens\toolbar\crlogo.gif" />
+    <Content Include="Imagens\toolbar\export.gif" />
+    <Content Include="Imagens\toolbar\exportd.gif" />
+    <Content Include="Imagens\toolbar\export_over.gif" />
+    <Content Include="Imagens\toolbar\First.gif" />
+    <Content Include="Imagens\toolbar\Firstd.gif" />
+    <Content Include="Imagens\toolbar\first_over.gif" />
+    <Content Include="Imagens\toolbar\gotopage.gif" />
+    <Content Include="Imagens\toolbar\gotopaged.gif" />
+    <Content Include="Imagens\toolbar\gotopage_over.gif" />
+    <Content Include="Imagens\toolbar\grouptree.gif" />
+    <Content Include="Imagens\toolbar\grouptreed.gif" />
+    <Content Include="Imagens\toolbar\grouptreepressed.gif" />
+    <Content Include="Imagens\toolbar\grouptree_over.gif" />
+    <Content Include="Imagens\toolbar\Last.gif" />
+    <Content Include="Imagens\toolbar\Lastd.gif" />
+    <Content Include="Imagens\toolbar\last_over.gif" />
+    <Content Include="Imagens\toolbar\Next.gif" />
+    <Content Include="Imagens\toolbar\Nextd.gif" />
+    <Content Include="Imagens\toolbar\next_over.gif" />
+    <Content Include="Imagens\toolbar\Prev.gif" />
+    <Content Include="Imagens\toolbar\Prevd.gif" />
+    <Content Include="Imagens\toolbar\prev_over.gif" />
+    <Content Include="Imagens\toolbar\print.gif" />
+    <Content Include="Imagens\toolbar\printd.gif" />
+    <Content Include="Imagens\toolbar\print_over.gif" />
+    <Content Include="Imagens\toolbar\Refresh.gif" />
+    <Content Include="Imagens\toolbar\refreshd.gif" />
+    <Content Include="Imagens\toolbar\refresh_over.gif" />
+    <Content Include="Imagens\toolbar\Search.gif" />
+    <Content Include="Imagens\toolbar\searchd.gif" />
+    <Content Include="Imagens\toolbar\search_over.gif" />
+    <Content Include="Imagens\toolbar\up.gif" />
+    <Content Include="Imagens\toolbar\upd.gif" />
+    <Content Include="Imagens\toolbar\up_over.gif" />
+    <Content Include="Imagens\topo_sistemas.jpg" />
+    <Content Include="loading.css" />
+    <Content Include="loading6.gif" />
+    <Content Include="PerMasterPagePerito.Master" />
+    <Content Include="PerMasterPage.master" />
+    <Content Include="Controles\CtlData1.ascx" />
+    <Content Include="Pericias.js" />
+    <Content Include="frmCadastrarPerito.aspx" />
+    <Content Include="frmEspecialidade.aspx" />
+    <Content Include="Principal.aspx" />
+    <Content Include="frmAutorizaRec.aspx" />
+    <Content Include="frmDeclaraRec.aspx" />
+    <Content Include="frmDadosDosPeritos.aspx" />
+    <Content Include="frmDeclaracaoPsicRes.aspx" />
+    <Content Include="frmAgendaAcidentaria.aspx" />
+    <Content Include="frmReqInscCadPerDipej.aspx" />
+    <Content Include="frmConsProcPer.aspx" />
+    <Content Include="frmAnotacoes.aspx" />
+    <Content Include="FrmOficioSubstituicao.aspx" />
+    <Content Include="frmAceitacao.aspx" />
+    <Content Include="frmConsPerProc.aspx" />
+    <Content Include="frmRads.aspx" />
+    <Content Include="FrmGravaFoto.aspx" />
+    <Content Include="teste.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.vbproj">
+      <Project>{015A216C-79A7-4757-B961-3BEAFB50AD4F}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidade\Entidade.vbproj">
+      <Project>{20574632-B715-4E92-94E7-EA7F698FC508}</Project>
+      <Name>Entidade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="CSS\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>22439</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost.tj.rj.gov.br/Interface_Interna</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

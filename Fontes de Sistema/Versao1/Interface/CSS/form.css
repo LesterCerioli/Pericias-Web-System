@@ -1,0 +1,192 @@
+.caixa-form
+{
+    BORDER-BOTTOM: #6a6861 1px solid;
+    BORDER-LEFT: #6a6861 1px solid;
+    WIDTH: 99%;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 11px;
+    BORDER-TOP: #6a6861 1px solid;
+    BORDER-RIGHT: #6a6861 1px solid
+}
+.drop-form-favoritos
+{
+    BORDER-BOTTOM: #630 1px solid;
+    BORDER-LEFT: #630 1px solid;
+    BACKGROUND-COLOR: #f1eae0;
+    WIDTH: 150px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #211512;
+    FONT-SIZE: 10px;
+    BORDER-TOP: #630 1px solid;
+    BORDER-RIGHT: #630 1px solid
+}
+.bt-form-busca-proces
+{
+    WIDTH: 65px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 11px
+}
+.caixa-busca-topo
+{
+    BORDER-BOTTOM: #b6b099 1px solid;
+    BORDER-LEFT: #b6b099 1px solid;
+    WIDTH: 150px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 11px;
+    BORDER-TOP: #b6b099 1px solid;
+    BORDER-RIGHT: #b6b099 1px solid
+}
+.bt-form-busca-topo
+{
+    BACKGROUND-IMAGE: url(../imagens/back-bt-buscar.jpg);
+    PADDING-BOTTOM: 2px;
+    BORDER-RIGHT-WIDTH: 0px;
+    BACKGROUND-COLOR: #8b7861;
+    MARGIN-TOP: 2px;
+    WIDTH: 56px;
+    FONT-FAMILY: Verdana, Geneva, sans-serif;
+    BORDER-TOP-WIDTH: 0px;
+    BORDER-BOTTOM-WIDTH: 0px;
+    HEIGHT: 18px;
+    COLOR: #fff;
+    FONT-SIZE: 9px;
+    BORDER-LEFT-WIDTH: 0px;
+    FONT-WEIGHT: bold;
+    MARGIN-RIGHT: 5px
+}
+.caixa-form-notic-busc
+{
+    BORDER-BOTTOM: #6a6861 1px solid;
+    BORDER-LEFT: #6a6861 1px solid;
+    WIDTH: 48px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 11px;
+    BORDER-TOP: #6a6861 1px solid;
+    BORDER-RIGHT: #6a6861 1px solid
+}
+.drop-form-notic
+{
+    BORDER-BOTTOM: #630 1px solid;
+    BORDER-LEFT: #630 1px solid;
+    BACKGROUND-COLOR: #e4ebed;
+    WIDTH: 100%;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #211512;
+    FONT-SIZE: 10px;
+    BORDER-TOP: #630 1px solid;
+    BORDER-RIGHT: #630 1px solid
+}
+.drop-form-institucional
+{
+    BORDER-BOTTOM: #8a7860 1px solid;
+    BORDER-LEFT: #8a7860 1px solid;
+    BACKGROUND-COLOR: #e8e8e5;
+    WIDTH: 240px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10px;
+    BORDER-TOP: #8a7860 1px solid;
+    BORDER-RIGHT: #8a7860 1px solid
+}
+.droplist-padrao
+{
+    BORDER-BOTTOM: #6a6861 1px solid;
+    BORDER-LEFT: #6a6861 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 11px;
+    BORDER-TOP: #6a6861 1px solid;
+    BORDER-RIGHT: #6a6861 1px solid
+}
+.dropJump-padrao
+{
+    BORDER-BOTTOM: #6a6861 1px solid;
+    BORDER-LEFT: #6a6861 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 11px;
+    BORDER-TOP: #6a6861 1px solid;
+    BORDER-RIGHT: #6a6861 1px solid
+}
+.textfield-padrao
+{
+    BORDER-BOTTOM: #6a6861 1px solid;
+    BORDER-LEFT: #6a6861 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 11px;
+    BORDER-TOP: #6a6861 1px solid;
+    BORDER-RIGHT: #6a6861 1px solid
+}
+.textarea-padrao
+{
+    BORDER-BOTTOM: #6a6861 1px solid;
+    BORDER-LEFT: #6a6861 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 11px;
+    BORDER-TOP: #6a6861 1px solid;
+    BORDER-RIGHT: #6a6861 1px solid
+}
+.Button-padrao
+{
+    BACKGROUND-COLOR: #e7dbc9;
+    PADDING-LEFT: 5px;
+    PADDING-RIGHT: 5px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #594e3e;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold
+}
+.radioButton-padrao
+{
+    MARGIN-TOP: 2px;
+    MARGIN-BOTTOM: 2px;
+    MARGIN-RIGHT: 2px;
+    TEXT-DECORATION: none
+}
+.fildset-padrao
+{
+    BORDER-RIGHT-WIDTH: 0px;
+    BORDER-TOP-WIDTH: 0px;
+    BORDER-BOTTOM-WIDTH: 0px;
+    BORDER-LEFT-WIDTH: 0px
+}
+.corpo-form TH
+{
+    BORDER-BOTTOM: #000000 0px solid;
+    TEXT-ALIGN: left;
+    BORDER-LEFT: #000000 0px solid;
+    BACKGROUND-COLOR: #efe6d6;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 40px;
+    COLOR: #000000;
+    FONT-SIZE: 11px;
+    VERTICAL-ALIGN: middle;
+    BORDER-TOP: #000000 0px solid;
+    FONT-WEIGHT: bold;
+    BORDER-RIGHT: #000000 0px solid
+}
+.corpo-form TD
+{
+    BORDER-BOTTOM: #000000 0px solid;
+    BORDER-LEFT: #000000 0px solid;
+    BACKGROUND-COLOR: #fbf8f0;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 11px;
+    BORDER-TOP: #000000 0px solid;
+    BORDER-RIGHT: #000000 0px solid
+}
+.corpo-form TD TD
+{
+    BORDER-BOTTOM: #000000 0px solid;
+    BORDER-LEFT: #000000 0px solid;
+    BACKGROUND-COLOR: #fbf8f0;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 11px;
+    BORDER-TOP: #000000 0px solid;
+    BORDER-RIGHT: #000000 0px solid
+}

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SegurancaWeb
+</name>
+</assembly>
+<members>
+<member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.#ctor">
+	<remarks/>
+</member><member name="E:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperaDadosUsuarioCompleted">
+	<remarks/>
+</member><member name="E:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperaJanelasCompleted">
+	<remarks/>
+</member><member name="E:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperaOrgaoSistemaCompleted">
+	<remarks/>
+</member><member name="E:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperarUsuarioPorChaveSiglaSistemaECodOrgaoCompleted">
+	<remarks/>
+</member><member name="E:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.zerarCronometroCompleted">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperaDadosUsuario(System.String)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperaDadosUsuarioAsync(System.String)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperaDadosUsuarioAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperaJanelas(System.String)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperaJanelasAsync(System.String)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperaJanelasAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperaOrgaoSistema(System.String,System.String)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperaOrgaoSistemaAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperaOrgaoSistemaAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperarUsuarioPorChaveSiglaSistemaECodOrgao(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperarUsuarioPorChaveSiglaSistemaECodOrgaoAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.recuperarUsuarioPorChaveSiglaSistemaECodOrgaoAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.zerarCronometro(System.String)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.zerarCronometroAsync(System.String)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.zerarCronometroAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.SessionEJB_SEGWEBWebServiceService">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.autorizacoes">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.idFunc">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.idDef">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.indCadPres">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.dtCadPres">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.origemUsuario">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.grupo_Usu">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.indAutenticaAD">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.codOrgaoLotado">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.idPessoa">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.matricula">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.CPF">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.cod_Grupo_Usu">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.indTrocaSenha">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.cargoUsu">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.nome">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.matr_Rh">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.supervisor">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.codUsu">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.idUsu">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.matr_Formatada">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.codUsuMumps">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.idProm">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.codAdv">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstUsuario.orgaoLotacao">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.EstUsuario">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstAutorizacao.janela">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstAutorizacao.indAutorizadoCertDig">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstAutorizacao.urlCertDig">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstAutorizacao.objFunc">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstAutorizacao.siglaFunc">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstAutorizacao.indAutorizado">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.EstAutorizacao">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstOrgaoGrupoUsu.codOrgao">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstOrgaoGrupoUsu.descrGrupo">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstOrgaoGrupoUsu.descrOrgao">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstOrgaoGrupoUsu.indAtivo">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstOrgaoGrupoUsu.codGrupo">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.EstOrgaoGrupoUsu">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstJanela.objeto">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.EstJanela.janela">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.EstJanela">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.recuperaDadosUsuarioCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.recuperaDadosUsuarioCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.recuperaDadosUsuarioCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.recuperaJanelasCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.recuperaJanelasCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.recuperaJanelasCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.recuperaOrgaoSistemaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.recuperaOrgaoSistemaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.recuperaOrgaoSistemaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.recuperarUsuarioPorChaveSiglaSistemaECodOrgaoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.recuperarUsuarioPorChaveSiglaSistemaECodOrgaoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.recuperarUsuarioPorChaveSiglaSistemaECodOrgaoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.zerarCronometroCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SegurancaWeb.ServicoCofre.zerarCronometroCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SegurancaWeb.ServicoCofre.zerarCronometroCompletedEventArgs">
+	<remarks/>
+</member><member name="P:SegurancaWeb.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SegurancaWeb.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:SegurancaWeb.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

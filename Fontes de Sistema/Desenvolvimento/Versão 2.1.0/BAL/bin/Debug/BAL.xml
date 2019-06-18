@@ -1,0 +1,34 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BAL
+</name>
+</assembly>
+<members>
+<member name="P:BAL.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:BAL.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:BAL.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:BAL.BALTIPO_STATUS.LISTAR_TODOS_STATUS">
+	<summary>
+ Método que lista todos os status da tabela TIPO_STATUS
+ </summary>
+</member><member name="M:BAL.BaseBAL.AplicarMascaraProcesso(System.String)">
+	<summary>
+ Aplica máscara de processo no valor informado, utilizando expressão regular.
+ </summary>
+	<param name="valor">Valor para aplicação de máscara.</param>
+	<returns>Valor com máscara aplicada.</returns>
+</member>
+</members>
+</doc>

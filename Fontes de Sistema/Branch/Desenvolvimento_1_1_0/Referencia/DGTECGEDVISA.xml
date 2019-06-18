@@ -1,0 +1,1346 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DGTECGEDVISA
+</name>
+</assembly>
+<members>
+<member name="M:DGTECGEDVISA.DGTECGEDVISA.InteropUserControl_Click(System.Object,System.EventArgs)">
+	<summary>
+ Evento de click simples no controle
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.InteropUserControl_DoubleClick(System.Object,System.EventArgs)">
+	<summary>
+ Evento de duplo clique no controle
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISA.Visible">
+	<summary>
+ Indica se o controle está visível ou não
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISA.Enabled">
+	<summary>
+ Indica se o controle esta habilitado ou não
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISA.ForegroundColor">
+	<summary>
+ Cor de frente do controle
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISA.BackgroundColor">
+	<summary>
+ Cor de fundo do controle
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISA.BackgroundImage">
+	<summary>
+ Imagem de fundo do controle
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.#ctor">
+	<summary>
+ Método de inicialização do controle GEDVISA
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDVISA.TVITEM">
+	<summary>
+ Estrutura a ser usada pelo método que retira a caixa de seleção usando a API.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:DGTECGEDVISA.DGTECGEDVISA.AntesSelecionarItemArvore">
+	<summary>
+ Evento ocorre antes da seleção de um item da árvore de documentos. A exibição pode ser cancelada
+ setando Cancel = True. 
+ </summary>
+	<param name="Cancel">Indica cancelamento ou não da exibição do documento.</param>
+	<param name="ItemArvore">Item da árvore de documentos que será selecionado.</param>
+	<remarks></remarks>
+</member><member name="E:DGTECGEDVISA.DGTECGEDVISA.AposMarcacaoCheckBoxItemArvore">
+	<summary>
+ Evento ocorrido após a marcação ou desmarcação do "CheckBox" de um item da árvore de documentos. 
+ </summary>
+	<param name="ItemArvore">Item da árvore marcado ou desmarcado após o evento</param>
+	<remarks>
+ O evento não ocorrerá caso a marcação ou desmarcação seja ocasionada:
+ <list type="number">
+			<item>
+ Devido da desmarcação automática de um item pai pelo fato de seu item filho ter sido desmarcado
+ </item>
+			<item>
+ Devido a marcação de automática de um item filho pelo fato de seu item pai ter sido marcado
+ </item>
+		</list>
+	</remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISA.UltimoCodigoErro">
+	<summary>
+ Código do último erro ocorrido no uso do componente DGTECGEDVISA
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISA.ExibeTempoExibicao">
+	<summary>
+ Exibe na barra de status do controle o tempo para exibição de um documento. Para uso interno do desenvolvimento do componente.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISA.ItemEscolhido">
+	<summary>
+ Indica/Seta qual item se encontra escolhido na árvore de documentos
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISA.ExibeSelecionadorDocto">
+	<summary>
+ Propriedade que indica se a caixa selecionadora de documentos deve ou não ser exibida
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISA.ExibeArvoreDocumentos">
+	<summary>
+ Indica se a arvoré de documentos deve estar ou não visível
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.CaixasSelecao(DGTECGEDVISA.DGTECGEDVISAItemArvore)">
+	<summary>
+ Verifica todos os itens da árvore para retirar as caixas de seleção se necessário.
+ </summary>
+	<param name="ia">Não deve ser preenchido.</param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.MostraCaixaSelecao(DGTECGEDVISA.DGTECGEDVISAItemArvore,System.Boolean)">
+	<summary>
+ Indica se a caixa de seleção deverá ser exibida.
+ </summary>
+	<param name="ia">DGTECGEDVISAItemArvore a ser alterado.</param>
+	<param name="mostra">Indica se deve mostrar a caixa de seleção.</param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.FindNodeByName(System.Windows.Forms.TreeNodeCollection,System.String,System.Boolean)">
+	<summary>
+ Busca um nó na árvore de documentos pelo atributo "name" em todos objetos TreeNode contidos na árvore
+ </summary>
+	<param name="Nodes"></param>
+	<param name="Name"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.BuscaItemPorCodigo(System.String)">
+	<summary>
+ Retorna um determinado item da árvore de documentos através do seu código
+ </summary>
+	<param name="Codigo">Código a ser procurado</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.GeraErro(DGTECGEDVISA.DGTECGEDVISAException.TipoErroGEDVISA,System.String)">
+	<summary>
+ Gera um erro padrão armazenando o código do último erro na instância do objeto.
+ </summary>
+	<param name="CodigoErro"></param>
+	<param name="MensagemExtra"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.AdicionaDocumento(System.String,System.String,DGTECGEDVISA.DGTECGEDDocumento,System.String,DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoDocumento,System.String,DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoPagina,System.Int32,System.Boolean)">
+	<summary>
+ Adiciona documento do GED na árvore de documentos a partir de um DGTECGEDDocumento préexistente (já instânciado).
+ </summary>
+	<param name="Texto">Texto do item que será exibido na árvore de documentos.</param>
+	<param name="Codigo">
+ Código do item dentro da árvore de documentos. 
+ O item poderá ser referenciado através deste código nos demais métodos do componente. 
+ O código deve ser único, caso contrário o método gerará erro.
+ </param>
+	<param name="Documento">Documento instanciado.</param>
+	<param name="CodigoPai">Código do pai sobre o qual o item ficará submetido. Caso omitido ficará constante na raiz da árvore de documentos.</param>
+	<param name="ExibicaoDocumento">Indica a forma pela qual o documento será exibido no painel esquerdo.</param>
+	<param name="DescrDocto">Descrição do documento a ser exibido abaixo da árvore de documentos.</param>
+	<param name="ExibicaoPaginas">Indica a forma de exibição das páginas do documento adicionado na árvore.</param>
+	<param name="PaginaInicialRelativa">
+ Indica qual o valor da primeira página do documento. Por padrão é 1.
+ Caso seja informado um valor menor que um não poderá ser exibida a lista de páginas do documento através do parâmetro
+ ExibicaoDocumento = TipoExibicaoPagina.ExibePaginasSempre ou ExibicaoDocumento = TipoExibicaoPagina.ExibePaginasSobDemanda,
+ e o método ExibePagina ignorará o item na busca da página informada como parâmetro.
+ </param>
+	<param name="MostraCaixa">Indica se o documento deverá possuir caixa de seleção.</param>
+	<returns>O item incluído do classe DGTECGEDVISAItemArvore.
+ </returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.AdicionaItemArvore(DGTECGEDVISA.DGTECGEDVISAItemArvore,System.String,System.String)">
+	<summary>
+ Adiciona item na árvore de documentos
+ </summary>
+	<param name="itemArvore">Item já instânciado e preparado para adição na árvore de documentos.</param>
+	<param name="CodigoPai">Código do item pai no qual o item será adicionado. Caso não informado será adicionado na raiz da árvore de documentos.</param>
+	<param name="CodigoPosterior">Códio posterior no qual o item deverá ser selecionado anteriormente. Caso não informado ser adicionado no final.</param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.AdicionaNovoDocumento(System.String,System.String,System.String,System.String,DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoDocumento,System.String,DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoPagina,System.Int32,System.Int32,DGTECGEDVISA.TipoDocumentoDigital,System.Boolean)">
+	<summary>
+ Adiciona documento do GED na árvore de documentos criando um novo DGTECGEDDocumento
+ </summary>
+	<param name="NomeVisivel">Texto do item que será exibido na árvore de documentos.</param>
+	<param name="Codigo">
+ Código do item dentro da árvore de documentos. 
+ O item poderá ser referenciado através deste código nos demais métodos do componente. 
+ O código deve ser único, caso contrário o método gerará erro.
+ </param>
+	<param name="IDDocumentoOuArquivo">Código do documento ou arquivo local a ser associado ao item da árvore de documentos.</param>
+	<param name="CodigoPai">Código do pai sobre o qual o item ficará submetido. Caso omitido ficará constante na raiz da árvore de documentos.</param>
+	<param name="ExibicaoDocumento">Indica a forma pela qual o documento será exibido no painel esquerdo.</param>
+	<param name="DescrDocto">Descrição do documento a ser exibido abaixo da árvore de documentos.</param>
+	<param name="ExibicaoPaginas">Indica a forma de exibição das páginas do documento adicionado na árvore.</param>
+	<param name="NumeroPaginas">Número de páginas do documento. Caso omitido será calculado automáticamente na ocasião de seu carregamento.</param>
+	<param name="PaginaInicialRelativa">
+ Indica qual o valor da primeira página do documento. Por padrão é 1. 
+ Caso seja informado um valor menor que um não poderá ser exibida a lista de páginas do documento através do parâmetro
+ ExibicaoDocumento = TipoExibicaoPagina.ExibePaginasSempre ou ExibicaoDocumento = TipoExibicaoPagina.ExibePaginasSobDemanda,
+ e o método ExibePagina ignorará o item na busca da página informada como parâmetro.
+ </param>
+	<param name="TipoDocumento"></param>
+	<param name="MostraCaixa">Indica se o novo documento possuirá caixa de seleção.</param>
+	<returns>O item incluído do classe DGTECGEDVISAItemArvore.
+ </returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.AdicionaAgrupador(System.String,System.String,System.String,System.String,System.Boolean)">
+	<summary>
+ Adiciona item na árvore de documentos para agrupar diversos documentos
+ Caso o código informado já exista, não adiciona agrupador e retorna o item da árvore com mesmo
+ código adicionado anteriormente.
+ </summary>
+	<param name="Codigo">Código do agrupador.</param>
+	<param name="Texto">Texto do agrupador a ser exibido dentro da árvore.</param>
+	<param name="Descricao">Descrição do item a ser exibido abaixo da árvore de documentos.</param>
+	<param name="CodigoPai">Código do item pai ao qual este item será dependente</param>
+	<param name="MostraCaixa">Indica se o agrupador possuirá caixa de seleção.</param>
+	<returns>Retorna item adicionado.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ExisteItemNaArvore(System.String)">
+	<summary>
+ Verifica a existencia de um item contido na árvore de documentos
+ </summary>
+	<param name="Codigo">Código com o qual o item foi incluído na árvore de documentos. Caso </param>
+	<returns>Verdadeiro ou falso se existe o item na árvore de documentos</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ObtemItemDaArvore(System.String)">
+	<summary>
+ Obtem um item contido na árvore de documentos
+ </summary>
+	<param name="Codigo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISA.GEDAR">
+	<summary>
+ Objeto DGTECGEDARDOTNET para comunicação com o GED no caso de ID documentos adicionados a árvore.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ExibeDocumentoDaArvore(System.String,System.Int32,System.Int32)">
+	<summary>
+ Exibe um nó contido na árvore de documentos cujo código seja passado como parâmetro.
+ </summary>
+	<param name="Codigo">Código do item constante na árvore de documentos.</param>
+	<param name="PaginaAbsoluta">Opcionalmente indica o número da página absoluta que será exibida. Caso não seja informado exibe do início do documento.</param>
+	<param name="PaginaRelativa">
+ Opcionalmente indica o número da página relativa que será exibida. 
+ Caso não seja informado exibe do início do documento.
+ Caso sejam informados a página absoluta e relativa a absoluta terá precedência.</param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ExibeDocumentoDaArvore(DGTECGEDVISA.DGTECGEDVISAItemArvore,System.Int32,System.Int32)">
+	<summary>
+ Exibe um nó contido na árvore de documentos passado como parâmetro.
+ </summary>
+	<param name="Item">Item constante na árvore de documentos para ser exibido.</param>
+	<param name="PaginaAbsoluta">Opcionalmente indica o número da página absoluta que será exibida. Caso não seja informado exibe do início do documento.</param>
+	<param name="PaginaRelativa">
+ Opcionalmente indica o número da página relativa que será exibida. 
+ Caso não seja informado exibe do início do documento.
+ Caso sejam informados a página absoluta e relativa a absoluta terá precedência.</param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ExibeNovoDocumento(System.String,DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoDocumento,DGTECGEDVISA.TipoDocumentoDigital)">
+	<summary>
+ Exibe um arquivo ou ID do GED avulso no controle. A propriedade GEDAR deve estar definida caso se deseje 
+ visualizar o documento.
+ </summary>
+	<param name="IDDocumentoOuArquivo"></param>
+	<param name="TipoExibicao"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ExibeDocumento(DGTECGEDVISA.DGTECGEDDocumento,DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoDocumento)">
+	<summary>
+ Exibe um documento passado como paramêtro.
+ </summary>
+	<param name="Documento">Documento a ser exibido.</param>
+	<param name="TipoExibicao">Forma pela qual o documento será exibido. Por padrão e decidido automaticamente</param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.LimpaDocumento">
+	<summary>
+ Limpa documento que esta sendo exibido no painel lateral direito
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ctlArvoreDocto_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+	<summary>
+ Nó da árvore foi selecionado
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ColapsaArvore">
+	<summary>
+ Colapsa toda a árvore de documentos
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ExpandeArvore">
+	<summary>
+ Expande toda a árvore de documentos
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.RemoveDocumento(System.String,System.Boolean)">
+	<summary>
+ Remove documento da árvore de documentos
+ </summary>
+	<param name="Codigo">Código do documento a ser removido.</param>
+	<param name="RemovePaiSemFilhos">
+ Indica se após a remoção do item indicado pelo código do primeiro parâmetro deve também remover o nó pai se ele não possuir mais filhos. 
+ A operação remoção de pais sem filhos será repetida recursivamente para items avós, bisavós e assim por diante. Parâmetro opcional. Por default é False.
+ </param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.RemoveTodosDocumentos">
+	<summary>
+ Remove todos os documentos da árvore de documentos 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.FocoNaArvore">
+	<summary>
+ Coloca o foco na árvore de documentos
+ </summary>
+	<returns>Retorna verdadeiro se o foco atribuído e falso caso contrário</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.FocoNoDocumento">
+	<summary>
+ Coloca o foco no documento visualizado
+ </summary>
+	<returns>Retorna verdadeiro se o foco atribuído e falso caso contrário</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ItensSelecionadosDaArvore(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Retorna array com os códigos dos items selecionados na árvore de documentos.
+ </summary>
+	<param name="RetornaDocumentos">Parâmetro opcional indicando se os items do tipo documento serão retornandos. Default True.</param>
+	<param name="RetornaAgrupadores">Parâmetro opcional indicando se os items do tipo agrupador serão retornandos. Default False.</param>
+	<param name="RetornaPaginas">
+ Parâmetro opcional indicando se os items do tipo "páginas de documentos" serão retornandos. 
+ Caso seja indicado para que as páginas sejam retornadas, o código da página será a composição das strings "_" + código do documento pai + "_" + número físico (absoluto) da página
+ Default False.</param>
+	<returns>Array de strings contendo os códigos dos itens selecionados na árvore.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ObtemNumeroDeSubitens(System.String)">
+	<summary>
+ Obtem número de subitens de um nó da árvore. 
+ </summary>
+	<param name="Codigo">
+ Código do item para se contar os seus subitens. 
+ Caso não informado ou código = "" retorna o quantitativo de itens da raiz da árvore.
+ </param>
+	<returns>
+ Retorna 0 se não houverem subitens ou -1 caso não exista documento 
+ com o código passado como parâmetro.
+ </returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.MarcaTodosItems">
+	<summary>
+ Marca os selecionadores de todos os items da árvore de documentos
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.DesmarcaTodosItems">
+	<summary>
+ Desmarca os selecionadores de todos os items da árvore de documentos
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.EscolheItemDisponivelSeguinte">
+	<summary>
+ Escolhe o próximo item disponível para exibição relativo ao atualmente escolhido na árvore de documentos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.EscolheItemDisponivelAnterior">
+	<summary>
+ Escolhe o item anterior disponível para exibição relativo ao atualmente escolhido na árvore de documentos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.EscolhePrimeiroItemDisponivel">
+	<summary>
+ Escolhe o primeiro item disponível da árvore de documentos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.EscolheUltimoItemDisponivel">
+	<summary>
+ Escolhe o último item da árvore disponível para exibição na árvore de documentos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ItemArvoreDescendente(DGTECGEDVISA.DGTECGEDVISAItemArvore,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Retorna item descendente da árvore de documentos relativo ao item inicial passado como parâmetro.
+ </summary>
+	<param name="ItemInicial">
+ Item inicial a partir do qual será calculado o item descendente. 
+ Caso seja Nothing será retornado o item mais ao topo da árvore de documentos.
+ </param>
+	<param name="IgnoraPaginas">
+ Indica se os itens da árvore correspondentes ao tipo "Pagina" devem ser ignorados.
+ </param>
+	<param name="IgnoraAgrupadores">
+ Indica se os itens correspondentes ao tipo "TextoAgrupador" devem ser ignorados.
+ </param>
+	<param name="IgnoraDocumentos">
+ Indica se os itens correspondentes ao tipo "Documento" devem ser ignorados.
+ </param>
+	<param name="IncluiItemInicial">
+ Indica se os critérios acima devem ser validados no item passado no parâmetro "ItemInicial". 
+ Caso seja omitido será False. 
+ Caso o parâmetro "ItemInicial" seja omitido ou Nothing este parâmetro será forçado para True.
+ </param>
+	<returns>Retorna o primeiro item que atenda aos critérios especificados.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ItemArvoreAscendente(DGTECGEDVISA.DGTECGEDVISAItemArvore,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Retorna item ascendente da árvore de documentos relativo ao item inicial passado como parâmetro.
+ </summary>
+	<param name="ItemInicial">
+ Item inicial a partir do qual será calculado o item ascendente. 
+ Caso seja Nothing será retornado o item mais inferior da árvore de documentos.
+ </param>
+	<param name="IgnoraPaginas">
+ Indica se os itens da árvore correspondentes ao tipo "Pagina" devem ser ignorados.
+ </param>
+	<param name="IgnoraAgrupadores">
+ Indica se os itens correspondentes ao tipo "TextoAgrupador" devem ser ignorados.
+ </param>
+	<param name="IgnoraDocumentos">
+ Indica se os itens correspondentes ao tipo "Documento" devem ser ignorados.
+ </param>
+	<param name="IncluiItemInicial">
+ Indica se os critérios acima devem ser validados no item passado no parâmetro "ItemInicial". 
+ Caso seja omitido será False. 
+ Caso o parâmetro "ItemInicial" seja omitido ou Nothing este parâmetro será forçado para True.
+ </param>
+	<returns>Retorna o primeiro item que atenda aos critérios especificados.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.BuscaItemPorTexto(System.String,System.Boolean,DGTECGEDVISA.DGTECGEDVISAItemArvore,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Realiza busca na propriedade texto dos itens da árvore de documentos de forma descendente ou ascendente.
+ A busca é feita em todo conteúdo do texto, ignorando diferenças entre maiúsculas e minúsculas, 
+ letras acentuadas ou não, c ou cedilha, e a existência de espaços duplos entre as palavras.
+ </summary>
+	<param name="TextoParaPesquisa">
+ Texto a ser pesquisado.
+ </param>
+	<param name="DirecaoDescendente">
+ Indica se a direção de busca é descendente (True - Default) ou ascendente (False).
+ </param>
+	<param name="ItemInicial">
+ Indica o item inicial a partir do qual sera realizada a busca. 
+ Caso não seja informado ou Nothing será usado o item mais superior (na busca descendente), ou 
+ o item mais inferior (na busca ascendente) como o inicial da busca na árvore de documentos; sendo que,
+ nestes casos, o parametro "IncluiItemInicial" será forçado para True.
+ </param>
+	<param name="IgnoraPaginas">
+ Indica se os itens da árvore correspondentes ao tipo "Pagina" devem ser ignorados na busca.
+ </param>
+	<param name="IgnoraAgrupadores">
+ Indica se os itens correspondentes ao tipo "TextoAgrupador" devem ser ignorados na busca.
+ </param>
+	<param name="IgnoraDocumentos">
+ Indica se os itens correspondentes ao tipo "Documento" devem ser ignorados na busca.
+ </param>
+	<param name="IncluiItemInicial">
+ Indica se a busca deve ser realizada no item inicial passado no parâmetro "ItemInicial". 
+ Caso seja omitido será False. 
+ Caso o parâmetro "ItemInicial" seja omitido ou Nothing este parâmetro será forçado para True.
+ </param>
+	<returns>Retorna o primeiro item que atenda aos critérios de pesquisa especificados.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.ExibePagina(System.Int32)">
+	<summary>
+ Exibe na árvore de documentos o número de página passado como parâmetro.
+ </summary>
+	<param name="NumeroPagina">Número da página para seleção.</param>
+	<returns>Retorna o item da árvore selecionado que contem o número de página passado como parâmetro.</returns>
+	<remarks>
+ Para correto funcionamento desta função é necessário o uso da propriedade "PaginaRelativa" na inclusão dos
+ items na árvore de documentos. Caso esta propriedade não seja informada, a estrutura dos documentos
+ esteja desordenada, ou a página não exista ocorrerá erro com a mensagem indicando o motivo.
+ Caso a página relativa de um item da árvore seja menor que 1 o método ignorará o item durante a busca pela página.
+ </remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.FiltrarDocumentos">
+	<summary>
+ Filtra documentos na árvore exibindo somente os que atenderem o filtro
+ Falta definir quais parametros com os filtros (não implementado)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISA.BuscaDocumento">
+	<summary>
+ Busca documento na árvore 
+ Falta definir quais parametros com os critérios de busca (não implementado)
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDVISA">
+	<summary>
+ Classe para visualização de documentos armazenados no GED ou em disco. Disponibiliza a exibição de uma
+ árvore de documentos onde podem ser adicionados diversos documentos.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumentoException.TipoErroGEDDocumento.Indefinido">
+	<summary>
+ Erro indefinido.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumentoException.TipoErroGEDDocumento.ArquivoIndisponivel">
+	<summary>
+ O arquivo correspondente ao documento não e encontra disponível.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumentoException.TipoErroGEDDocumento.WordOuOpenOfficeIndisponivel">
+	<summary>
+ Microsoft Office ou o OpenOffice 2.2 estão indisponíveis para conversão do documento.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumentoException.TipoErroGEDDocumento.ConversorPDFNaoImplementado">
+	<summary>
+ Não implementado nenhum conversor de PDF para o tipo de documento. 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumentoException.TipoErroGEDDocumento.DocumentoJaInicializado">
+	<summary>
+ O documento já foi inicializado. Se necessário instâncie um novo documento.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumentoException.TipoErroGEDDocumento.GEDARIndisponivel">
+	<summary>
+ Não é possível se comunicar com o GED pois nenhum objeto GEDAR foi instânciado e atribuído ao documento.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumentoException.TipoErroGEDDocumento.ScannerTWAINIndisponivel">
+	<summary>
+ Não existe scanner com driver TWAIN instalado no sistema.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumentoException.TipoErroGEDDocumento.ProblemaDuranteDigitalizacao">
+	<summary>
+ Ocorreu algum problema durante a digitalização ou a operação foi cancelada.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDDocumentoException.TipoErroGEDDocumento">
+	<summary>
+ Tipos de erro gerados a partir de uma exceção DGTECGEDVISAException. O tipo do erro pode ser recuperado 
+ pela propriedade CodigoErro de uma instância de DGTECGEDVISAException.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumentoException.CodigoErro">
+	<summary>
+ Código do erro que representa o motivo da ocorrência da exceção.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumentoException.Message">
+	<summary>
+ Mensagem de erro que representa o motivo da ocorrência da exceção.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDDocumentoException">
+	<summary>
+ Exceção para tratamento de erros ocorridos relativos a classe DGTECGEDDocumento
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAException.TipoErroGEDVISA.Indefinido">
+	<summary>
+ Erro indefinido
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAException.TipoErroGEDVISA.ItemJaExistenteNaArvore">
+	<summary>
+ Já existe item com mesmo código na árvore de documentos
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAException.TipoErroGEDVISA.ItemNaoExistenteNaArvore">
+	<summary>
+ Não existe item com o código informado
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAException.TipoErroGEDVISA.PaginaNaoExistenteNoDocumento">
+	<summary>
+ Página inexistente no documento
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAException.TipoErroGEDVISA.PaginasNaoOrdenadas">
+	<summary>
+ As páginas dos documentos da árvore não estão ordenadas corretamente
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAException.TipoErroGEDVISA.PaginaIndisponivel">
+	<summary>
+ Página indisponível nos documentos da árvore
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDVISAException.TipoErroGEDVISA">
+	<summary>
+ Tipos de erro gerados a partir de uma exceção DGTECGEDVISAException. O tipo do erro pode ser recuperado 
+ pela propriedade CodigoErro de uma instância de DGTECGEDVISAException.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAException.CodigoErro">
+	<summary>
+ Código do erro que representa o motivo da ocorrência da exceção.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAException.Message">
+	<summary>
+ Mensagem de erro que representa o motivo da ocorrência da exceção.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDVISAException">
+	<summary>
+ Exceção para tratamento de erros ocorridos em nos componentes contidos na DGTECGEDVISA.dll
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAItemArvore.CaixaSelecao">
+	<summary>
+ Indica se o DGTECGEDVISAItemArvore criado possui caixa de seleção, idependente de como estiver 
+ o restante dos itens da árvore.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAItemArvore.ExibicaoPagina">
+	<summary>
+ Indica de que forma as páginas do documento serão exibidas. Ver enumerável TipoExibicaoPagina para 
+ o detalhamento das formas de exibição.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoPagina.NaoExibePaginas">
+	<summary>
+ As páginas não serão exibidas de forma alguma
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoPagina.ExibePaginasSobDemanda">
+	<summary>
+ As páginas serão exibidas somente quando o seu número for fornecido ou o documento carregado sob demanda
+ (as páginas do documento só serão calculadas após o carregamento do documento).
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoPagina.ExibePaginasSempre">
+	<summary>
+ As páginas serão sempre exibidas chegando a forçar o carregamento do documento se necessário.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoPagina">
+	<summary>
+ Indica se as páginas do documento serão exibidas na árvore de documentos.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoItemArvore.Documento">
+	<summary>
+ Um documento do GED ou arquivo no disco
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoItemArvore.Pagina">
+	<summary>
+ Faz referência a uma página de um documento. Só pode ser criado automaticamente após a inclusão de um documento na árvore.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoItemArvore.TextoAgrupador">
+	<summary>
+ É somente um texto para agrupar documentos contidos na árvore
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoItemArvore">
+	<summary>
+ Tipos de items que a árvore de documentos pode conter.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoDocumento.Automatico">
+	<summary>
+ Deixa a classe decidir de acordo com o tipo do documento (usa a extensão)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoDocumento.AcrobatReaderPDF">
+	<summary>
+ Exibe documento como PDF usando o Acrobat Reader embutido no controle de visualização.
+ </summary>
+	<remarks>A classe faz a conversão automática para PDF.</remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoDocumento.Imagem">
+	<summary>
+ Exibe o documento como imagem.
+ </summary>
+	<remarks>Somente para os tipos gif, jpg, bmp, wmf, png</remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoDocumento.InternetExplorerHTML">
+	<summary>
+ Exibe o documento como HTML usando o Internet Explorer embutido no controle de visualização.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoDocumento.RTF">
+	<summary>
+ Exibe documento RTF visualizador de RTF embutido no controle de visualização. 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoExibicaoDocumento">
+	<summary>
+ Enumerável com as formas possíveis de se exibir um documento dentro do painel de exbição de documentos.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoPermissaoDocumento.Todas">
+	<summary>
+ Permite qualquer operação com o documento dentre as passíveis de serem atribuídas.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoPermissaoDocumento.Exibir">
+	<summary>
+ Permite exibição do documento no painel de exibição
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoPermissaoDocumento">
+	<summary>
+ Tipos de permissão que o documento pode possuir.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAItemArvore.Codigo">
+	<summary>
+ Código do item da árvore de documentos
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAItemArvore.Texto">
+	<summary>
+ Texto do item conforme exibido na árvore de documentos
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAItemArvore.Selecionado">
+	<summary>
+ Indica se o item se econtra selecionado (checked) ou não
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAItemArvore.PaginaDocumento">
+	<summary>
+ Página do documento ao qual o item da árvore faz referência. É a pagina real do documento independente dos demais documentos presentes
+ na árvore. Caso a propriedade TipoItemArvore seja Documento o valor desta propriedade deve ser sempre 1.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAItemArvore.PaginaRelativa">
+	<summary>
+ Página do documento ao qual o item da árvore faz referência. 
+ O valor é relativo pois é dependente aos demais documentos presentes na árvore. 
+ O valor relativo pode ser igual ou maior a propriedade PaginaDocumento.
+ Caso a propriedade TipoItemArvore seja Documento o valor da página relativa se refere a primeira página do documento.
+ Caso o valor de página relativa seja menor que 1 indica que o método ExibePagina deve ignorar o item na 
+ busca pelo número da página passado como parâmetro.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISAItemArvore.VerificaPermissao(DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoPermissaoDocumento)">
+	<summary>
+ Verifica se o item da árvore possui uma determinada permissão
+ </summary>
+	<param name="Permissao"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISAItemArvore.ConcedePermissao(DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoPermissaoDocumento)">
+	<summary>
+ Concede uma determinada permissão para o item da árvore
+ </summary>
+	<param name="Permissao"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISAItemArvore.RevogaPermissao(DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoPermissaoDocumento)">
+	<summary>
+ Revoga uma determinada permissão para o item da árvore
+ </summary>
+	<param name="Permissao"></param>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAItemArvore.ExibicaoDocumento">
+	<summary>
+ Forma pela qual o documento será exibido no painel esquerdo do controle
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAItemArvore.DescricaoDocumento">
+	<summary>
+ Descrição do documento exibido no painel inferior a árvore de documentos
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAItemArvore.TipoItem">
+	<summary>
+ Tipo do item (nó) da árvore de documentos 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISAItemArvore.#ctor">
+	<summary>
+ Cria um novo item para exibição na árvore de documentos. As propriedades Código, Documento e texto devem 
+ ser preenchidas antes da adição na árvore
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISAItemArvore.#ctor(System.String,System.String,DGTECGEDVISA.DGTECGEDDocumento,System.Boolean)">
+	<summary>
+ Cria um novo item para exibição na árvore de documentos com as propriedades código, documento e texto já preenchidas.
+ </summary>
+	<param name="Codigo">Código que o item possúira na árvore de documentos. Deverá ser único dentro da árvore.</param>
+	<param name="Texto"></param>
+	<param name="Documento"></param>
+	<param name="MostraCaixa">Indica se a caixa de seleção será exibida.</param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISAItemArvore.SubitemMaisInferior">
+	<summary>
+ Retorna subitem mais inferior descendo recursivamente até último.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISAItemArvore.ItemArvoreAscendente(System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Retorna item ascendente da árvore de documentos (anterior ao atual). 
+ </summary>
+	<param name="IgnoraPaginas">
+ Indica se os itens da árvore correspondentes ao tipo "Pagina" devem ser ignorados.
+ </param>
+	<param name="IgnoraAgrupadores">
+ Indica se os itens correspondentes ao tipo "TextoAgrupador" devem ser ignorados.
+ </param>
+	<param name="IgnoraDocumentos">
+ Indica se os itens correspondentes ao tipo "Documento" devem ser ignorados.
+ </param>
+	<remarks>
+ Equivalente ao método PrevVisibleNode sendo que ignora o fato do nó anterior estar visível ou não. 
+ Caso não exista nó ascendente retorna Nothing.
+ </remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDVISAItemArvore.ItemArvoreDescendente(System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Retorna item descendente da árvore de documentos (seguinte ao atual). 
+ </summary>
+	<param name="IgnoraPaginas">
+ Indica se os itens da árvore correspondentes ao tipo "Pagina" devem ser ignorados.
+ </param>
+	<param name="IgnoraAgrupadores">
+ Indica se os itens correspondentes ao tipo "TextoAgrupador" devem ser ignorados.
+ </param>
+	<param name="IgnoraDocumentos">
+ Indica se os itens correspondentes ao tipo "Documento" devem ser ignorados.
+ </param>
+	<remarks>
+ Equivalente ao método NextVisibleNode sendo que ignora o fato do nó seguinte estar visível ou não. 
+ Caso não exista nó descendente retorna Nothing.
+ </remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDVISAItemArvore.Documento">
+	<summary>
+ Documento associado ao item da árvore de documentos.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDVISAItemArvore">
+	<summary>
+ Classe que representa um nó da arvore de documentos. Os nós podem de três tipos: 
+ um documento, agrupador de documentos ou páginas de um documento. O tipo é indicado pela propriedade Tipoitem.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DGTECGEDVISA.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DGTECGEDVISA.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.Indefindo">
+	<summary>
+ Tipo indefinido
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.ZIP">
+	<summary>
+ Arquivo comprimido em formato ZIP
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.PDF">
+	<summary>
+ Portable Document Format
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.MSWord">
+	<summary>
+ Microsoft Word
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.BMP">
+	<summary>
+ Rich Text Format
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.MSExcel">
+	<summary>
+ Microsoft Excel
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.Jpeg">
+	<summary>
+ Joint Photographic Experts Group
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.MSPowerPoint">
+	<summary>
+ Microsoft PowerPoint
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.MSAccess">
+	<summary>
+ Microsoft Access
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.GIF">
+	<summary>
+ Graphics Interchange Format
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.PNG">
+	<summary>
+ Portable Network Graphics
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.ModeloTextoOpenDocument">
+	<summary>
+ Modelo de texto do OpenDocument
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.TextoOpenOffice1">
+	<summary>
+ Documento de texto do OpenOffice.org 1.0
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.MSWordModelo">
+	<summary>
+ Modelo do Microsoft Word
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.RTF">
+	<summary>
+ Rich Text Format
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.StarWriter">
+	<summary>
+ Texto do Star Writer
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.StarWriterModelo">
+	<summary>
+ Modelo de texto do Star Writer
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.TXT">
+	<summary>
+ Arquivo texto
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.Html">
+	<summary>
+ HyperText Markup Language
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.WordPerfect">
+	<summary>
+ Texto do Word Perfect
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.PlanilhaOpenDocument">
+	<summary>
+ Planilha de dados Open Document
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.ModeloPlanilhaOpenDocument">
+	<summary>
+ Modelo de planilha de dados Open Document
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.PlanilhaOpenOffice1">
+	<summary>
+ Planilha de dados para Open Office 1
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.TextoOpenDocument">
+	<summary>
+ Texto Open Document
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.ModeloTexoOpenDocument">
+	<summary>
+ Modelo de texo Open Document
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.DBF">
+	<summary>
+ DBASE Database File
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.MSExcelModelo">
+	<summary>
+ Modelo do Microsoft Excel
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.ApresentacaoOpenDocument">
+	<summary>
+ Apresentação OpenDocument
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.ModeloApresentacaoOpenDocument">
+	<summary>
+ Modelo de Apresentação OpenDocument
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.ApresentacaoOpenOffice1">
+	<summary>
+ Apresentação do OpenOffice.org 1.0
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.TIF">
+	<summary>
+ Tagged Image File Format
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.WindowsMetaFile">
+	<summary>
+ Windows MetaFile
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.TipoDocumentoDigital.CrystalReports">
+	<summary>
+ Relatório do Crystal Reports
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.TipoDocumentoDigital">
+	<summary>
+ Tipos de formato de arquivos digitais
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoAssinaturaDigital.Indefinido">
+	<summary>
+ Não foi definido ainda o tipo de assinatura digital do documento.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoAssinaturaDigital.NaoAssinado">
+	<summary>
+ Nenhuma assinatura digital disponível para o documento.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoAssinaturaDigital.ExternaPKCS7">
+	<summary>
+ A assinatura digital é um arquivo externo ao documento 
+ no padrão de assinatura digital PKCS#7, usualmente com extensão P7S.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoAssinaturaDigital.EmbutidaPDF">
+	<summary>
+ A assinatura digital está embutida no arquivo PDF.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoAssinaturaDigital.EmbutidaPDFeExternaPKCS7">
+	<summary>
+ A assinatura está embutida no arquivo PDF e também externa como um arquivo PKCS#7.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDDocumento.TipoAssinaturaDigital">
+	<summary>
+ Enumerável com os tipos de assinatura digital que um documento pode possuir.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.TipoDocumento">
+	<summary>
+ Tipo do documento Eletrônico
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.ErroRecuperacaoGED">
+	<summary>
+ Indica se houve erro na recuperação do documento do GED
+ </summary>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.AssinaturaDigital">
+	<summary>
+ Propriedade somente de leituta com o tipo de assinatura digital associada ao documento.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.NumeroPaginasDisponivel">
+	<summary>
+ Indica se o número de páginas esta disponível ou depende de ser calculado pelo componente GEDVISA
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.NumeroPaginas">
+	<summary>
+ Retorna o número de páginas de um documento. 
+ Caso o documento não seja do tipo PDF e a propriedade não tenha sido atribuída ainda,
+ ele é convertido primeiramente para PDF o que pode tornar lento o primeiro retorno desta função
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDDocumento.FinalizaUsoOffice">
+	<summary>
+ Finaliza uso das suites office (BROffice e Microsoft Office) pelos objetos do tipo DGTECConversorPDF liberando 
+ espaço de memória física da máquina cliente. 
+ </summary>
+	<remarks>
+ Caso seja necessário a conversão de novos documentos após o uso desta função, novas aplicações 
+ Office serão iniciadas levando mais tempo para a conversão. Portanto esta função só deve ser chamada ao 
+ término da aplicação.
+ </remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoSituacaoDocumento.Ativo">
+	<summary>
+ Documento não excluído (ativo)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoSituacaoDocumento.ExcluidoLogicamente">
+	<summary>
+ Documento excluído logicamente
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoSituacaoDocumento.ExcluidoFisicamente">
+	<summary>
+ Documento excluído fisicamente
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoSituacaoDocumento.SubstituidoComVers">
+	<summary>
+ Substituído com versionamento (mantido o documento no servidor de arquivos)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoSituacaoDocumento.SubstituidoSemVers">
+	<summary>
+ Substituído sem versionamento (não mantido o documento no servidor de arquivos)
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDDocumento.TipoSituacaoDocumento">
+	<summary>
+ Possíveis situações do documento armazenado no GED
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoOrigemDocumento.Indefinido">
+	<summary>
+ Infedinido - Detecção automática do tipo (se armazenado no GED ou no sistema de arquivos).
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoOrigemDocumento.GED">
+	<summary>
+ Documento armazenado no GED
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDVISA.DGTECGEDDocumento.TipoOrigemDocumento.Arquivo">
+	<summary>
+ Documento constante no sistema de arquivos
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDDocumento.TipoOrigemDocumento">
+	<summary>
+ Origem do documento representado pela intancia de DGTECGEDDocumento.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.OrigemDocumento">
+	<summary>
+ Retorna o tipo de documento que a instancia do objeto representa. 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDDocumento.#ctor">
+	<summary>
+ Construtor NEW sem parâmetros que é obrigatório para uso por aplicações VB6 ou opcional 
+ por aplicações DOTNET que prefiram usar as propriedades 
+ CaminhoArquivo ou IDDocumento para respectivamente definir o nome do arquivo em disco 
+ ou um documento armazenado no GED.
+ No caso de uso do IDDocumento para recuperação e armazenamento do documento no GED ainda é necessário
+ definir a propriedade GEDARque corresponde ao objeto de comunicação com o GED em DOTNET
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDDocumento.#ctor(System.String)">
+	<summary>
+ Inicia uma instância do objeto a partir de um arquivo previamente armazenado no disco
+ </summary>
+</member><member name="M:DGTECGEDVISA.DGTECGEDDocumento.#ctor(DGTECGEDARDOTNET.DGTECGEDAR,System.String,System.Int32)">
+	<summary>
+ Inicia uma instância do objeto a partir de um ID de documento e um manipulador de documentos do GED
+ </summary>
+	<param name="GEDAR">Objeto DGTECGEDARDOTNET para recuperação e armazenamento de arquivos no GED</param>
+	<param name="IDDocumento">ID do documento a ser instânciado</param>
+	<param name="VersaoDocumento">Versão do documento a ser instânciado. Caso seja 0 faz referência a última versão.</param>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.NomeArquivoOriginal">
+	<summary>
+ Propriedade somente de leitura com o nome do arquivo original.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.CaminhoArquivo">
+	<summary>
+ Usado na inicialização da classe associando a um documento armazenado em disco
+ e/ou fornece o caminho completo do arquivo correspondente ao documento.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.IDDocumento">
+	<summary>
+ Usado para fornecer ou determinar o ID do documento no GED.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.ExtensaoArquivo">
+	<summary>
+ Extensão do arquivo correspondente ao documento. 
+ É preechido automáticamente quando da atribuição do ID do documento ou do 
+ caminho do documento no sistema de arquivos. 
+ A propriedade por ser atribuída manualmente para forçar a indicação 
+ de que o arquivo é de um determinado tipo. Para que a extensão seja associada novamente ao tipo
+ original do documento deve-se atribuir uma string vazia a propriedade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.CaminhoArquivoPDF">
+	<summary>
+ Caminho completo com o nome do arquivo PDF, caso ele seja já seja do tipo PDF retorna o caminho do arquivo.
+ Caso contrário tenta convertê-lo para PDF caso já não tenha sido convertido.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDDocumento.GeraErro(DGTECGEDVISA.DGTECGEDDocumentoException.TipoErroGEDDocumento,System.String)">
+	<summary>
+ Gera erro padrão na utilização da classe
+ </summary>
+	<param name="CodigoErro"></param>
+	<param name="MensagemExtra"></param>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.CodigoUltimoErro">
+	<summary>
+ Código do último erro ocorrido na utilização da classe
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDDocumento.Finalize">
+	<summary>
+ Chamado na finalização de uso de uma instância do objeto pelo Garbage Collector
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDDocumento.Fecha">
+	<summary>
+ Elimina e disponibiliza recursos alocados pelo objeto
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDDocumento.VerificaExistenciaGEDAR">
+	<summary>
+ Verifica a existência de um objeto GEDAR válido.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDDocumento.Recupera(System.Boolean)">
+	<summary>
+ Carrega arquivo do GED a partir do ID determinado na inicialização do objeto.
+ </summary>
+	<param name="Forca">Força recuperação caso o documento já tenha sido recuperado</param>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.GEDAR">
+	<summary>
+ Objeto GEDAR em DOTNET para manipulação de documentos no GED
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.VersaoDocumento">
+	<summary>
+ Versão do documento ao qual a instância do objeto faz referência.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.SituacaoDocumento">
+	<summary>
+ Situação do documento. Só será preenchido após sua recuperação do GED.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDVISA.DGTECGEDDocumento.Alterado">
+	<summary>
+ Indica se o documento foi ou não alterado.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ As alterações em um documento podem ter sido ocasionadas por uma assinatura digital do documento, 
+ conversão para PDF, criação por uso do scanner ou arquivo de disco.
+ </remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDDocumento.SalvarComoArquivo(System.String,System.Boolean)">
+	<summary>
+ Salva uma cópia do arquivo que representa o documento como um arquivo no disco local
+ </summary>
+	<param name="Arquivo">Caminho diretório (opcional) e nome do arquivo a ser salvo.</param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDVISA.DGTECGEDDocumento.SalvarComoArquivoPDF(System.String,System.Boolean)">
+	<summary>
+ Salva uma cópia do arquivo que representa o documento convertido para o formato PDF. 
+ Caso o original já esteja no formato PDF não será feita conversão.
+ </summary>
+	<param name="Arquivo">Caminho diretório (opcional) e nome do arquivo a ser salvo.</param>
+	<param name="Sobrescreve">Indica se o arquivo deve ser sobrescrito se existente.</param>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDVISA.DGTECGEDDocumento">
+	<summary>
+ Representa um documento armazenado no GED ou armazenado em sistema de arquivo local/rede.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

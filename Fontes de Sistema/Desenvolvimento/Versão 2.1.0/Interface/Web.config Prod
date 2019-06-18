@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="system.web.extensions" type="System.Web.Configuration.SystemWebExtensionsSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+      <sectionGroup name="scripting" type="System.Web.Configuration.ScriptingSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+        <section name="scriptResourceHandler" type="System.Web.Configuration.ScriptingScriptResourceHandlerSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication"/>
+        <sectionGroup name="webServices" type="System.Web.Configuration.ScriptingWebServicesSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+          <section name="jsonSerialization" type="System.Web.Configuration.ScriptingJsonSerializationSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="Everywhere"/>
+          <section name="profileService" type="System.Web.Configuration.ScriptingProfileServiceSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication"/>
+          <section name="authenticationService" type="System.Web.Configuration.ScriptingAuthenticationServiceSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication"/>
+          <section name="roleService" type="System.Web.Configuration.ScriptingRoleServiceSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication"/>
+        </sectionGroup>
+      </sectionGroup>
+    </sectionGroup>
+    <section  name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net"/>
+  </configSections>
+  <connectionStrings>
+    <add name="ConnectionString" connectionString="Provider=MSDAORA;Data Source=TJ01;Persist Security Info=True;User ID=PERICIAS;Password=pericias#2010;Unicode=True"
+        providerName="System.Data.OleDb" />
+    <add name="PerConex" connectionString="Provider=MSDAORA;Data Source=TJ01;Persist Security Info=True;User ID=PERICIAS;Password=pericias#2010;Unicode=True"
+        providerName="System.Data.OleDb" />
+    <add name="ConnectionString2" connectionString="Provider=MSDAORA;Data Source=TJ01;Persist Security Info=True;Password=pericias#2010;User ID=PERICIAS"
+        providerName="System.Data.OleDb" />
+    <add name="ConnectionString3" connectionString="Provider=MSDAORA;Data Source=TJ01;Persist Security Info=True;Password=pericias#2010;User ID=PERICIAS"
+        providerName="System.Data.OleDb" />
+  </connectionStrings>
+  <system.web>
+
+    <!--<sessionState mode="StateServer"  timeout="5" >
+
+    </sessionState>-->
+
+    <pages>
+      <controls>
+        <add tagPrefix="asp" namespace="System.Web.UI" assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+        <add tagPrefix="asp" namespace="System.Web.UI.WebControls" assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+        <add tagPrefix="uc1" namespace="System.Web.UI.WebControls" assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+        <add tagPrefix="uc2" namespace="System.Web.UI.WebControls" assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+        <!-- <%@ Register="" TagPrefix="MyControl" TagName="footerControl" Src="Footer.ascx" %> -->
+        <!-- <add tagPrefix="MyControl" src="~/Footer.ascx" tagName="footerControl"/> -->
+        <!-- <%@ Register src="Controles/CtlData1.ascx" tagname="CtlData1" tagprefix="uc2" %> -->
+        <!-- <add tagprefix="uc2" src="~/Controles/CtlData1.ascx" tagname="CtlData1"/> -->
+      </controls>
+    </pages>
+    <!--
+          Set compilation debug="true" to insert debugging
+          symbols into the compiled page. Because this
+          affects performance, set this value to true only
+          during development.
+    -->
+    <compilation debug="true">
+      <assemblies>
+        <add assembly="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.DirectoryServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.DirectoryServices.Protocols, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <!-- <add assembly="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/> 
+        <add assembly="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+        <add assembly="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+        <add assembly="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+        <add assembly="CrystalDecisions.Enterprise.Desktop.Report, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+        <add assembly="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+        <add assembly="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>
+        <add assembly="CrystalDecisions.ReportAppServer.ClientDoc, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/> -->
+        <add assembly="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+        <add assembly="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+
+
+        <add assembly="Microsoft.ReportViewer.WebForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+      </assemblies>
+      <buildProviders>
+        <add extension=".rdlc" type="Microsoft.Reporting.RdlBuildProvider, Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+      </buildProviders>
+    </compilation>
+
+    <httpHandlers>
+      <remove path="*.asmx" verb="*"/>
+      <add path="*.asmx" verb="*" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" validate="false"/>
+      <add path="*_AppService.axd" verb="*" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" validate="false"/>
+      <add path="ScriptResource.axd" verb="GET,HEAD" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" validate="false"/>
+      <!--<add path="CrystalImageHandler.aspx" verb="GET" type="CrystalDecisions.Web.CrystalImageHandler, CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"/>-->
+      <!--<add path="Reserved.ReportViewerWebControl.axd" verb="*" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" validate="false"/> -->
+    </httpHandlers>
+    <globalization culture="pt-BR" uiCulture="pt-BR"/>
+    <httpModules>
+      <add name="ScriptModule" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+      <add name="FiltroAcesso" type="SegurancaWeb.tj.module.Control"/>
+      <add name="mLog" type="Interface.log.ModuleLog"/>
+    </httpModules>
+    <customErrors mode="Off" defaultRedirect="frmErro.aspx?m=m4">
+      <!--
+              <error statusCode="403" redirect="NoAccess.htm" />
+              <error statusCode="404" redirect="FileNotFound.htm" /> 
+              -->
+    </customErrors>
+  </system.web>
+
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false"/>
+    <modules>
+      <remove name="ScriptModule"/>
+      <add name="ScriptModule" preCondition="managedHandler" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+    </modules>
+    <handlers>
+      <remove name="ScriptHandlerFactory"/>
+      <remove name="ScriptHandlerFactoryAppServices"/>
+      <remove name="ScriptResource"/>
+      <remove name="WebServiceHandlerFactory-Integrated"/>
+      <add name="ScriptHandlerFactory" verb="*" path="*.asmx" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+      <add name="ScriptHandlerFactoryAppServices" verb="*" path="*_AppService.axd" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+      <add name="ScriptResource" preCondition="integratedMode" verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+      <!-- <add name="CrystalImageHandler.aspx_GET" verb="GET" path="CrystalImageHandler.aspx" type="CrystalDecisions.Web.CrystalImageHandler, CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" preCondition="integratedMode"/>       -->
+    </handlers>
+  </system.webServer>
+  <location allowOverride="true">
+    <!-- inheritInChildApplications="true"> -->
+    <appSettings>
+      <add key="siglaSistema" value="PERICIAS"/>
+      <add key="url" value="http://localhost:8599/PagMenu.aspx"/>
+      <add key="local" value="http://localhost:8599/PagMenu.aspx"/>
+      <add key="servidor" value="http://localhost:8599/PagMenu.aspx"/>
+      <add key="SEGWebService" value="http://HWebserver.tjrj.jus.br/HSegWS/SEGInterfaceBLL.asmx"/>
+      <add key="ConnectionStringRel" value="data source=DSV01;user id=Pericias_DSV;password=Pericias#2010;"/>
+      <add key="t1" value="SUCESSO"/>
+      <add key="t2" value="ERRO"/>
+      <add key="t3" value="AVISO"/>
+      <add key="t4" value="INFORMAÇÃO"/>
+      <add key="i1" value="IMAGENS/img_sucesso.gif"/>
+      <add key="i2" value="IMAGENS/img_erro.gif"/>
+      <add key="i3" value="IMAGENS/img_aviso.gif"/>
+      <add key="i4" value="IMAGENS/img_info.gif"/>
+      <add key="m1" value="Cadastro Efetuado com Sucesso !"/>
+      <add key="m2" value="Alteração Efetuada com Sucesso !"/>
+      <add key="m3" value="Exclusão Efetuada com Sucesso !"/>
+      <add key="m4" value="Ocorreu um Erro Inesperado. Caso o Erro Persista, Entre em contato com o Suporte no Ramal 9100."/>
+      <add key="m5" value="Esta Operação Poderá demorar alguns minutos. Deseja Prosseguir ??"/>
+      <add key="m6" value="Atenção , este protocolo não foi atualizado."/>
+      <add key="m7" value="Atenção , usuário não autorizado a acessar esta funcionalidade."/>
+      <add key="m8" value="Atenção , este órgão não é grupo de protocolo."/>
+      <add key="m9" value="Atenção , protocolo não pertence a este grupo."/>
+      <add key="m10" value="Atenção , número de protocolo inexistente."/>
+      <add key="m11" value="Atenção , guia de remessa do protocolo não recebida."/>
+      <add key="m12" value="Atenção , o protocolo não pertence ao órgão do usuário."/>
+      <add key="m13" value="Atenção , órgão do usuário sem permissão para autenticar."/>
+      <add key="m14" value="Atenção , protocolo já atualizado."/>
+      <add key="m15" value="Atenção , não há lote aberto."/>
+      <add key="m16" value="Atenção , o este protocolo está apensado/juntado a outro."/>
+      <add key="m17" value="Sessão expirou, faça novo login."/>
+      <add key="m18" value="Atenção , protocolo cancelado."/>
+      <add key="m19" value="Atenção , Data Inválida."/>
+      <add key="m20" value="Atenção , Guia já foi gerada para este Lote."/>
+      <add key="GEDServIdxPRD" value="4"/>
+      <add key="GEDServIdxHML" value="2"/>
+      <add key="GEDDiretorioUpLoad" value="temp\"/>
+      <add key="CrystalImageCleaner-AutoStart" value="true"/>
+      <add key="CrystalImageCleaner-Sleep" value="60000"/>
+      <add key="CrystalImageCleaner-Age" value="120000"/>
+
+      <add key="TJERJ238.StringConexao" value="AQAAANCMnd8BFdERjH13oAwE/Cl+sBAAAAvRVFcnhB8US+2BIc4gjWdwQAAAACAAAAAAADZgAAqAAAABAAAACjQMiJDQYMDQiBMsuBB/r0AAAAAASAAACgAAAAEAAAALICKTon6I0UL5qwDulPLlc4AAAADE7mb6dzILn5QRg4rkrUmUR51F2NErP2PfUhysksn3pHN7cfxvt8MKthbGGskjfpr3qSJOsU+QkUAAAAtdGpERJodjl8VchaZDLEf+vJrsc="/>
+      <add key="TJERJ201.StringConexao" value=""/>
+      <add key="TJERJ265.StringConexao" value=""/>
+      <add key="StringConexao" value="data source=TJ01;user id=pericias;password=pericias#2010;"/>
+      <!-- 
+          <add key="SEGWebService" value="http://tjerj238:9009/SEGInterfaceBLL.asmx"/>
+          Ambiente 
+          1 para DSV
+          2 para HML
+          3 para PRD
+    -->
+      <add key="AMBIENTE" value="2"/>
+    </appSettings>
+  </location>
+  <system.codedom>
+    <compilers>
+      <compiler language="vb;vbs;visualbasic;vbscript" extension=".vb" type="Microsoft.VisualBasic.VBCodeProvider, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" warningLevel="4">
+        <providerOption name="CompilerVersion" value="v3.5"/>
+        <providerOption name="OptionInfer" value="true"/>
+        <providerOption name="WarnAsError" value="false"/>
+      </compiler>
+    </compilers>
+  </system.codedom>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Extensions" publicKeyToken="31bf3856ad364e35"/>
+        <bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="3.5.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Extensions.Design" publicKeyToken="31bf3856ad364e35"/>
+        <bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="3.5.0.0"/>
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+
+  <!-- Log4Net Início -->
+  <log4net>
+
+    <!-- Existem diversos tipos de appender´s e diversas maneiras de configurá-los, um único projeto pode haver N appender´s -->
+
+    <appender name="LogRequest" type="log4net.Appender.RollingFileAppender">
+      <file value="temp/LogsRequest.log" />
+      <appendToFile value="true" />
+      <rollingStyle value="Composite" />
+      <datePattern value="yyyyMMdd" />
+      <maxSizeRollBackups value="10" />
+      <maximumFileSize value="10MB" />
+      <layout type="log4net.Layout.PatternLayout">
+        <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss}; %X{sessionId}; %X{trilha}; [%t]; %-5p; %c; %m%n"/>
+      </layout>
+    </appender>
+
+    <logger name="LogInRequest">
+      <!-- nivel de log que será incluido no appender -->
+      <level value="All" />
+      <!--Utilizando qual appender -->
+      <appender-ref ref="LogRequest" />
+    </logger>
+
+    <appender name="LogFileAppender" type="log4net.Appender.RollingFileAppender">
+      <param name="File" value="temp/LogsAppp.log"/>
+      <appendToFile value="true" />
+      <rollingStyle value="Composite" />
+      <datePattern value="yyyyMMdd" />
+      <maxSizeRollBackups value="10" />
+      <maximumFileSize value="10MB" />
+      <layout type="log4net.Layout.PatternLayout">
+        <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss}; %X{sessionId}; %X{trilha}; (%file:%line) [%t]; %-5p; %c; %m%n"/>
+      </layout>
+    </appender>
+
+    <logger name="LogInFile">
+      <!-- nivel de log que será incluido no appender -->
+      <level value="All" />
+      <!--Utilizando qual appender -->
+      <appender-ref ref="LogFileAppender" />
+    </logger>
+
+    <appender name="LogFileAppenderBAL" type="log4net.Appender.RollingFileAppender">
+      <param name="File" value="temp/LogsApppBALPericias.log"/>
+      <appendToFile value="true" />
+      <rollingStyle value="Composite" />
+      <datePattern value="yyyyMMdd" />
+      <maxSizeRollBackups value="10" />
+      <maximumFileSize value="10MB" />
+      <layout type="log4net.Layout.PatternLayout">
+        <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss}; %X{sessionId}; %X{trilha}; (%file:%line) [%t]; %-5p; %c; %m%n"/>
+      </layout>
+    </appender>
+
+    <logger name="BAL">
+      <!-- nivel de log que será incluido no appender -->
+      <level value="All" />
+      <!--Utilizando qual appender -->
+      <appender-ref ref="LogFileAppenderBAL" />
+    </logger>
+
+    <appender name="LogErros" type="log4net.Appender.RollingFileAppender">
+      <param name="File" value="temp/LogErrosPericias.log"/>
+      <appendToFile value="true" />
+      <rollingStyle value="Composite" />
+      <datePattern value="yyyyMMdd" />
+      <maxSizeRollBackups value="10" />
+      <maximumFileSize value="10MB" />
+      <layout type="log4net.Layout.PatternLayout">
+        <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss}; %X{sessionId}; %X{trilha}; (%file:%line) [%t]; %-5p; %c; %m%n"/>
+      </layout>
+    </appender>
+
+    <logger name="ASP._global_asax">
+      <!-- nivel de log que será incluido no appender -->
+      <level value="ERROR" />
+      <!--Utilizando qual appender -->
+      <appender-ref ref="LogErros" />
+    </logger>
+
+    <appender name="tjLogErro" type="log4net.Appender.RollingFileAppender">
+      <param name="File" value="temp/LogErroPericias.log"/>
+      <appendToFile value="true" />
+      <rollingStyle value="Composite" />
+      <datePattern value="yyyyMMdd" />
+      <maxSizeRollBackups value="10" />
+      <maximumFileSize value="10MB" />
+      <layout type="log4net.Layout.PatternLayout">
+        <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss}; %X{sessionId}; %X{trilha}; (%file:%line) [%t]; %-5p; %c; %m%n"/>
+      </layout>
+    </appender>
+
+    <logger name="Interface.log">
+      <!-- nivel de log que será incluido no appender -->
+      <level value="ERROR" />
+      <!--Utilizando qual appender -->
+      <appender-ref ref="LogErroPericias" />
+    </logger>
+
+  </log4net>
+  <!-- Log4Net Fim -->
+
+</configuration>

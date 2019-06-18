@@ -1,0 +1,251 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="PerMasterPageExt.master.vb"
+    Inherits="Interface.PERMasterPageExt" %>
+
+<%@ Register Assembly="ClienteWebPadrao" Namespace="ClienteWebPadrao" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<script language="javascript" type="text/javascript" src="pericias.js"></script>
+
+<head id="Head1" runat="server">
+    <link href="loading.css" rel="stylesheet" type="text/css"/>
+    <script language="javascript" type "text/javascript">
+
+                                   loading = function (){
+
+                                               //document.getElementById("loading99").setAttribute("style","display:inline");
+											   document.getElementById("loading99").style.cssText = "display:inline"
+
+                                   }
+
+                                   loaded = function (){
+												 //document.getElementById("loading99").removeAttribute("style");
+                                               document.getElementById("loading99").style.cssText = "display:none"
+
+                                   }
+
+    </script>
+    <!-- Início do código particular do projeto -->
+    <title>Perícias - Sistema de Gerenciamento de Perícias </title>
+    <meta name="author" content="DGTEC-DESIS-DIMEQ" />
+    <meta http-equiv="Content-Language" content="pt-br" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso8859-1" />
+    <link rel="shortcut icon" href="imagens/favicon.ico" />
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-ico" />
+
+    <script type="text/javascript" src="Pericias.js"></script>
+
+    <script type="text/javascript" src="http://www.tjrj.jus.br/consultas/redirecionador/js/integracaoPortal.js"></script>
+
+    <!-- Fim do código particular do projeto -->
+    <!-- Início do código comum -->
+   <%-- <link href="http://www.tjrj.jus.br/css/body.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.tjrj.jus.br/css/lay-out.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.tjrj.jus.br/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.tjrj.jus.br/css/form.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.tjrj.jus.br/css/textos-img.css" rel="stylesheet" type="text/css" />--%>
+    <%--  <link rel="stylesheet" href="css/EPROTPE.css" type="text/css" />
+    <link rel="stylesheet" href="css/body.css" type="text/css" /> --%>
+    <%--    <link rel="stylesheet" href="css/lay-out.css" type="text/css" />--%>
+
+   <link rel="stylesheet" type="text/css" href="http://portaltj.tjrj.jus.br/web/guest/importacao-portal/-/importacao-portal/css" />
+    <script type="text/javascript" src="http://portaltj.tjrj.jus.br/web/guest/importacao-portal/-/importacao-portal/script"></script>
+
+
+    <!-- Fim do código comum -->
+
+    <script type="text/javascript">
+      <!--
+    function MM_jumpMenu(targ, selObj, restore) { //v3.0
+        eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
+        if (restore) selObj.selectedIndex = 0;
+    }
+   
+    function AbrePoup(url,w,h,nome, scroll){
+        var janela = window.open(url, nome, 'width=' + w + ',height=' + h + ',scrollbars=true', false);
+        janela.focus();
+        
+   }
+      //-->
+    
+    </script>
+
+</head>
+<body onload = "loaded()", onunload="loading()">
+   <div style="display:inline;" id="loading99" class="carrega"><img alt="" src="loading6.gif" height="90" width="90"/></div>
+   <div id="tudo">
+
+        <!-- inicio do menu horizontal-->
+                <!-- Início do topo do Layout-->
+        <% 
+            
+            'Dim lcUrl As String = "http://www.tjrj.jus.br/tpl_topo_simples.jsp"
+            'Dim loHttp As Net.HttpWebRequest = DirectCast(Net.WebRequest.Create(lcUrl), Net.HttpWebRequest)
+            'loHttp.Timeout = 50000
+            'Dim loWebResponse As Net.HttpWebResponse = DirectCast(loHttp.GetResponse(), Net.HttpWebResponse)
+            'Dim enc As Encoding = Encoding.GetEncoding(1252)
+            'Dim loResponseStream As New IO.StreamReader(loWebResponse.GetResponseStream(), enc)
+            'Dim lcHtml As String = loResponseStream.ReadToEnd()
+            'Response.Write(lcHtml)
+            'loWebResponse.Close()
+            'loResponseStream.Close()
+            'Dim port As String = Request.ServerVariables("server_port")
+            
+            Dim lcUrl As String = "http://portaltj.tjrj.jus.br/web/guest/importacao-portal/-/importacao-portal/tpl/topo-simples"
+            Dim loHttp As Net.HttpWebRequest = DirectCast(Net.WebRequest.Create(lcUrl), Net.HttpWebRequest)
+            loHttp.Timeout = 50000
+            Dim loWebResponse As Net.HttpWebResponse = DirectCast(loHttp.GetResponse(), Net.HttpWebResponse)
+            Dim enc As Encoding = Encoding.GetEncoding(1252)
+            Dim loResponseStream As New IO.StreamReader(loWebResponse.GetResponseStream(), enc)
+            Dim lcHtml As String = loResponseStream.ReadToEnd()
+            Response.Write(lcHtml)
+            loWebResponse.Close()
+            loResponseStream.Close()
+                
+            Dim port As String = Request.ServerVariables("server_port")
+                                    
+        %>
+              
+        <!-- Fim do menu horizontal-->
+        <!-- Início da div#container -->
+        <div id="container">
+            <!-- início navegação vertical -->
+                      <% 
+
+                          'Dim lcUrl2 As String = "http://www.tjrj.jus.br/tpl_menu.jsp"
+                          'Dim loHttp2 As Net.HttpWebRequest = DirectCast(Net.WebRequest.Create(lcUrl2), Net.HttpWebRequest)
+                          'loHttp2.Timeout = 50000
+                          'Dim loWebResponse2 As Net.HttpWebResponse = DirectCast(loHttp2.GetResponse(), Net.HttpWebResponse)
+                          'Dim enc2 As Encoding = Encoding.GetEncoding(1252)
+                          'Dim loResponseStream2 As New IO.StreamReader(loWebResponse2.GetResponseStream(), enc2)
+                          'Dim lcHtml2 As String = loResponseStream2.ReadToEnd()
+                          'Response.Write(lcHtml2)
+                          'loWebResponse.Close()
+                          'loResponseStream.Close()
+                         
+                                          
+            %>
+
+
+            <div id="navegador">
+                <!-- COMUM -->
+                <h6 id="h-areas">
+                    Perícias Judiciais - Versão 2.0.3</h6>
+                <ul id="ul">
+                    <li>
+                       <a href="frmPreCadastroPeritoExt.aspx">Pré-Cadastro On Line do Perito</a><br />
+                       <a href="frmReqInscCadPerDipej.aspx">Formulário-Requerimento de Inscrição </a><br />
+                       <a href="frmDeclaracaoPsicRes.aspx">Declaração(Psiquiatria) Resolução Nº 21/2006</a><br />
+                       <a href="frmDocsNecessarios.aspx">Documentos Necessários</a>
+                    </li>
+                    <!-- <li><a href="http://www.tjrj.jus.br" class="bold-white-estrela">RADs e Atos</a>
+                    </li> !-->
+                    <li><a href="http://www.tjrj.jus.br" class="bold-white-estrela">Sair</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- fim navegação vertical -->
+            <!-- inicio id usuario -->
+            <div id="content-id-busca">
+                <table width="100%" border="0" cellspacing="2" cellpadding="0">
+                    <tr>
+                        <td align="left" class="seja-bemvindo">
+                            Seja Bem-Vindo <span class="txt-nome-usuario">
+                                <cc1:DGTECLabel ID="lblID" runat="server"></cc1:DGTECLabel>
+                            </span>
+                        </td>
+                        <td>
+                            <cc1:DGTECLabel ID="lblAmbiente" runat="server" Font-Bold="True" ForeColor="Red"></cc1:DGTECLabel>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Fim id usuario -->
+            <!-- inicio da barra de ferramentas -->
+
+            <script language="javascript" type="text/javascript" src="http://www.tjrj.jus.br/js_funcoes/max_min_font_size2.js"></script>
+
+            <div id="content-barra">
+
+                <script type="text/javascript"> 
+                        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+                </script>
+
+                <script type="text/javascript">
+                    try {
+                    var pageTracker = _gat._getTracker("UA-870424-5");
+                    pageTracker._setDomainName("none");
+                    pageTracker._setAllowLinker(true);
+                    pageTracker._trackPageview();
+                    } catch (err) { }
+                </script>
+
+                <noscript>
+                    o seu navegador não suporta JavaScript!</noscript>
+                <a href="javascript:history.back();">
+                    <img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-voltar.gif"
+                        alt="voltar" /></a> <a href="javascript:history.go(1);">
+                            <img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-avancar.gif"
+                                alt="avançar" /></a> <a href="javascript:printPartOfPage('content');" id="btPrint" style="visibility: visible;">
+                                    <img height="17" width="26" class="margin-icos" src="http://www2.tjrj.jus.br/imagens/ico-print.gif"
+                                        alt="imprimir" /></a> <a href="javascript:decreaseFontSize();">
+                                            <img height="17" width="31" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-font-menos.gif"
+                                                alt="diminuir fonte" /></a> <a href="javascript:defaultFontSize();">
+                                                    <img height="17" width="24" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-font-default.gif"
+                                                        alt="normalizar fonte" /></a> <a href="javascript:increaseFontSize();">
+                                                            <img height="17" width="31" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-font-mais.gif"
+                                                                alt="aumentar fonte" /></a>
+            </div>
+            <!-- Fim da barra de ferramentas-->
+            <!-- inicio das divs de conteúdo -->
+            <div id="content">
+                <asp:ContentPlaceHolder ID="Tela" runat="server">
+                    <!-- AQUI DEVERÁ SER INCLUÍDO TODO O CONTEÚDO DA PÁGINA -->
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- Fim das divs de conteúdo -->
+            <div class="clear">
+            </div>
+        </div>
+        <!-- Fim da div#container -->
+        <!-- Início DIV do Rodapé do Sistema-->
+     <% 
+
+         'Dim lcUrl4 As String = "http://www.tjrj.jus.br/tpl_rodape.jsp"
+         'Dim loHttp4 As Net.HttpWebRequest = DirectCast(Net.WebRequest.Create(lcUrl4), Net.HttpWebRequest)
+         'loHttp4.Timeout = 50000
+         'Dim loWebResponse4 As Net.HttpWebResponse = DirectCast(loHttp4.GetResponse(), Net.HttpWebResponse)
+         'Dim enc4 As Encoding = Encoding.GetEncoding(1252)
+         'Dim loResponseStream4 As New IO.StreamReader(loWebResponse4.GetResponseStream(), enc4)
+         'Dim lcHtml4 As String = loResponseStream4.ReadToEnd()
+         'Response.Write(lcHtml4)
+         'loWebResponse.Close()
+         'loResponseStream.Close()
+         
+         Dim lcUrl4 As String = "http://portaltj.tjrj.jus.br/web/guest/importacao-portal/-/importacao-portal/tpl/rodape"
+         Dim loHttp4 As Net.HttpWebRequest = DirectCast(Net.WebRequest.Create(lcUrl4), Net.HttpWebRequest)
+         loHttp4.Timeout = 50000
+         Dim loWebResponse4 As Net.HttpWebResponse = DirectCast(loHttp4.GetResponse(), Net.HttpWebResponse)
+         Dim enc4 As Encoding = Encoding.GetEncoding("UTF-8")
+         Dim loResponseStream4 As New IO.StreamReader(loWebResponse4.GetResponseStream(), enc4)
+         Dim lcHtml4 As String = loResponseStream4.ReadToEnd()
+         Response.Write(lcHtml4)
+         loWebResponse4.Close()
+         loResponseStream4.Close()
+                  
+
+        %>
+       <%-- 
+        <div id="rodape">
+            PALÁCIO DA JUSTIÇA DO ESTADO DO RIO DE JANEIRO - FÓRUM CENTRAL<br />
+            Av. Erasmo Braga, 115 - Centro / CEP: 20020-903 - Rua Dom Manuel, 29, Centro / CEP:
+            20010-090 / Tel.: (0xx21) 3133-2000
+        </div>--%>
+
+        <!-- FIM DIV do Rodapé do Sistema-->
+    </div>
+    <iframe name="pgPrint" id="pgPrint" width="600" height="100" style="visibility: hidden">
+    </iframe>
+</body>
+</html>

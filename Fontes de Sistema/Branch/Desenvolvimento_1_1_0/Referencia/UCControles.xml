@@ -1,0 +1,70 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+UCControles
+</name>
+</assembly>
+<members>
+<member name="P:UCControles.DGTECAdvogado.PesquisaComEnter">
+	<summary>
+ Indica se o controle vai realizar uma pesquisa ao pressionar a tecla "Enter". 
+ </summary>
+	<value>True se a tecla "Enter" realiza pesquisa; False caso contrário.</value>
+	<returns>Boolean</returns>
+</member><member name="T:UCControles.DGTECAdvogado">
+	<summary>
+ Controle de pesquisa de Advogado.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:UCControles.DGTECEndereco.IndExibeJanelaBuscaCEPEnderecoMultiplo">
+	<summary>
+ Indica se será exibida de janela de busca caso seja detectado mais de um endereço para o mesmo CEP digitado no controle.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:UCControles.DGTECEndereco.IndExibeSempreJanelaBusca">
+	<summary>
+ Indica se sempre será exibida de janela de busca de endereço existindo um ou mais endereços para escolha a partir do CEP digitado.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:UCControles.DGTECEndereco.IndImpedeCidadeBairroInvalido">
+	<summary>
+ Indica se o controle impedirá a informação de um par cidade/bairro brasileiros inválidos
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:UCControles.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:UCControles.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:UCControles.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:UCControles.DGTECCEP.IndExibeJanelaBuscaEnderecoMultiplo">
+	<summary>
+ Indica se será exibida de janela de busca caso seja detectado mais de um endereço para o mesmo CEP digitado no controle.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:UCControles.DGTECCEP.IndExibeSempreJanelaBusca">
+	<summary>
+ Indica se sempre será exibida de janela de busca de endereço existindo um ou mais endereços para escolha a partir do CEP digitado.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

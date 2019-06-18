@@ -1,0 +1,1295 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DGTECGEDARDOTNET
+</name>
+</assembly>
+<members>
+<member name="M:DGTECGEDARDOTNET.modGlobais.ObtemArquivoTemporario">
+	<summary>
+ Obtem caminho completo de nome de arquivo temporário preparado para uso (com 0 bytes) 
+ para a aplicação
+ </summary>
+	<returns></returns>
+	<remarks>
+ O arquivo é criado no diretório temporário indicado pela variável DiretorioTemporario
+ Caso a variável DiretorioTemporario não seja atribuída retorna arquivo temporário
+ no diretório temporário padrão do usuário autenticado.
+ </remarks>
+</member><member name="M:DGTECGEDARDOTNET.modGlobais.Compacta(System.String[])">
+	<summary>
+ Compacta uma lista de arquivos passada como parametro
+ </summary>
+	<param name="Arquivos"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.modGlobais.Descompacta(System.String,System.String,System.String,System.String)">
+	<summary>
+ Descompacta um arquivo zip em um diretório de destino. Caso seja informado o Nome do Arquivo de Destino
+ (variável NomeArquivoDestino) usa este nome para o arquivo de destino do conteúdo descompactado.
+ </summary>
+	<param name="DiretorioDestino"></param>
+	<param name="ArquivoZIP"></param>
+	<param name="NomeArquivoDestino"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.modGlobais.FtpDownload(System.String,System.String,System.String,System.String)">
+	<summary>
+ Faz download de um arquivo a partir de uma URL
+ </summary>
+	<param name="fileName">Nome do arquivo local</param>
+	<param name="downloadUrl">URL do arquivo remoto</param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.modGlobais.FtpUpload(System.String,System.String,System.String,System.String)">
+	<summary>
+ Faz upload de um arquivo para uma URL
+ </summary>
+	<param name="fileName">Localização e nome do arquivo a ser transferido</param>
+	<param name="uploadUrl">Localização na rede para transferência do arquivo (FTP)</param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.modGlobais.ConverteHeader(System.String)">
+	<summary>
+ Função para converter string proveniente Header do HTTP que vem em formato UTF-8
+ </summary>
+	<param name="str"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.modGlobais.WebDownload(System.String,System.String,System.String,System.Int32@)">
+	<summary>
+ Faz download de um arquivo a partir de uma URL
+ </summary>
+	<param name="downloadUrl">URL do arquivo remoto</param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.#ctor">
+	<remarks/>
+</member><member name="E:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.ObtemStringConexaoCompleted">
+	<remarks/>
+</member><member name="E:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.ObtemDataSetCompleted">
+	<remarks/>
+</member><member name="E:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistraUsuarioGEDCompleted">
+	<remarks/>
+</member><member name="E:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.FinalizaSessaoGEDCompleted">
+	<remarks/>
+</member><member name="E:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistraUsuarioCompleted">
+	<remarks/>
+</member><member name="E:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistrarUsuarioCompleted">
+	<remarks/>
+</member><member name="E:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistrarSistemaCompleted">
+	<remarks/>
+</member><member name="E:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.TempoTimeoutCompleted">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.ObtemStringConexao(System.Int32)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.ObtemStringConexaoAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.ObtemStringConexaoAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.ObtemDataSet(DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroObtemDataset[])">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.ObtemDataSetAsync(DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroObtemDataset[])">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.ObtemDataSetAsync(DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroObtemDataset[],System.Object)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistraUsuarioGED(DGTECGEDARDOTNET.DGTECGEDARWebService.EstruturaIdentificacaoUsuario,System.String)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistraUsuarioGEDAsync(DGTECGEDARDOTNET.DGTECGEDARWebService.EstruturaIdentificacaoUsuario,System.String)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistraUsuarioGEDAsync(DGTECGEDARDOTNET.DGTECGEDARWebService.EstruturaIdentificacaoUsuario,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.FinalizaSessaoGED">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.FinalizaSessaoGEDAsync">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.FinalizaSessaoGEDAsync(System.Object)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistraUsuario(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistraUsuarioAsync(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistraUsuarioAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistrarUsuario(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistrarUsuarioAsync(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistrarUsuarioAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistrarSistema(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistrarSistemaAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.RegistrarSistemaAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.TempoTimeout">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.TempoTimeoutAsync">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.TempoTimeoutAsync(System.Object)">
+	<remarks/>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.GEDWebService">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroObtemDataset.ServidorIdx">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroObtemDataset.NomeTabelas">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroObtemDataset.ComandoSQL">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroObtemDataset.ParametrosComandoSQL">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroObtemDataset">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroComandoSQL.Valor">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroComandoSQL.InfereTipoAuto">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroComandoSQL.Direcao">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroComandoSQL.Tipo">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroComandoSQL">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.EstruturaIdentificacaoUsuario.Login">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.EstruturaIdentificacaoUsuario.Senha">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.EstruturaIdentificacaoUsuario.LoginAutent">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.EstruturaIdentificacaoUsuario.SenhaAutent">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.EstruturaIdentificacaoUsuario.UsuarioSO">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.EstruturaIdentificacaoUsuario.NomeMaquina">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.EstruturaIdentificacaoUsuario.SiglaSist">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.EstruturaIdentificacaoUsuario.CodOrg">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.EstruturaIdentificacaoUsuario">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.ParameterDirection.Input">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.ParameterDirection.Output">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.ParameterDirection.InputOutput">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.ParameterDirection.ReturnValue">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.ParameterDirection">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.AnsiString">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Binary">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Byte">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Boolean">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Currency">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Date">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.DateTime">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Decimal">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Double">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Guid">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Int16">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Int32">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Int64">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Object">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.SByte">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Single">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.String">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Time">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.UInt16">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.UInt32">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.UInt64">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.VarNumeric">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.AnsiStringFixedLength">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.StringFixedLength">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.Xml">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.DateTime2">
+	<remarks/>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType.DateTimeOffset">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.DbType">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.ObtemStringConexaoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.ObtemStringConexaoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.ObtemStringConexaoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.ObtemDataSetCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.ObtemDataSetCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.ObtemDataSetCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.RegistraUsuarioGEDCompletedEventHandler">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.FinalizaSessaoGEDCompletedEventHandler">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.RegistraUsuarioCompletedEventHandler">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.RegistrarUsuarioCompletedEventHandler">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.RegistrarSistemaCompletedEventHandler">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.TempoTimeoutCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARWebService.TempoTimeoutCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARWebService.TempoTimeoutCompletedEventArgs">
+	<remarks/>
+</member><member name="P:DGTECGEDARDOTNET.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DGTECGEDARDOTNET.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DGTECGEDARDOTNET.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.DocumentoBDC.Nome">
+	<summary>
+ Nome do arquivo com extensão.
+ </summary>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.DocumentoBDC.ContentType">
+	<summary>
+ Content-type para exibiçao de arquivo via http.
+ </summary>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.DocumentoBDC.CaminhoCompleto">
+	<summary>
+ Caminho completo do arquivo recuperado para busca no BDC.
+ </summary>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.DocumentoBDC.Compactado">
+	<summary>
+ Indica se o documento se encontra ou não compactado no BDC
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.DocumentoBDC.TipoCompactacao">
+	<summary>
+ Indica o tipo de compactacao do arquivo no BDC
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.DocumentoBDC.ContentTypeCompactacao">
+	<summary>
+ Content-type para exibiçao de arquivo via http (caso esteja compactado)
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDAR.DocumentoBDC">
+	<summary>
+ Valor para retorno de dados do arquivo recuperado pelo site web.
+ </summary>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoOrdHistorico.DataHistDescendente">
+	<summary>
+ Ordena por data do histórico descendente.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoOrdHistorico.DataHistAscendente">
+	<summary>
+ Ordena por data do histórico ascendente.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDAR.TipoOrdHistorico">
+	<summary>
+ Tipo de ordenacao para retorno do histórico de acessos a um documento
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService.Automatico">
+	<summary>
+ Deixa a classe decidir qual melhor opção de servidor de webservices 
+ a partir da informação do servidor de indexação preferencial e localidade do computador cliente
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService.Homologacao">
+	<summary>
+ Usa o servidor de homologação.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService.Producao">
+	<summary>
+ Deixa a classe decidir o melhor servidor de produção dependendo da localidade do computador cliente
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService.Local">
+	<summary>
+ Usa a máquina local como servidor de Webservices - util para depuração junto a código fonte dos webservices.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService.ProducaoGEDWEB">
+	<summary>
+ Força uso de gedweb.tjrj.jus.br como servidor de WebService
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService.ProducaoGEDWEB2">
+	<summary>
+ Força uso de gedweb2.tjrj.jus.br como servidor de WebService
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService.ProducaoWEBSERVER">
+	<summary>
+ Força uso de webserver.tjrj.jus.br como servidor de WebService
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService.ProducaoWEBSERVER2">
+	<summary>
+ Força uso de webserver2.tjrj.jus.br como servidor de WebService
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService.Producao2INST">
+	<summary>
+ Força uso de tjerj2104avm.tjrj.jus.br (máquina de serviços de 2a instância) 
+ como servidor de WebService
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService">
+	<summary>
+ Define o tipo com os possíveis servidores de WebServices a serem utilizados pelo componente.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorIndexacao.Homologacao1">
+	<summary>
+ Para sistemas que utilizam a instância DSV03 para testes e desenvolvimento
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorIndexacao.Homologacao2">
+	<summary>
+ Para sistemas que utilizam a instância DSV01 para testes e desenvolvimento
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorIndexacao.Producao1">
+	<summary>
+ Para sistemas que utilizam a instância PRD3 em ambiente de produção.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorIndexacao.Producao2">
+	<summary>
+ Para sistemas que utilizam a instância TJ01 em ambiente de produção
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorIndexacao.Homologacao3">
+	<summary>
+ Servidor de homologação 3 (SRV_GED3H)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorIndexacao.Homologacao4">
+	<summary>
+ Servidor de homologação 4 (SRV_GED1H)
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorIndexacao">
+	<summary>
+ Servidores atualmente ativos para indexação de documentos.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoHistDocto.Armazenamento">
+	<summary>
+ Armazenamento inicial do documento.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoHistDocto.SubstituicaoComVersionamento">
+	<summary>
+ Documento substituído sendo mantida a versão anterior do documento para possível recuperação futura.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoHistDocto.SubstituicaoSemVersionamento">
+	<summary>
+ Documento substituído não sendo mantida a versão anterior do documento.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoHistDocto.Recuperacao">
+	<summary>
+ Recuperação do documento para consulta.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoHistDocto.ExclusaoLogica">
+	<summary>
+ Exclusão lógica do documento.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoHistDocto.ExclusaoFisica">
+	<summary>
+ Exclusão física do documento.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoHistDocto.RestauracaoExclusao">
+	<summary>
+ Restaura uma exclusão lógica de um documento.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoHistDocto.HistoricoAcesso">
+	<summary>
+ Obtenção do histórico de acesso de um documento.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDAR.TipoHistDocto">
+	<summary>
+ Tipo de operação histórica ocorrida em um documento
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoOrdMetadados.NumVersaoDescendente">
+	<summary>
+ Ordenação por número da versão de forma descendente.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDAR.TipoOrdMetadados.NumVersaoAscendente">
+	<summary>
+ Ordenação por número da versão de forma crescente.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDAR.TipoOrdMetadados">
+	<summary>
+ Tipo de ordenacao para retorno dos metadados das versões de um documento
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDAR.FTPTimeOut">
+	<summary>
+ Tempo de espera em milisegundos para obtenção de resposta do servidor nas operações envolvendo acesso
+ aos servidores de FTP do GED
+ </summary>
+	<remarks>
+		<para>
+ O valor default desta propriedade é -1 (Infinito)
+ </para>
+		<para>
+ Em atendimento ao SICS 2011.0597136, de acordo com 
+ <a target="_blank" href="http://social.msdn.microsoft.com/Forums/en/netfxnetcom/thread/2aafdf6f-97ae-4444-a863-84d309db0053">forum da microsoft</a>
+ a configuração do timeout pode impedir erros na comunicação de aplicações .NET junto a servidor de FTP
+ intermediado por Firewall
+ </para></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDAR.FTPPassiveMode">
+	<summary>
+ Indica se o GED trabalhará em modo passivo junto aos servidores de FTP que armazenam os documentos
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+		<para>
+ O valor default desta propriedade é True tendo em vista que o modo passivo é mais performático.
+ </para>
+		<para>
+ Esta propriedade foi criada em atendimento ao SICS 2011.0597136 para desativar modo passivo nas transferências 
+ por FTP tentando resolver o problema de comunicação de aplicações .NET junto a servidor de FTP intermediado por Firewall.
+ Portanto, ela não deve ser usada exceto em casos especiais de problemas de comunicação com o servidor de FTP por intermédio de um
+ Firewall.
+ </para>
+	</remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDAR.UltimoCodigoErro">
+	<summary>
+ Indica qual foi o último código de erro gerado pelo GEDAR.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDAR.UsaCacheWeb">
+	<summary>
+ Indica se a classe usará o BDC mais próximo para acesso ao GED nas operações de recuperação de 
+ documentos. Caso o documento esteja disponível no BDC será procedida sua recuperação sem conexão
+ ao servidor de documentos do GED localizado na capital.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDAR.URLBaseCacheWeb">
+	<summary>
+ URL base para download de documentos no Cache de algum BDC
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDAR.URLGEDWebService">
+	<summary>
+ URL usada para acesso ao GEDWebService
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDAR.DataArquivo">
+	<summary>
+ Data do arquivo (DGTECGEDARDOTNET.dll).
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDAR.IDRedeBDC">
+	<summary>
+ Identificador de rede do BDC mais próximo a máquina em que a classe foi instânciada.
+ Caso não seja informado é calculado automaticamente.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDAR.DiretorioTemporario">
+	<summary>
+ Diretório para armazenamento de documentos temporários de manipulação do GED
+ </summary>
+	<remarks>
+		<para>
+ Caso a propriedade não seja atribuída o diretório temporário será o default do framework 
+ retornado pela função System.IO.Path.GetTempPath.
+ </para>
+		<para>
+ Caso atribuída, a propriedade será compartilhada por todas as instâncias da classe DGTECGEDAR
+ criadas pela aplicação cliente.
+ </para>
+	</remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.NomeProc(System.String)">
+	<summary>
+ Monta nome do procedimento a partir de seu nome basico
+ </summary>
+	<param name="sNomeBase"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.SArray(System.String[])">
+	<summary>
+ Cria array dinamica de strings a partir de uma lista de strings passada como parametro para função
+ </summary>
+	<param name="Items"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ObtemServIdx(System.String)">
+	<summary>
+ Obtem o servidor de indexação a partir do código de armazenamento de um documento
+ </summary>
+	<param name="IDDocumento">ID do documento</param>
+	<returns>Valor inteiro correspondente ao servidor de indexação do documento</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ObtemTipoServIdx(System.String)">
+	<summary>
+ Obtem o tipo do servidor de indexação a partir do código de armazenamento de um documento
+ </summary>
+	<param name="IDDocumento">ID do documento</param>
+	<returns>Tipo do servidor de indexação do documento</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.Versao">
+	<summary>
+ Retorna a versão do componente GEDAR
+ </summary>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.PArray(DGTECGEDARDOTNET.DGTECGEDARWebService.ParametroObtemDataset[])">
+	<summary>
+ Cria array dinamica de ParametroObtemDataset a partir de uma lista de ParametroObtemDataset 
+ passado como parametro para função
+ </summary>
+	<param name="Items"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.MontaParametroObtemDataset(System.Int32,System.String,System.Object,System.Object[])">
+	<summary>
+ Monta um objeto para invocação do método para obtenção de um DATASET a partir do método ObtemDataSet
+ do WebService
+ </summary>
+	<param name="ComandoSQL">
+ Comando SQL a ser executado. Pode retornar um ou mais cursores. Os nomes das
+ tabelas criadas dentro do dataset para cada cursor será determinado pelo próximo parâmetro.</param>
+	<param name="NomeTabelas">
+ Array de strings com os nomes das das tabelas para cursor retornado pelo ComandoSQL. 
+ Pode-se informar somente uma string de forma que o array é criado automaticamente pela funcao
+ </param>
+	<param name="ParametrosComandoSQL">Lista de parametros para chamada do ComandoSQL</param>
+	<returns>
+ Retorna o objeto ParametroObtemDataset montado e pronto para ser usado junto ao 
+ comando ObtemDataset
+ </returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ExecutaProc(System.Int32,System.String,System.Object,System.Object[])">
+	<summary>
+ Executa um procedimento através do WebService intanciado na classe usando um servidor de indexação 
+ determinado pelo parametro ServidorIdx
+ </summary>
+	<param name="ServidorIdx"></param>
+	<param name="ComandoSQL"></param>
+	<param name="NomeTabelas"></param>
+	<param name="ParametrosComandoSQL"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorIndexacao,DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService,System.Boolean)">
+	<summary>
+ Inicializa o objeto DGTECGEDAR para aplicações que não fazem uso da BaseEntidade 
+ (ex.: aplicações ASP.NET executadas no servidor)
+ </summary>
+	<param name="Login">Login do usuário no sistema de segurança.</param>
+	<param name="Senha">Senha do usuário "hasheada" em MD5.</param>
+	<param name="NomeMaquina">Nome da máquina na qual o usuário esta executando o sistema.</param>
+	<param name="SiglaSist">Sigla do sistema onde o usuário esta autenticado.</param>
+	<param name="UsuarioSO">Sigla do usuário do sistema operacional em que o usuário esta autenticado.</param>
+	<param name="CodOrg">Órgão em que o usuário esta autenticado.</param>
+	<param name="ServidorIndexacaoPreferencial">Servidor de indexação preferencial para armazenamento de documentos.</param>
+	<param name="ServidorWebService">Servidor de Webservice que o sistema cliente prefere usar para trabalhar junto ao GED.</param>
+	<param name="VerificaDisponibilidadeCompleta">
+ Indica se o método de inicialização do GED deve realizar verificação completa de 
+ disponibilidade quanto aos serviços de banco de dados e FTP. 
+ Por padrão é False indicando que somente o webservice será verificado.
+ </param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.#ctor(DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorIndexacao,DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService,System.Boolean)">
+	<summary>
+ Inicializa o objeto DGTECGEDAR para aplicações que fazem uso da BaseEntidade 
+ (aplicações VB.NET executadas no cliente)
+ </summary>
+	<param name="ServidorIndexacaoPreferencial">Servidor de indexação preferencial para armazenamento de documentos.</param>
+	<param name="ServidorWebService">Servidor de Webservice que o sistema cliente prefere usar para trabalhar junto ao GED.</param>
+	<param name="VerificaDisponibilidadeCompleta">
+ Indica se o método de inicialização do GED deve realizar verificação completa de 
+ disponibilidade quanto aos serviços de banco de dados e FTP. 
+ Por padrão é False indicando que somente o webservice será verificado.
+ </param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.#ctor">
+	<summary>
+ Para uso pelo VB6 ao instanciar a biblioteca
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ObtemDadosBDCPorNomeBDC(System.Int32,System.String,System.Boolean@,System.String@)">
+	<summary>
+ Verifica se o BDC esta ativo e qual URL de acesso no servidor de indexacao passado como parâmetro
+ </summary>
+	<param name="ServidorIndexacao"></param>
+	<param name="NomeBDC"></param>
+	<param name="BDCDisponivel"></param>
+	<param name="URLBaseCacheWeb"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ObtemDadosBDCPorNomeMaquina(System.Int32,System.String,System.Boolean@,System.String@,System.String,System.String@)">
+	<summary>
+ Equivalente a ObtemDadosBDCPorNomeBDC só que analisando o NomeMaquina e detectando o BDC mais próximo
+ </summary>
+	<param name="ServidorIndexacao"></param>
+	<param name="NomeMaquina"></param>
+	<param name="BDCDisponivel"></param>
+	<param name="URLBaseCacheWeb"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.Inicializa(System.String,System.String,System.String,System.String,System.String,System.String,DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorIndexacao,DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorWebService,System.Boolean)">
+	<summary>
+ Inicializa o objeto GED de forma análoga ao método construtor com os mesmos parâmetros deste método. 
+ Util para aplicações que utilizem a interface COM deste objeto e só tem acesso ao método construtor sem parâmetros.
+ Por exemplo: aplicações escritas em Visual Basic 6.
+ </summary>
+	<param name="Login">Login do usuário no sistema de segurança.</param>
+	<param name="Senha">Senha do usuário "hasheada" em MD5.</param>
+	<param name="NomeMaquina">Nome da máquina na qual o usuário esta executando o sistema.</param>
+	<param name="SiglaSist">Sigla do sistema onde o usuário esta autenticado.</param>
+	<param name="UsuarioSO">Sigla do usuário do sistema operacional em que o usuário esta autenticado.</param>
+	<param name="CodOrg">Órgão em que o usuário esta autenticado.</param>
+	<param name="ServidorIndexacaoPreferencial">Servidor de indexação preferencial para armazenamento de documentos.</param>
+	<param name="ServidorWebService">Servidor de Webservice que o sistema cliente prefere usar para trabalhar junto ao GED.</param>
+	<param name="VerificaDisponibilidadeCompleta">
+ Indica se o método de inicialização do GED deve realizar verificação completa de 
+ disponibilidade quanto aos serviços de banco de dados e FTP. 
+ Por padrão é False indicando que somente o webservice será verificado.
+ </param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ProcedimentoVazio(System.String,System.Data.DataTableReader,System.Int32)">
+	<summary>
+ Verifica se o resultado de um procedimento é vazio retornando mensagem de erro padrão
+ </summary>
+	<param name="NomeProc"></param>
+	<param name="rs"></param>
+	<param name="IndiceTabela"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.SubstituiOuArmazena(System.String,System.String,System.Int32,DGTECGEDARDOTNET.DGTECGEDAR.TipoHistDocto,System.String,System.Int32)">
+	<summary>
+ Funcão que serve de suporte aos métodos de armazenamento e substituição de documentos.
+ </summary>
+	<param name="NomeArquivo"></param>
+	<param name="NomeArquivoAssinatura"></param>
+	<param name="TipoArquivo"></param>
+	<param name="TipoOperacao"></param>
+	<param name="CodDoctoPub"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDAR.IDTransacao">
+	<summary>
+ Fornece um ID que pode ser usado para finalização ou abortamento de uma transação no GED.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.IniciaTransacao(System.Int32)">
+	<summary>
+ Inicia uma transação no GED permitindo o desfecho com sucesso ou abortamento de todas as 
+ operações ocorridas dentro da transação.
+ </summary>
+	<param name="nTempoMaxSemOperacoes">Indica o tempo máximo em segundos que a transação 
+ pode ficar sem a realização de alguma operação de armazenamento ou substituição no GED. 
+ Caso nenhuma destas operações sejam realizadas durante o período indicado a transação fica passível 
+ de ser fechada com o abortamento de todas as operações realizadas. 
+ Caso o parâmetro não seja informado, o valor é de 3600 segundos (1 hora).
+ </param>
+	<returns>Retorna o ID da transação. O mesmo conteúdo da propriedade IDTransacao.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.RecuperaIDTransacao(System.String,System.Int64@,System.String@)">
+	<summary>
+ Calcula nas variávies passadas por referência o ID da transação. Gera erro caso não exista transação em andamento.
+ </summary>
+	<param name="IDTransacao"></param>
+	<param name="nIDTransacao"></param>
+	<param name="sIDTransacao"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.LimpaTransacao(System.Int64@,System.String@)">
+	<summary>
+ Fecha transação na instância do objeto GEDAR somente se a transação finalizada for a mesma da instância 
+ </summary>
+	<param name="nIDTransacao"></param>
+	<param name="sIDTransacao"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.FinalizaTransacao(System.String)">
+	<summary>
+ Finaliza uma transação no GED realizando desfecho com sucesso de todas as operações ocorridas dentro da 
+ transação.
+ </summary>
+	<param name="IDTransacao">
+ Este ID pode se referir a uma transação não iniciada pelo objeto correntemente instanciado pela aplicação. 
+ Assim é possível finalizar uma transação iniciada em outro computador. 
+ Este parâmetro é útil quando se deseja que um computador servidor finalize a transação iniciada pelo 
+ computador cliente. O ID da transação pode ser obtido através da propriedade IDTransacao do objeto GEDAR. 
+ Caso o parâmetro seja omitido, a propriedade IDTransacao  do objeto GEDAR correntemente instanciado 
+ será utilizado.
+ </param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.AbortaTransacao(System.String)">
+	<summary>
+ Abortar uma transação desfazendo-se todas as operações realizadas em seu escopo.
+ </summary>
+	<param name="IDTransacao">
+ Este ID pode se referir a uma transação não iniciada pelo objeto correntemente instanciado pela aplicação. 
+ Assim é possível abortar uma transação iniciada em outro computador. 
+ Este parâmetro é útil quando se deseja que um computador servidor aborte a transação iniciada pelo computador cliente. 
+ O ID da transação pode ser obtido através da propriedade IDTransacao do objeto GEDAR. Caso o parâmetro seja omitido, 
+ a propriedade IDTransacao  do objeto GEDAR correntemente instanciado será utilizado.
+ </param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.FinalizaTransacaoDistribuida(ADODB.Connection,System.String)">
+	<summary>
+ Finaliza uma transação em conjunto a uma transação realizada no banco de dados do sistema cliente utilizando-se de uma
+ conexão ADO. É aconselhavel que a conexão esteja em estado transacional a fim de que o 
+ a transação possa ser finalizada (commit) ou abortada (rollback) pelo sistema cliente.
+ </summary>
+	<param name="Conexao">Conexao ADO que executará a finalização da transação no GED.</param>
+	<param name="IDTransacao">
+ Este ID pode se referir a uma transação não iniciada pelo objeto correntemente instanciado pela aplicação. 
+ Assim é possível finalizar uma transação iniciada em outro computador. 
+ Este parâmetro é útil quando se deseja que um computador servidor finalize a transação iniciada pelo computador cliente. 
+ O ID da transação pode ser obtido através da propriedade IDTransacao do objeto GEDAR. 
+ Caso o parâmetro seja omitido, a propriedade IDTransacao  do objeto GEDAR correntemente instanciado será utilizado.
+ </param>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.FinalizaTransacaoDistribuida(ServicoDados.ServicoDadosOracle,System.String)">
+	<summary>
+ Finaliza uma transação em conjunto a uma transação realizada no banco de dados do sistema cliente utilizando-se de uma
+ conexão do Servico de Dados. É aconselhavel que a conexão esteja em estado transacional a fim de que o 
+ a transação possa ser finalizada (commit) ou abortada (rollback) pelo sistema cliente. 
+ </summary>
+	<param name="Conexao">Conexao do tipo Servico de Dados que executará a finalização da transação no GED.</param>
+	<param name="IDTransacao">
+ Este ID pode se referir a uma transação não iniciada pelo objeto correntemente instanciado pela aplicação. 
+ Assim é possível finalizar uma transação iniciada em outro computador. 
+ Este parâmetro é útil quando se deseja que um computador servidor finalize a transação iniciada pelo computador cliente. 
+ O ID da transação pode ser obtido através da propriedade IDTransacao do objeto GEDAR. 
+ Caso o parâmetro seja omitido, a propriedade IDTransacao  do objeto GEDAR correntemente instanciado será utilizado.
+ </param>
+	<remarks>
+ Esta sobrecarga do método FinalizaTransacaoDistribuida não esta disponível para aplicações que utilizem a interface COM do componente.
+ </remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.FinalizaTransacaoDistribuida(ServicoDadosODPNET.ServicoDadosOracle,System.String)">
+	<summary>
+   Finaliza transação do GED em conjunto com uma transação iniciada através de uma conexão (ServicoDadosODPNET) ao banco de dados do sistema cliente 
+ </summary>
+	<remarks>
+		<para><!--Badly formed XML. File 'DGTECGEDAR-DOC.xml' cannot be included.--></para>
+		<para><!--Badly formed XML. File 'DGTECGEDAR-DOC.xml' cannot be included.--></para>
+	</remarks>
+	<example>Exemplo de transação distribuída com a DLL ServicoDadosODPNET
+ <code language="vbnet">
+			<code source="..\..\GEDTeste\GEDAR-Exemplos.vb" region="DeclServicoDadosODPNET"/>
+			<code source="..\..\GEDTeste\GEDAR-Exemplos.vb" region="TransacaoDistribuida"/>
+		</code>
+	</example>
+	<!--Badly formed XML. File 'DGTECGEDAR-DOC.xml' cannot be included.--><!--Badly formed XML. File 'DGTECGEDAR-DOC.xml' cannot be included.--><!--Badly formed XML. File 'DGTECGEDAR-DOC.xml' cannot be included.--></member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.EstadoTransacionalNaoPermitido">
+	<summary>
+ Verifica se o objeto se encontra em estado transacional gerando excessão neste caso.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.MontaURLCacheWeb(System.String,System.Int32,System.String,System.String,System.Boolean@)">
+	<summary>
+ Retorna URL completa para download pelo navegador de internet do documento cujo ID foi passado como parâmetro.
+ </summary>
+	<param name="IDDocumento">ID do documento para obtenção.</param>
+	<param name="Versao">Versão do documento para obtenção. Opcional, por default é a ultima versão.</param>
+	<param name="MaquinaRede">IP ou nome da máquina da rede que requisitou o documento. 
+ Opcional, caso não informado usará a propriedade URLBaseCacheWeb para determinar a URL final.
+ <paramref name="CacheDisponivel">Parâmetro para ser recebido por referência indicando se o BDC se encontra disponível.</paramref>
+	</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.Recupera(System.String,System.String,System.Int32@)">
+	<summary>
+ Recupera Documento armazenado previamente no GED
+ </summary>
+	<param name="IDDocumento">ID do documento a ser recuperado.</param>
+	<param name="LocalExtracao">
+ Diretório local para armazenamento do documento recuperado com nome original do documento. 
+ Caso seja informado um nome de arquivo cria o documento recuperado com este nome e o arquivo de assinatura com este nome mais
+ a extensão p7s.
+ </param>
+	<param name="Versao">Versão do documento a ser recuperado. Se omitido ou zero recupera a última versão.</param>
+	<returns>Retorna o diretório completo com nome do documento recuperado.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.RecuperaBDC(System.String,System.String,System.String,System.Int32@)">
+	<summary>
+ Função utilizada, apenas pelos BDCs, para recuperação de documentos do GED.
+ </summary>
+	<param name="IDDocumento">ID do documento a ser recuperado.</param>
+	<param name="LocalExtracao">Local para onde o arquivo será recuperado.</param>
+	<param name="BDC">HostName do BDC.</param>
+	<param name="Versao">Versão do documento a ser recuperado. Se omitido ou zero recupera a última versão.</param>
+	<returns>Retorna o diretório completo com nome do documento recuperado.</returns>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ListaArqLimpezaCacheWeb(DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorIndexacao,System.String,System.Int64)">
+	<summary>
+ Obtem a lista de arquivos a serem excluídos do BDC indicado, baseando-se na quantidade de bytes
+ informada.
+ </summary>
+	<param name="iServIdx">Servidor de indexação a ser utilizado.</param>
+	<param name="strBDC">HostName do BDC para realizar a limpeza.</param>
+	<param name="iTotalBytes">Total de bytes que deverá ser excluído.</param>
+	<returns>DataSet contendo os arquivos a serem excluídos.</returns>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ExcluiArqCacheWeb(DGTECGEDARDOTNET.DGTECGEDAR.TipoServidorIndexacao,System.Int64,System.Int64,System.String)">
+	<summary>
+ Indica arquivo que foi excluído no processo de limpeza do GEDCacheWeb.
+ </summary>
+	<param name="iServIdx">Servidor de indexação a ser utilizado.</param>
+	<param name="iCodDcto">Código do documento no GED.</param>
+	<param name="iVerDcto">Versão do documento no GED.</param>
+	<param name="strBDC">HostName do BDC para realizar a limpeza.</param>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.Armazena(System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Método de armazenamento de documentos
+ </summary>
+	<param name="NomeArquivo">
+ Nome do documento a ser armazenado conforme localizado no sistema de arquivos do windows.
+ </param>
+	<param name="NomeArquivoAssinatura">
+ Nome do arquivo de assinatura conforme localizado no sistema de arquivos do windows.
+ </param>
+	<param name="TipoArquivo">
+ Tipo do arquivo sendo armazenado (2 - PDF, 3 - Word e etc). 
+ Caso não informado o sistema tentar identificar o tipo do arquivo através de sua extensão.
+ </param>
+	<param name="TipoDocumentoSistema">
+ Tipo do documento cadastrado no GED para o sistema. 
+ Parâmetro opcional que por padrão é do tipo 0 (zero) indicando um documento genérico para o sistema. 
+ Outros tipos podem ser cadastrados junto ao responsável pelo GED de forma que o local de armazenamento (servidores de FTP) 
+ e permissões de acesso padrões para outros sistemas sejam diferenciados.
+ </param>
+	<returns>Retorna o ID do documento armazenado</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.Substitui(System.String,System.String,System.Boolean,System.String,System.Int32,System.Int32)">
+	<summary>
+ Substitui documento armazenado previamente no GED
+   com versionamento - a versão anterior pode ser recuperada do banco
+   sem versionamento - a versão anterior não pode ser recuperada do banco
+ </summary>
+	<param name="IDDocumento">ID do documento a ser substituido.</param>
+	<param name="NomeArquivo">
+ Nome do documento a ser armazenado conforme localizado no sistema de arquivos do windows.
+ </param>
+	<param name="IndVersiona">
+ Indica se a versão anterior do documento será preservada 
+ de forma que possa ser recuperada posteriormente.
+ </param>
+	<param name="NomeArquivoAssinatura">
+ Nome do arquivo de assinatura conforme localizado no sistema de arquivos do windows.
+ </param>
+	<param name="TipoArquivo">
+ Tipo do arquivo sendo armazenado (2 - PDF, 3 - Word e etc). 
+ Caso não informado o sistema tentar identificar o tipo do arquivo através de sua extensão.
+ </param>
+	<param name="TipoDocumentoSistema">
+ Tipo do documento cadastrado no GED para o sistema. 
+ Parâmetro opcional que por padrão é do tipo 0 (zero) indicando um documento genérico para o sistema. 
+ Outros tipos podem ser cadastrados junto ao responsável pelo GED de forma que o local de armazenamento (servidores de FTP) 
+ e permissões de acesso padrões para outros sistemas sejam diferenciados.
+ </param>
+	<returns>A número da versão corrente do documento armazenado.</returns>
+	<remarks>
+	</remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.Exclui(System.String,System.Boolean,System.Int32@,System.Boolean@)">
+	<summary>
+ Exclui de forma física ou lógica uma versão de um documento previamente armazenado no GED.
+ </summary>
+	<param name="IDDocumento">ID do documento a ser excluído</param>
+	<param name="IndExclusaoLogica">
+ Indica se a exclusão será física ou lógica.
+   Exclusão física - não permite a restauração do documento.
+   Exclusão lógica - permite a restauração do documento.
+ </param>
+	<param name="Versao">
+ Versão do documento a ser excluída. Caso seja 0 ou omitido será considerada com sendo a exclusão da última versão.
+ </param>
+	<param name="ExcluiVersoesAnteriores">
+ Indica se todas as versões anteriores do documento devem sofrer o mesmo tipo de exclusão. Por default é "True".
+ </param>
+	<returns>
+ Retorna número da última versão ativa do documento anterior a versão excluída.
+ </returns>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ObtemHistorico(System.String,System.Int32,DGTECGEDARDOTNET.DGTECGEDAR.TipoOrdHistorico,System.DateTime,System.Int32)">
+	<summary>
+ Retorna um DataTable com o histórico de acessos a um documento ou a uma de suas versões.
+ </summary>
+	<param name="IDDocumento">ID do documento a ter seu histórico recuperado</param>
+	<param name="Versao">
+ Numero da versão do documento. 
+ Caso omitido ou igual a 0 trás o histórico de todas as versões.
+ </param>
+	<param name="Ordenacao">
+ Qual a ordenação em que os dados serão retornados. 
+ Caso omitido trás por ordem descendente da data e hora da operação histórica
+ </param>
+	<param name="DataHoraInicial">
+ Data e hora iniciais a partir da qual o histórico ser retornado.
+ </param>
+	<param name="NumMaxRegistros">
+ Número máximo de registros que serão retornados no DataSet
+ </param>
+	<returns>Retorna um DataTable contendo o histórico do documento.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ObtemHistoricoRS(System.String,System.Int32,DGTECGEDARDOTNET.DGTECGEDAR.TipoOrdHistorico,System.DateTime,System.Int32)">
+	<summary>
+ Retorna um ADODB.Recorset com o histórico de acessos a um documento ou a uma de suas versões.
+ </summary>
+	<param name="IDDocumento">ID do documento a ter seu histórico recuperado</param>
+	<param name="Versao">
+ Numero da versão do documento. 
+ Caso omitido ou igual a 0 trás o histórico de todas as versões.
+ </param>
+	<param name="Ordenacao">
+ Qual a ordenação em que os dados serão retornados. 
+ Caso omitido trás por ordem descendente da data e hora da operação histórica
+ </param>
+	<param name="DataHoraInicial">
+ Data e hora iniciais a partir da qual o histórico ser retornado.
+ </param>
+	<param name="NumMaxRegistros">
+ Número máximo de registros que serão retornados no DataSet
+ </param>
+	<returns>Retorna um ADODB.Recordset contendo o histórico do documento.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ConverteParaRecordset(System.Data.DataTable)">
+	<summary>
+ Converte um DataTable para Recordset
+ </summary>
+	<param name="Table">DataTable a ser convertida para um RecordSet</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ObtemMetadados(System.String,System.Int32,DGTECGEDARDOTNET.DGTECGEDAR.TipoOrdMetadados,System.Int32)">
+	<summary>
+ Retorna um DataTable com os metadados de uma ou todas as versões de um documento armazenado no GED.
+ </summary>
+	<param name="IDDocumento">
+ ID do documento a ter seus metadados recuperados.
+ </param>
+	<param name="Versao">
+ Numero da versão do documento. 
+ Caso omitido ou igual a 0 trás os metadados de todas as versões.
+ </param>
+	<param name="Ordenacao">
+ Ordenação pela qual os registros de metadados serão retornados: 
+ crescente ou decrescente do seqüencial de versão do documento. Caso omitido será retornado em ordem decrescente.
+ </param>
+	<param name="NumMaxRegistros">
+ Número máximo de versões a serem retornadas considerando a ordenação definida no parâmetro anterior. 
+ Parâmetro opcional. O padrão é retornar o conjunto completo dos metadados de todas as versões do documento.
+ </param>
+	<returns>Retorna um DataTable com os metadados do documento.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.ObtemMetadadosRS(System.String,System.Int32,DGTECGEDARDOTNET.DGTECGEDAR.TipoOrdMetadados,System.Int32)">
+	<summary>
+ Retorna um ADODB.Recordset com os metadados de uma ou todas as versões de um documento armazenado no GED.
+ </summary>
+	<param name="IDDocumento">
+ ID do documento a ter seus metadados recuperados.
+ </param>
+	<param name="Versao">
+ Numero da versão do documento. 
+ Caso omitido ou igual a 0 trás os metadados de todas as versões.
+ </param>
+	<param name="Ordenacao">
+ Ordenação pela qual os registros de metadados serão retornados: 
+ crescente ou decrescente do seqüencial de versão do documento. Caso omitido será retornado em ordem decrescente.
+ </param>
+	<param name="NumMaxRegistros">
+ Número máximo de versões a serem retornadas considerando a ordenação definida no parâmetro anterior. 
+ Parâmetro opcional. O padrão é retornar o conjunto completo dos metadados de todas as versões do documento.
+ </param>
+	<returns>Retorna um ADODB.Recordset com os metadados do documento.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.RestauraExclusao(System.String,System.Int32)">
+	<summary>
+ Restaura documento excluído logicamente.
+ </summary>
+	<param name="IDDocumento">ID do documento a ser restaurado.</param>
+	<param name="Versao">
+ Número da versão do documento que o sistema cliente deseja restaurar. Parâmetro opcional. Caso omitido o GED-AR tentará restaurar a última versão do documento (estando ela excluída ou não).
+ </param>
+	<returns>Retorna o número da última versão ativa do documento..</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.GaranteAcesso(System.String,DGTECGEDARDOTNET.DGTECGEDAR.TipoHistDocto,System.String)">
+	<summary>
+ Garante acesso a um documento para um sistema
+ </summary>
+	<param name="IDDocumento">ID do documento a ter seu acesso concedido.</param>
+	<param name="TipoOperacao">Tipo de acesso a ser garantido conforme definido no tipo TipoHistDocto.</param>
+	<param name="SiglaSistema">Sigla do sistema que receberá o acesso.</param>
+	<remarks>
+ Os seguintes tipos de acesso podem ser concedidos através desta função:
+ SubstituicaoComVersionamento,
+ SubstituicaoSemVersionamento,
+ Recuperacao,
+ ExclusaoLogica,
+ ExclusaoFisica,
+ RestauracaoExclusao,
+ HistoricoAcesso.
+ </remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.RevogaAcesso(System.String,DGTECGEDARDOTNET.DGTECGEDAR.TipoHistDocto,System.String)">
+	<summary>
+ Revoga acesso a um documento de um sistema
+ </summary>
+	<param name="IDDocumento">ID do documento a ter seu acesso revogado.</param>
+	<param name="TipoOperacao">Tipo de acesso a ser revogado conforme definido no tipo TipoHistDocto.</param>
+	<param name="SiglaSistema">Sigla do sistema que terá seu acesso revogado.</param>
+	<remarks>
+ Os seguintes tipos de acesso podem ser revogados através desta função:
+ SubstituicaoComVersionamento,
+ SubstituicaoSemVersionamento,
+ Recuperacao,
+ ExclusaoLogica,
+ ExclusaoFisica,
+ RestauracaoExclusao,
+ HistoricoAcesso.
+ </remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.Finalize">
+	<summary>
+ Finaliza sessão  do WebService
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDAR.Finaliza">
+	<summary>
+ Finaliza sessão do GED. Após a finalização, 
+ para retomar a sessão com chamada de métodos do GED deve-se
+ proceder com a execução do método Inicializa.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDAR">
+	<summary>
+ Classe para manipulação de documentos no GED
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARException.UltimoCodigoErro">
+	<summary>
+ Indica qual foi o último código de erro gerado como uma excessão DGTECGEDARException
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.Indefinido">
+	<summary>
+ Erro indefinido.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.UsuarioNaoAutenticado">
+	<summary>
+ Usuário não autenticado.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.SistemaSemUso">
+	<summary>
+ O sistema permaneceu muito tempo sem uso. Conecte-se novamente.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.ChaveEstrangeira">
+	<summary>
+ Este registro está associado a registros em outras tabelas.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.ArquivoInexistente">
+	<summary>
+ Arquivo inexistente.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.AssinaturaInexistente">
+	<summary>
+ Arquivo de assinatura digital inexistente.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.Compactacao">
+	<summary>
+ Erro na compactação do arquivo.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.Descompactacao">
+	<summary>
+ Erro na descompactação do arquivo.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.ProcSemResultados">
+	<summary>
+ Procedimento não trouxe os resultados desejados.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.ConexaoFTP">
+	<summary>
+ Falha na conexão ao servidor FTP.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.ComandoPUTFTP">
+	<summary>
+ Falha na transferência de arquivos para o servidor FTP - Comando PUT.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.DiretorioInexistente">
+	<summary>
+ Diretório inexistente.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.ComandoGETFTP">
+	<summary>
+ Falha na transferência de arquivos do servidor FTP - Comando GET.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.DocumentoInvalido">
+	<summary>
+ Código inválido de documento.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.IntegridadeReferencial">
+	<summary>
+ Tentativa de violação da integridade referencial
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.ExcedeuTempoSemUsoDoBD">
+	<summary>
+ Excedeu o tempo sem uso do Banco de Dados
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.TipoCompactNaoSuportado">
+	<summary>
+ Tipo de compactação não suportada pelo componente GED.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.DiretorioAssinaturaInvalido">
+	<summary>
+ O diretório do arquivo de assinatura deve ser o mesmo do arquivo a ser armazenado.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.VerificacaoAssinaturaDigital">
+	<summary>
+ Erro verificando assinatura digital do arquivo a ser manipulado pelo GED
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.TransacaoEmAndamento">
+	<summary>
+ Transação já se encontra em andamento
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.IDTransacaoInvalido">
+	<summary>
+ ID de transação inválido.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.EstadoTransacionalNaoPermitido">
+	<summary>
+ Não é permitido o estado transacional na execução da operação
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.ConexaoHTTP">
+	<summary>
+ Falha na conexão ao servidor HTTP.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.ComandoHTTPRequest">
+	<summary>
+ Falha na transferência de arquivos do por HTTP Request.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.ServidorWebIndisponivel">
+	<summary>
+ Falha no contato ao servidor web do GED
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.ServidorBDIndisponivel">
+	<summary>
+ Falha no contato ao servidor de banco de dados do GED
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR.ServidorFTPIndisponivel">
+	<summary>
+ Falha no contato ao servidor de FTP do GED
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARException.TipoErroGEDAR">
+	<summary>
+ Tipos de erro gerados a partir de uma exceção DGTECGEDARException. O tipo do erro pode ser recuperado 
+ pela propriedade CodigoErro de uma instância de DGTECGEDARException.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARException.CodigoErro">
+	<summary>
+ Código do erro que representa o motivo da ocorrência da exceção.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARException.MensagemExtra">
+	<summary>
+ Mensagem extra relativa ao erro
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECGEDARDOTNET.DGTECGEDARException.Message">
+	<summary>
+ Mensagem de erro que representa o motivo da ocorrência da exceção.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECGEDARDOTNET.DGTECGEDARException.#ctor(System.Web.Services.Protocols.SoapException)">
+	<summary>
+ Processa erros proveniente da chamada ao webservice de forma a levantar erro DGGTECGEDARExeption.
+ Trata erros provenientes de procedimentos Oracle (Código -20001 ou maior) ou alguns erros padrões do Oracle.
+ </summary>
+	<param name="WSException"></param>
+	<remarks></remarks>
+</member><member name="T:DGTECGEDARDOTNET.DGTECGEDARException">
+	<summary>
+ Exceções geradas no processo de manipulação de documentos no GED
+ </summary>
+</member>
+</members>
+</doc>

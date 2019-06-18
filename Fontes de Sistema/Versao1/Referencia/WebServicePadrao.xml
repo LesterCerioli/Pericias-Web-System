@@ -1,0 +1,221 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WebServicePadrao
+</name>
+</assembly>
+<members>
+<member name="M:WebServicePadrao.BaseWebService.RegistrarUsuario(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<summary>
+ Registra um usuário do WebService. Guarda na sessão as informações do usuário.
+ </summary>
+	<param name="sLogin">Login do usuário.</param>
+	<param name="sSenha">Senha do usuário.</param>
+	<param name="sMachine">Nome da máquina na qual o usuário se autenticou.</param>
+	<param name="sUsuarioSO">Nome do usuário de Sistema Operacional da máquina na qual o usuário se autenticou.</param>
+	<param name="sSiglaSist">Sigla do Sistema onde foi feito o login.</param>
+	<param name="codOrg">Código do órgão que o usuário utilizou para acessar o sistema.</param>
+	<remarks></remarks>
+</member><member name="M:WebServicePadrao.BaseWebService.RegistrarSistema(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)">
+	<summary>
+ Registra um Sistema como um usuário do WebService. Guarda na sessão as informações do usuário e as
+ autorizações dos métodos do WebService que o Sistema pode executar.
+ </summary>
+	<param name="sLogin">Login do Sistema no SistSeg.</param>
+	<param name="sSenha">Senha MD5 do Sistema.</param>
+	<param name="sMachine">Nome da máquina na qual o usuário se autenticou.</param>
+	<param name="sUsuarioSO">Nome do usuário de Sistema Operacional da máquina na qual o usuário se autenticou.</param>
+	<param name="sSiglaSist">Sigla do Sistema que é dono WebService.</param>
+	<param name="codOrg">Código fixo do órgão no qual o Sistema usuário foi cadastrado.</param>
+	<param name="sUsuarioLog">Login do usuário que autenticou no sistema.</param>
+	<remarks></remarks>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.#ctor">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.RetornaDadosOrgaoCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.ConsultarNomeUsuarioCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.CarregaAutorizacoesCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.LoginCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.RegistraAcessoUsuarioCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.TrocarSenhaCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.UltimoAcessoCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.VerificaSenhaCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.AtualizaSituacaoMensagemCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.MensagensNaoLidasCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.MostraMensagemUsuarioCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.RetornaCodigoSistemaCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.RegistrarUsuarioCompleted">
+	<remarks/>
+</member><member name="E:WebServicePadrao.SegWS.SEGInterfaceBLL.RegistrarSistemaCompleted">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RetornaDadosOrgao(System.Int32)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RetornaDadosOrgaoAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RetornaDadosOrgaoAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.ConsultarNomeUsuario(System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.ConsultarNomeUsuarioAsync(System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.ConsultarNomeUsuarioAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.CarregaAutorizacoes(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.CarregaAutorizacoesAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.CarregaAutorizacoesAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.Login(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.LoginAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.LoginAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RegistraAcessoUsuario(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RegistraAcessoUsuarioAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RegistraAcessoUsuarioAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.TrocarSenha(System.String,System.Boolean,System.Boolean,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.TrocarSenhaAsync(System.String,System.Boolean,System.Boolean,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.TrocarSenhaAsync(System.String,System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.UltimoAcesso(System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.UltimoAcessoAsync(System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.UltimoAcessoAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.VerificaSenha(System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.VerificaSenhaAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.VerificaSenhaAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.AtualizaSituacaoMensagem(System.String,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.AtualizaSituacaoMensagemAsync(System.String,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.AtualizaSituacaoMensagemAsync(System.String,System.Int32,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.MensagensNaoLidas(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.MensagensNaoLidasAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.MensagensNaoLidasAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.MostraMensagemUsuario(System.String,System.Int32,System.String,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.MostraMensagemUsuarioAsync(System.String,System.Int32,System.String,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.MostraMensagemUsuarioAsync(System.String,System.Int32,System.String,System.Int32,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RetornaCodigoSistema(System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RetornaCodigoSistemaAsync(System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RetornaCodigoSistemaAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RegistrarUsuario(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RegistrarUsuarioAsync(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RegistrarUsuarioAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RegistrarSistema(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RegistrarSistemaAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.RegistrarSistemaAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:WebServicePadrao.SegWS.SEGInterfaceBLL.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.SEGInterfaceBLL">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.RetornaDadosOrgaoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebServicePadrao.SegWS.RetornaDadosOrgaoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.RetornaDadosOrgaoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.ConsultarNomeUsuarioCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebServicePadrao.SegWS.ConsultarNomeUsuarioCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.ConsultarNomeUsuarioCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.CarregaAutorizacoesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebServicePadrao.SegWS.CarregaAutorizacoesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.CarregaAutorizacoesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.LoginCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebServicePadrao.SegWS.LoginCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.LoginCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.RegistraAcessoUsuarioCompletedEventHandler">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.TrocarSenhaCompletedEventHandler">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.UltimoAcessoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebServicePadrao.SegWS.UltimoAcessoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.UltimoAcessoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.VerificaSenhaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebServicePadrao.SegWS.VerificaSenhaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.VerificaSenhaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.AtualizaSituacaoMensagemCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebServicePadrao.SegWS.AtualizaSituacaoMensagemCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.AtualizaSituacaoMensagemCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.MensagensNaoLidasCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebServicePadrao.SegWS.MensagensNaoLidasCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.MensagensNaoLidasCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.MostraMensagemUsuarioCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebServicePadrao.SegWS.MostraMensagemUsuarioCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.MostraMensagemUsuarioCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.RetornaCodigoSistemaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:WebServicePadrao.SegWS.RetornaCodigoSistemaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.RetornaCodigoSistemaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.RegistrarUsuarioCompletedEventHandler">
+	<remarks/>
+</member><member name="T:WebServicePadrao.SegWS.RegistrarSistemaCompletedEventHandler">
+	<remarks/>
+</member>
+</members>
+</doc>

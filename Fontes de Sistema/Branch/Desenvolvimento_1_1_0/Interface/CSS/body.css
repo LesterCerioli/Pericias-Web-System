@@ -1,0 +1,67 @@
+
+*
+{
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px
+}
+HTML
+{
+    HEIGHT: 99%
+}
+BODY
+{
+    HEIGHT: 99%
+}
+BODY
+{
+    BACKGROUND-IMAGE: url(../imagens/back-geral.jpg);
+    TEXT-ALIGN: center;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    BACKGROUND-REPEAT: repeat-x;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #000;
+    FONT-SIZE: 11px;
+    PADDING-TOP: 0px
+}
+P
+{
+    MARGIN-BOTTOM: 10px
+}
+A
+{
+    OUTLINE-STYLE: none;
+    OUTLINE-COLOR: invert;
+    OUTLINE-WIDTH: medium;
+    COLOR: #344852;
+    TEXT-DECORATION: underline
+}
+A:visited
+{
+    COLOR: #5b5b2d
+}
+A.visited
+{
+    COLOR: #5b5b2d
+}
+A:hover
+{
+    COLOR: #868170
+}
+A:active
+{
+    COLOR: #868170
+}
+A.active
+{
+    COLOR: #868170
+}
+.clear
+{
+    CLEAR: both
+}

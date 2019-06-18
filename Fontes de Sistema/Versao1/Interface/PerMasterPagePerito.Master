@@ -1,0 +1,251 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="PerMasterPagePerito.master.vb" Inherits="Interface.PERMasterPagePerito" EnableViewState="true" %>
+
+<%@ Register Assembly="ClienteWebPadrao" Namespace="ClienteWebPadrao" TagPrefix="cc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<script language="javascript" type="text/javascript" src="pericias.js"></script>
+
+<title>Sistema de Gerenciamento de Perícias </title>
+<head id="Head1" runat="server">
+
+  <link href="loading.css" rel="stylesheet" type="text/css"/>
+    <script language="javascript" type="text/javascript">
+
+        loading = function () {
+
+            //document.getElementById("loading99").setAttribute("style","display:inline");
+            document.getElementById("loading99").style.cssText = "display:inline"
+
+        }
+
+        loaded = function () {
+            //document.getElementById("loading99").removeAttribute("style");
+            document.getElementById("loading99").style.cssText = "display:none"
+
+        }
+
+
+      <!-- set 2012
+        function MM_jumpMenu(targ, selObj, restore) { //v3.0
+            eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
+            if (restore) selObj.selectedIndex = 0;
+        }
+
+        function AbrePoup(url, w, h, nome, scroll) {
+            var janela = window.open(url, nome, 'width=' + w + ',height=' + h + ',scrollbars=true', false);
+            janela.focus();
+
+        }
+      //-->
+    
+    </script>
+    
+    <!-- Início do código particular do projeto -->
+    <!--  <title>Perícias - Sistema de Gerenciamento de Perícias
+    </title>
+    -->
+    <meta name="author" content="DGTEC-DESIS-DIMEQ" />
+    <meta http-equiv="Content-Language" content="pt-br" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso8859-1" />
+    <link rel="shortcut icon" href="imagens/favicon.ico" />
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-ico" />
+    <script type="text/javascript" src="Pericias.js"></script>
+
+    <%--<script type="text/javascript" src="http://www.tjrj.jus.br/consultas/redirecionador/js/integracaoPortal.js"></script>
+--%>
+    <!-- Fim do código particular do projeto -->
+    <!-- Início do código comum -->
+    <link href="http://www.tjrj.jus.br/css/body.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.tjrj.jus.br/css/lay-out.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.tjrj.jus.br/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.tjrj.jus.br/css/form.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.tjrj.jus.br/css/textos-img.css" rel="stylesheet" type="text/css" />
+    <link href="css\estilo_pericias.css" rel="stylesheet" type="text/css" />
+
+<!--
+    <%--  %> <link rel="stylesheet" href="css/EPROTPE.css" type="text/css" />
+    <link rel="stylesheet" href="css/body.css" type="text/css" /> --%>
+    <%--    <link rel="stylesheet" href="css/lay-out.css" type="text/css" />--%>
+    <!-- Fim do código comum -->
+
+    <script type="text/javascript">
+      <!--
+        function MM_jumpMenu(targ, selObj, restore) { //v3.0
+            eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
+            if (restore) selObj.selectedIndex = 0;
+        }
+      //-->
+    </script>
+</head>
+<body onload = "loaded()" onunload="loading()" onbeforeunload ="loading()">
+   <!-- <div style="display:inline;" id="loading99" class="carrega"><img alt="" src="loading6.gif" height="90" width="90"/></div> -->
+   <div style="display:none;" id="loading99" class="carrega"><img alt="" src="loading6.gif" height="90" width="90"/></div>
+    <div id="tudo">
+        <div id="cabecalho">
+        </div>
+        <!-- inicio do menu horizontal-->
+        <div id="navegador-horiz-limpo">
+        </div>
+        <!-- Fim do menu horizontal-->
+        <!-- Início da div#container -->
+        <div id="container">
+            <!-- início navegação vertical -->
+            <div id="navegador">
+                <!-- COMUM -->
+                <h6 id="h-areas">
+                   Perícias Judiciais - Versão 1.0.0</h6>
+                <ul id="ul">
+                    
+                    <li id="Principal" runat="server"> 
+                         <a href="Principal.aspx" class="bold-white-estrela">Página Principal</a> </li> 
+                    <li id="DIPEJ" runat="server"> 
+                         <a href="Principal.aspx" class="bold-white-estrela">Peritos</a> 
+                         <a href="frmCadastrarPerito.aspx">Cadastro</a>
+                         <a href="frmAnotacoes.aspx">Anotações do Perito</a>
+                         <a href="frmConsPerProc.aspx">Consulta Processos do Perito</a>
+                    </li>
+                    <li id="Auxiliares" runat="server">
+                        <a href="Principal.aspx" class="bold-white-estrela">Tabelas Auxiliares</a> 
+                        <a href="frmEspecialidade.aspx">Especialidades</a> 
+                        <a href="frmProfissao.aspx">Profissões</a> 
+                        <a href="frmOrgaoPer.aspx">Órgãos Profissionais</a> 
+                        <a href="frmTiposDeAnotacoes.aspx">Tipos de Anotações</a> 
+                    </li>
+                    
+                   
+                    <!--   
+                            <a href="frmAceitacao.aspx">Aceitacao/Declinio</a>                             
+                            <a href="frmReqInscCadPerDipej.aspx">Formulário-Requerimento de Inscrição</a>
+  		    	            <a href="frmDeclaraRec.aspx">Declaração do Requerimento</a>
+                        	<a href="frmAutorizaRec.aspx">Autorização do Requerente</a>
+                        	<a href="frmDeclaracaoPsicRes.aspx">Declaração(Psiquiatria) Resolução Nº 21/2006</a>
+                        	<a href="frmDocsNecessarios.aspx">Documentos Necessários</a>
+                    -->                        	
+                   
+                       
+                    <!--
+                    <li> <a href="" class="bold-white-estrela">Consultas</a>
+                         <a href="frmAceitacao.aspx">Consulta Processos do Perito</a>
+                         <a href="frmConsProcPer.aspx">Consulta Peritos do Processo</a>
+                         <a href="frmConsPerProc.aspx">Consulta Processos do Perito</a>                        
+                    </li>
+                    -->
+                    <li id="Nomeacao" runat="server"> 
+                         <a href="#" class="bold-white-estrela">Juízo</a> 
+                         <a href="frmPeritoDCP.aspx">Nomear Perito</a>
+                    </li>
+                    <li id="Serventia" runat="server"> 
+                         <a href="#" class="bold-white-estrela">Serventia</a> 
+                         <a href="frmPreCadastroPeritoJuizo.aspx">Pré-Cadastro Serventia</a>
+                    </li>
+                       <!--
+   			           <a href="frmAgendaAcidentaria.aspx">Agendamento de Perícias Acidentárias</a> 
+   			           -->
+             <!--       </li>
+                    <li id="Li1" runat="server"> 
+                         <a href="#" class="bold-white-estrela">Juízo</a>  -->
+
+                       <!--
+   			           <a href="frmAgendaAcidentaria.aspx">Agendamento de Perícias Acidentárias</a> 
+   			           -->
+               <!--     </li> -->
+                    <li id="Perito" runat="server"> 
+                         <a href="#" class="bold-white-estrela">Profissional Perito&nbsp; </a> 
+                         <a href="frmaceitacao.aspx">Aceitação/Recusa de Nomeação.</a>
+                    </li>
+                    <!--
+                    <li id="Internet" runat="server"> 
+                         <a href="" class="bold-white-estrela">Internet</a> 
+                         <a href="PerMasterPageExt.master">Cadastro On line</a>
+                    </li>
+                    -->
+                   <%-- <li> <a href="#" class="bold-white-estrela">Internet</a>
+                         <a href="frmPreCadastroPeritoExt.aspx">Pré-Cadastro On Line do Perito</a>
+                    </li>--%>
+                    <!--
+                    <li id="Perito1" runat="server">
+                         <a href="#" class="bold-white-estrela">RADs</a>
+                         <a href="http://www.tjrj.jus.br/intrav2/siga/rotina_admin/dgjur/pdf/rad_dgjur_031.pdf">DGJUR-031 Indicar Peritos</a>
+                         <a href="http://www.tjrj.jus.br/intrav2/siga/rotina_admin/dgjur/pdf/rad_dgjur_032.pdf">DGJUR-032 Pagamentos dos Peritos</a>
+                         <a href="http://www.tjrj.jus.br/intrav2/siga/rotina_admin/dgjur/pdf/rad_dgjur_033.pdf">DGJUR-033 Perícias Acidentárias</a>                                                  
+                    </li> -->
+                    <li id="Perito2" runat="server">
+                         <a href="#" class="bold-white-estrela">Atos</a>
+                         <%--<a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE44&PORTAL=1&LAB=BIBxWEB&AMB=INTRA&SUMULAxTJ=&TRIPA=198^2009^24&PAL=&JUR=ESTADUAL&ANOX=2009&TIPO=198&ATO=24&START=">Aviso TJ nº 24/2009 (Cadastramento de Peritos)</a>--%>
+                         <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=198^2009^31&PAL=&JUR=ESTADUAL&ANOX=2009&TIPO=198&ATO=31&START=">Aviso TJ nº 31/2009 (Auxílio pericial)</a>
+                         <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=141^2009^231&PAL=&JUR=ESTADUAL&ANOX=2009&TIPO=141&ATO=231&START=">Aviso CGJ nº 231/2009 (cumprimento de prazo nas perícias)</a> 
+                         <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE44&PORTAL=1&LAB=BIBxWEB&AMB=INTRA&SUMULAxTJ=&CHECKSUMULA=&TRIPA=50^2011^3&PAL=&JUR=ESTADUAL&ANOX=&TIPO=50&ATO=3&START=&DGCON=">Resolução CM nº 03/2011</a> 
+                         <%--<a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=50^2003^2&PAL=&JUR=ESTADUAL&ANOX=2003&TIPO=50&ATO=2&START=">Resolução nº 02/2003 (perícia nas ações acidentárias)</a> 
+                         <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=50^2004^2&PAL=&JUR=ESTADUAL&ANOX=2004&TIPO=50&ATO=2&START=">Resolução nº 02/2004 (modifica valor dos honorários nas ações acidentárias)</a> 
+                         <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=50^2006^20&PAL=&JUR=ESTADUAL&ANOX=2006&TIPO=&ATO=20&START=">Resolução nº 20/2006 (perícias com Justiça Gratuita)</a> 
+                         <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=50^2006^21&PAL=&JUR=ESTADUAL&ANOX=2006&TIPO=&ATO=21&START=">Resolução nº 21/2006 (perícias com Justiça Gratuita em ações de interdição)</a>                                                                                                                                                                                                     
+                         <a href="http://www.tjrj.jus.br/scripts/weblink.mgw?MGWLPN=DIGITAL1A&PGM=WEBBCLE66&LAB=BIBxWEB&PORTAL=1&AMB=INTRA&SUMULAxTJ=&TRIPA=50^2008^12&PAL=&JUR=ESTADUAL&ANOX=2008&TIPO=&ATO=12&START=">Resolução nº 12/2008 (altera o anexo VI da Res. 20/2006)</a>                                                                                                                                                                                                                                                                                                                                                                                                         --%>
+                    </li>
+                    
+                    <li><a href="http:\\www.tjrj.jus.br">Sair</a></li>
+                </ul>
+            </div>
+            <!-- fim navegação vertical -->
+            <!-- inicio id usuario -->
+            <div id="content-id-busca">
+                <table width="100%" border="0" cellspacing="2" cellpadding="0">
+                    <tr>
+                        <td align="left" class="seja-bemvindo">
+                            Seja Bem-Vindo <span class="txtnome-usuario">
+                                <cc1:DGTECLabel ID="lblID" runat="server"></cc1:DGTECLabel>
+                            </span>
+                        </td>
+                        <td>
+                            <cc1:DGTECLabel ID="lblAmbiente" runat="server" Font-Bold="True" ForeColor="Red"></cc1:DGTECLabel>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Fim id usuario -->
+            <!-- inicio da barra de ferramentas -->
+            <script language="javascript" type="text/javascript" src="http://www.tjrj.jus.br/js_funcoes/max_min_font_size2.js"></script>
+            <div id="content-barra">
+                <a href="javascript:history.back();">
+                    <img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-voltar.gif"
+                        alt="voltar" /></a> <a href="javascript:history.go(1);">
+                            <img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-avancar.gif"
+                                alt="avançar" /></a> <a href="javascript:printPartOfPage('content');" id="btPrint" style="visibility: visible;">
+                                    <img height="17" width="26" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-print.gif"
+                                        alt="imprimir" /></a> <a href="javascript:decreaseFontSize();">
+                                            <img height="17" width="31" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-font-menos.gif"
+                                                alt="diminuir fonte" /></a> <a href="javascript:defaultFontSize();">
+                                                   <img height="17" width="24" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-font-default.gif"
+                                                        alt="normalizar fonte" /></a> <a href="javascript:increaseFontSize();">
+                                                           <img height="17" width="31" class="margin-icos" src="http://www.tjrj.jus.br/imagens/ico-font-mais.gif"
+                                                                alt="aumentar fonte" /></a>
+
+            </div>
+            <!-- Fim da barra de ferramentas-->
+            <!-- inicio das divs de conteúdo -->
+            <div id="content">
+                <asp:ContentPlaceHolder ID="Tela" runat="server">
+                    <!-- AQUI DEVERÁ SER INCLUÍDO TODO O CONTEÚDO DA PÁGINA -->
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- Fim das divs de conteúdo -->
+            <div class="clear">
+            </div>
+        </div>
+        <!-- Fim da div#container -->
+        <!-- Início DIV do Rodapé do Sistema-->
+        <div id="rodape">
+            PALÁCIO DA JUSTIÇA DO ESTADO DO RIO DE JANEIRO - FÓRUM CENTRAL<br />
+            Av. Erasmo Braga, 115 - Centro / CEP: 20020-903 - Rua Dom Manuel, 29, Centro / CEP:
+            20010-090 / Tel.: (0xx21) 3133-2000
+        </div>
+        <!-- FIM DIV do Rodapé do Sistema-->
+    </div>
+    <iframe name="pgPrint" id="pgPrint" width="600" height="100" style="visibility: hidden">
+    </iframe>
+</body>
+</html>
+
+ 

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Entidade
+</name>
+</assembly>
+<members>
+<member name="T:Entidade.AjudaCusto">
+	<summary>
+ Classe referente aos status dos peritos da tabela AJUDA_CUSTO
+ </summary>
+</member><member name="P:Entidade.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Entidade.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Entidade.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Entidade.RelacaoPagamento">
+	<summary>
+ Classe referente aos status dos peritos da tabela RELACAO_PAGAMENTO
+ </summary>
+</member><member name="T:Entidade.TIPO_STATUS">
+	<summary>
+ Classe referente aos status dos peritos da tabela TIPO_STATUS
+ </summary>
+</member><member name="T:Entidade.DOCUMENTO">
+	<summary>
+ Classe referente aos documentos do perito da tabela DOCUMENTO
+ </summary>
+</member>
+</members>
+</doc>

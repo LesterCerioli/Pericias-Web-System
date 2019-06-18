@@ -1,0 +1,1216 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DGTECCertDigital
+</name>
+</assembly>
+<members>
+<member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.Email">
+	<summary>
+ Email do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.Nome">
+	<summary>
+ Nome do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.ComplementoNome">
+	<summary>
+ Complemento do nome do titular do certificado digital. Geralmente presente ao final do nome separado por ":".
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.DataNascimento">
+	<summary>
+ Data de nascimento do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.CPF">
+	<summary>
+ CPF do titular do certificado Digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.PISPASEP">
+	<summary>
+ PIS/PASEP do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.RG">
+	<summary>
+ Documento de identificação do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.UFOrgaoExpedidorRG">
+	<summary>
+ Unidade federativa emitente do documento de identificação do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.OrgaoExpedidorRG">
+	<summary>
+ Sigla do órgão expedidor do documento de identificação do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.INSS">
+	<summary>
+ Número do INSS do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.TituloEleitoral">
+	<summary>
+ Título eleitoral do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.ZonaEleitoral">
+	<summary>
+ Zona eleitoral do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.SecaoEleitoral">
+	<summary>
+ Seção eleitoral do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.MunicipioEleitoral">
+	<summary>
+ Município eleitoral do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.UFEleitoral">
+	<summary>
+ Unidade federativa eleitoral do titular do certificado digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertificadoICPBrasilPF.OAB">
+	<summary>
+ Código da OAB do titular do certificado digital.
+ Válido somente para certificados emitidos pela OAB.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificadoICPBrasilPF.DecodeASCII(System.String)">
+	<summary>
+ Converte uma hexastring no seu correspondente ASCII, como,
+ por exemplo, "3237303531393735" em "27051975".
+ </summary>
+	<param name="hexaString"></param>
+	<returns></returns>
+</member><member name="M:DGTECCertDigital.DGTECCertificadoICPBrasilPF.HexToByte(System.String)">
+	<summary>
+ Converte um par hexastring em um byte, como, por exemplo,
+ "FF" em 0xff.
+ </summary>
+	<param name="hex"></param>
+	<returns></returns>
+</member><member name="M:DGTECCertDigital.DGTECCertificadoICPBrasilPF.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+	<summary>
+ Cria instância da classe a partir de um certificado digital.
+ </summary>
+	<param name="cert"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificadoICPBrasilPF.ObtemDados">
+	<summary>
+ Faz a analise dos campos ICP-Brasil do certificado preenchendo as variáveis privadas com o resultado
+ </summary>
+</member><member name="T:DGTECCertDigital.DGTECCertificadoICPBrasilPF">
+	<summary>
+ Extrai dados relativos a certificados ICP-Brasil de pessoa física
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.TipoIncorporacaoLCR.NaoIncorpora">
+	<summary>
+ Não incorpora LCR no pacote fazendo com que fique menor
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.TipoIncorporacaoLCR.PadraoPKCS7">
+	<summary>
+ Incorpora LCR no pacote usando o padrão PKCS7
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.TipoIncorporacaoLCR.PadraoPDF">
+	<summary>
+ Incorpora LCR no pacote usando o padrão de PDF permitindo que o Adobe Acrobat 
+ identifique-as. Usa a OID 1.2.840.113583.1.1.8 em conformidade com a especificação
+ do PDF Reference 1.6
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECCertDigital.TipoIncorporacaoLCR">
+	<summary>
+ Tipos de incoporação dos dados contidos um listas de certificados revogados
+ em pacotes PKCS7
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECCertDigital.DGTECAssinadorP7S.CRLStore">
+	<summary>
+ Classe criada para poder passar uma lista de CRLs para o gerar um pacote de 
+ assinatura digital com as informações da CRLs embutidas
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinadorP7S.AssinaDados(System.Byte[],System.Boolean,System.Security.Cryptography.X509Certificates.X509Certificate2,System.DateTime,System.Collections.Generic.List{Org.BouncyCastle.X509.X509Crl})">
+	<summary>
+ Assina um buffer, retornando um pacote PKCS7.
+ Caso seja passado uma lista de CRL (lista de certificados revogados)
+ incorpora-as dentro do pacote usando o padrão PKCS7 de incorporação.
+ </summary>
+</member><member name="M:DGTECCertDigital.DGTECAssinadorP7S.AssinaDadosComCarimboDeDataHora(System.Byte[],System.Boolean,System.Security.Cryptography.X509Certificates.X509Certificate2,System.DateTime,System.String,System.String,System.String,DGTECCertDigital.TipoIncorporacaoLCR,System.Collections.Generic.List{Org.BouncyCastle.X509.X509Crl})">
+	<summary>
+ Assina um buffer, retornando um pacote PKCS7 com carimbo de data e hora.
+ </summary>
+</member><member name="M:DGTECCertDigital.DGTECAssinadorP7S.AdicionaTimeStamp(System.Byte[],System.String,System.String,System.String)">
+	<summary>
+ Adiciona um carimbo de tempo fornecido por um serviço Web (HTTP-POST) a um pacote PKCS#7
+ padrão de assinatura digital. Este pacote pode ser gerado através da função AssinaDados.
+ </summary>
+	<param name="SignedCms">Pacote PKCS#7 a ser acrescido as informações relativas ao carimbo de tempo.</param>
+	<param name="URLServidorTSA">URL do serviço web (HTTP-POST) que fornecerá o carimbo de tempo.</param>
+	<param name="Usuario">Usuário para autenticação no serviço Web indicado por URLServidorTSA.</param>
+	<param name="Senha">Senha para autenticação no serviço Web indicado por URLServidorTSA.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinadorP7S.CoAssinaDados(System.Byte[],System.Byte[],System.Boolean,System.Security.Cryptography.X509Certificates.X509Certificate2,System.DateTime)">
+	<summary>
+ Adiciona mais uma assinatura (co-assina) em um pacote PKCS#7 a partir de um novo certificado
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinadorP7S.VerificaAssinatura(System.Byte[],System.Byte[])">
+	<summary>
+ Verifica a assinatura de um pacote PKCS7.
+ </summary>
+	<returns></returns>
+</member><member name="T:DGTECCertDigital.DGTECAssinadorP7S">
+	<summary>
+ Classe para a geracao de assinaturas PKCS7 e verificação das mesmas.
+ </summary>
+</member><member name="M:DGTECCertDigital.DGTECHash.#ctor(System.Security.Cryptography.HashAlgorithm)">
+	<summary>
+ Define o algorítmo de Hash que será usado para cálculo do Hash pela biblioteca
+ </summary>
+	<param name="AlgoritmoDeHash"></param>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECHash.AlgoritmoDeHash">
+	<summary>
+ Algorítimo de HASH para uso da biblioteca. 
+ Em geral SHA1. Ex. em VB: New SHA1CryptoServiceProvider()
+ Caso não seja informado assume SHA1CryptoServiceProvider
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECHash.ObtemHash(System.String)">
+	<summary>
+ Gera o Hash de um Texto
+ </summary>
+	<param name="Texto">Texto a ter o seu HASH gerado.</param>
+	<returns>HASH do texto</returns>
+</member><member name="M:DGTECCertDigital.DGTECHash.ObtemHash(System.Byte[])">
+	<summary>
+ Gera o Hash de um array de bytes.
+ </summary>
+	<param name="Dados">Array de bytes a ter o HASH gerado.</param>
+	<returns>HASH dos dados</returns>
+</member><member name="M:DGTECCertDigital.DGTECHash.ObtemHashDeArquivo(System.String)">
+	<summary>
+ Gera o hash de um arquivo.
+ </summary>
+	<param name="Arquivo">Diretorio completo do arquivo a ter o seu HASH gerado</param>
+	<returns></returns>
+</member><member name="M:DGTECCertDigital.DGTECHash.ObtemHash(System.IO.Stream)">
+	<summary>
+ Gera o hash de um Stream.
+ </summary>
+	<param name="fs">Stream já aberta com o para gerar o HASH</param>
+	<returns></returns>
+</member><member name="T:DGTECCertDigital.DGTECHash">
+	<summary>
+ Classe para auxiliar na geracão de hash de arquivos, streams ou textos simples
+ </summary>
+</member><member name="M:DGTECCertDigital.DGTECGerenciadorCertStore.ObtemCertificado(System.Security.Cryptography.X509Certificates.StoreName,System.Boolean,System.Boolean,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Retorna um certificado do store, mediante seleção do usuário.
+ </summary>
+	<param name="storeName">Tipo de certificado de acordo com a classificação do windows</param>
+	<param name="SelecionaUnico">Seleciona o certificado caso este parametro seja verdadeiro e só exista um certificado no store</param>
+	<param name="SoComChavePrivada">Filtra certificados retornados pela função que só possuam chave privada.</param>
+	<param name="FiltroPorNome">Filtra certificados retornados pela função que só possuam parte do nome passado como parâmetro.</param>
+	<param name="VerificaCertificado">Verifica se o certificado selecionado não se encontra expirtado e sua raiz é confiável.</param>
+	<param name="VerificaRevogacao">Verifica se o cerificado se encontra revogado. Pode ser necessário esta on-line para que esta verificação seja feita.</param>
+	<param name="IgnoraVerificacaoRevogacaoIndisponivel">Ignora erros de revogação caso não seja possível contatar servidor de revogação</param>
+	<param name="ListaCertificadosInvalidos">Indica se deve-se realizar a validãção de cada certificado antes de adicioná-lo a lista de certificados para seleção.</param>
+	<returns>Certificado digital selecionado.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECGerenciadorCertStore.ObtemCertificado(System.Security.Cryptography.X509Certificates.StoreName,System.Boolean,System.Boolean,System.String,System.Boolean,System.Boolean)">
+	<summary>
+ Retorna um certificado do store, mediante seleção do usuário.
+ </summary>
+	<param name="storeName">Tipo de certificado de acordo com a classificação do windows</param>
+	<param name="SelecionaUnico">Seleciona o certificado caso este parametro seja verdadeiro e só exista um certificado no store</param>
+	<param name="SoComChavePrivada">Filtra certificados retornados pela função que só possuam chave privada.</param>
+	<param name="FiltroPorNome">Filtra certificados retornados pela função que só possuam parte do nome passado como parâmetro.</param>
+	<param name="VerificaCertificado">Verifica se o certificado selecionado não se encontra expirtado e sua raiz é confiável.</param>
+	<param name="VerificaRevogacao">Verifica se o cerificado se encontra revogado. Pode ser necessário esta on-line para que esta verificação seja feita.</param>
+	<returns>Certificado digital selecionado.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECGerenciadorCertStore.ObtemCertificado(System.Security.Cryptography.X509Certificates.X509Certificate2Collection,System.Boolean,System.Boolean,System.String,System.Boolean)">
+	<summary>
+ Retorna um certificado de uma coleção, mediante seleção do usuário.
+ </summary>
+	<param name="certs">Colecao de certificados a serem selecionados</param>
+	<param name="SelecionaUnico">Seleciona o certificado caso este parametro seja verdadeiro e só exista um certificado no store</param>
+	<param name="SoComChavePrivada">Filtra certificados retornados pela função que só possuam chave privada.</param>
+	<param name="FiltroPorNome">Filtra certificados retornados pela função que só possuam parte do nome passado como parâmetro.</param>
+	<returns>Certificado digital selecionado.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECGerenciadorCertStore.ObtemCadeiaDeCertificadosDoStore(System.Security.Cryptography.X509Certificates.StoreName)">
+	<summary>
+ Retorna um certificado do store e toda sua cadeia de validação, mediante seleção do usuário.
+ </summary>
+	<param name="storeName">Tipo de certificado de acordo com a classificação do windows</param>
+	<returns>Certificado e sua cadeia de certificação</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECGerenciadorCertStore.ObtemCertificadoDoArquivo(System.String)">
+	<summary>
+ Retorna um certificado a partir de um arquivo do disco.
+ </summary>
+	<param name="Arquivo">Caminho completo da localização do certificado</param>
+	<returns>Certificado</returns>
+	<remarks></remarks>
+</member><member name="T:DGTECCertDigital.DGTECGerenciadorCertStore">
+	<summary>
+ Gerencia e fornece certificados digitais do Store do Windows
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.Indefinido">
+	<summary>
+ Erro indefinido.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.CertificadoNaoSelecionado">
+	<summary>
+ Nenhum certificado selecionado
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.SemCertificadosParaSelecao">
+	<summary>
+ Não existem certificados selecionáveis com os filtros especificados
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.ValidacaoDoCertificadoDigital">
+	<summary>
+ Não foi possível validar o certificado digital
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.AberturaDoCertificadoDigital">
+	<summary>
+ Problema desconhecido na abertura do Certificado Digital.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.CertificadoDigitalInvalido">
+	<summary>
+ O Certificado Digital foi revogado ou sua validade está expirada. Solicite um novo a sua Autoridade de Registro.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.CertificadoSemChavePrivada">
+	<summary>
+ Não existe chave privada associada ao certificado.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.URLAssinadorWSInvalida">
+	<summary>
+ URL do WebService assinador genérico de documentos do TJ não informada ou inválida
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.FalhaNaObtencaoDataHora">
+	<summary>
+ Falha ao tentar recuperar data e hora do servidor SNTP
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.FalhaAutenticacaoWebService">
+	<summary>
+ Não houve sucesso na autenticação no serviço de assinatura digital
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.CertificadoNaoAutorizado">
+	<summary>
+ O usuário não tem acesso ao certificado de assinatura digital hospedado no servidor
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.ErroVerificandoAssinatura">
+	<summary>
+ Erro na verificação da assinatura digital
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.ErroAssinandoDigitalmente">
+	<summary>
+ Erro durante a assinatura digital
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.AssinaturaInvalida">
+	<summary>
+ Assinatura inválida. Verifique se o token utilizado na assinatura corresponde ao certificado selecionado previamente.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.FalhaCalculandoHash">
+	<summary>
+ Falha no calculando o HASH 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.FalhaAssinandoP7S">
+	<summary>
+ Falha ao assinar gerando pacote PKCS7
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.FalhaVerificandoP7S">
+	<summary>
+ Falha verificando assinatura em um pacote PKCS7
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.CertificadoNaoICPBrasilPF">
+	<summary>
+ O certificado não possui extensões ICP-Brasil para pessoas físicas
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital.PropriedadeNaoAtribuivel">
+	<summary>
+ Não é permitido a atribuição de valor a propriedade
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital">
+	<summary>
+ Tipos de erro gerados pela biblioteca de certificação digital.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertDigitalException.CodigoDeErro">
+	<summary>
+ Indica o código do erro relativo a excessão
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertDigitalException.GeraErro(DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital,System.String)">
+	<summary>
+ Gera uma excessão com o tipo do erro e mensagem opcional passada como parâmetro
+ </summary>
+	<param name="Codigo"></param>
+	<param name="MensagemExtra"></param>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertDigitalException.GeraErro(DGTECCertDigital.DGTECCertDigitalException.TipoErroCertDigital,System.Exception,System.String)">
+	<summary>
+ Gera uma excessão com o tipo do erro, excessão prévia e mensagem opcional passada como parâmetro
+ </summary>
+	<param name="Codigo"></param>
+	<param name="MensagemExtra"></param>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECCertDigitalException.Message">
+	<summary>
+ Mensagem de erro que representa o motivo da ocorrência da exceção.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DGTECCertDigital.DGTECCertDigitalException">
+	<summary>
+ Exceções geradas no processo de geracao de assinatura e verificação de assinatura digital.
+ </summary>
+</member><member name="P:DGTECCertDigital.DGTECAssinador.URLServidorTSA">
+	<summary>
+ Servidor de Timestamp para que assinatura digital possua data e hora certificadas digitalmente
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECAssinador.UsuarioServidorTSA">
+	<summary>
+ Usuário para acesso ao serviço de Timestamp definido pela propriedade URLServidorTSA
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECAssinador.SenhaServidorTSA">
+	<summary>
+ Senha para acesso ao serviço de Timestamp definido pela propriedade URLServidorTSA
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.CertificateValidationCallback(System.Object,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)">
+	<summary>
+ Função para servir como delegate de validação de um certificado enviado numa
+ abertura de conexão SSL/TLS
+ </summary>
+	<param name="sender"></param>
+	<param name="certificate"></param>
+	<param name="chain"></param>
+	<param name="sslPolicyErrors"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECAssinador.CredenciaisNaRede">
+	<summary>
+ Indica quais as credenciais na rede que serão utilizadas para utilização da assinatura digital generica
+ (que utiliza de WebService). Estas credenciais serão passadas diretamente para o webservice 
+ de assinatura genérica TJ-RJ.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECAssinador.CredenciaisNoWindows">
+	<summary>
+ Indica quais as credenciais no windows que serão utilizadas para utilização da assinatura digital generica
+ (que utiliza de WebService). Estas credenciais serão usadas em um contexto de impersonalização para
+ chamada ao webservice de assinatura genérica TJ-RJ.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>
+ Só existe necessidade do preenchimento desta propriedade no caso em que o usuário autenticado do Windows
+ não seja o usuário que tem permissão para assessar o WebService assinador genérico de documentos do TJRJ. Para aplicações que não 
+ fazem uso do assinador genérico via webservice não há necessidade de preenchimento desta propriedade.
+ Em geral, aplicações WinForms que fazem uso desta biblioteca não terão necessidade de uso desta propriedade
+ pois o usuário que usa a aplicação cliente deverá possuir o direito para usar o assinador genérico.
+ Para aplicações que estão hospedadas em servidores como no caso de WebServices ou aplicações ASP.NET 
+ (que rodam sob a alcunha do usuário genérico "NETWORK SERVICE"), esta propriedade deve
+ ser preenchida com as credenciais do Windows disponíveis na propriedade Context.Request.LogonUserIdentity. 
+ A parte servidora destas aplicações deverá tomar o cuidado em ser configurada no IIS para somente permitir o acesso de usuário autenticados na rede. Sem esta opção unicamente selecionada o assinador não funcionará.
+ </remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.SetaCredenciaisSistSegOracle(System.String,System.String,System.Int32,System.String,System.String)">
+	<summary>
+ Indica quais as credenciais no Sistema de Segurança em Oracle que serão utilizadas para utilização da assinatura digital genérica
+ (que utiliza de WebService). Estas credenciais serão usadas caso o webservice tenha optado em usar o sistema de segurança em Oracle
+ para permitir ou não a assinatura usando o assinador genérico do TJ-RJ. O sistema que é usado para autenticação possui a sigla ASSINADORTJRJ.
+ Portanto o usuário que é passado como parâmetro deve estar cadastrado neste sistema.
+ </summary>
+	<param name="Usuario">Usuário no sistema de segurança que será usado na autenticação do ASSINADORTJRJ</param>
+	<param name="Senha">Senha do usuário no sistema de segurança que será usada na autenticação do ASSINADORTJRJ</param>
+	<param name="Orgao">Orgão em que o usuário esta cadastrado no sistema de segurança para autenticação do ASSINADORTJRJ.</param>
+	<param name="SenhaMD5">
+ A senha passada como segundo paramêtro é internamente criptografada em MD5 antes do uso. Entretanto se o sistema cliente só possuí-la neste formato, ela pode ser
+ passada neste paramêtro opcional.</param>
+	<param name="UsuarioLog">Usuário que será usado para efeito de LOG (trilhas de auditoria) no uso do assinador genérico. 
+ Caso não seja infomado o usuário de autenticação (1º parâmetro) será utilizado para efeito de LOG.
+ </param>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECAssinador.NomeCertificadoAssinador">
+	<summary>
+ Nome do certificado (subject) localizado em um webservice
+ que será usado na assinatura digital pela instância do assinador.     
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECAssinador.signCert">
+	<summary>
+ Certificado responsável pela assinatura digital
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECAssinador.TipoURLAssinadorTJWebService.Livre">
+	<summary>
+ Para informação livre da URL com o webservice de assinatura digital
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECAssinador.TipoURLAssinadorTJWebService.Producao">
+	<summary>
+ Para utilização do webservice padrão de assinatura em ambiente de produção. O usuário do windows que assina deve ter
+ o acesso garantido pelo DEPRO dentro do grupo do A.D. para assinatura de documentos pelo certificado do TJ.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECAssinador.TipoURLAssinadorTJWebService.Homologacao">
+	<summary>
+ Para utilização do webservice padrão de assinatura em ambiente de homologação.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECAssinador.TipoURLAssinadorTJWebService.Local">
+	<summary>
+ Para utilização do webservice padrão de assinatura na máquina local. Para ser utilizado na depuração
+ do código fonte.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:DGTECCertDigital.DGTECAssinador.TipoURLAssinadorTJWebService.DIMEQ">
+	<summary>
+ Para utilização de máquina da DIMEQ usada para testes de WebService
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECCertDigital.DGTECAssinador.TipoURLAssinadorTJWebService">
+	<summary>
+ Utilizado na assinatura genérica de documentos através de serviços Web (webservices) disponibilizados em servidores
+ do TJ.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECAssinador.PublicParams">
+	<summary>
+ Retorna a chave pública.
+ </summary>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.#ctor">
+	<summary>
+ Construtor básico que gera um par de chaves aleatório.
+ </summary>
+</member><member name="T:DGTECCertDigital.DGTECAssinador.TipoSegurancaWebService">
+	<summary>
+ Indica o tipo de segurança que será usada na comunicação com o WebService
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.#ctor(DGTECCertDigital.DGTECAssinador.TipoURLAssinadorTJWebService,DGTECCertDigital.DGTECAssinador.TipoSegurancaWebService,System.String,System.String,System.String)">
+	<summary>
+ Construtor do assinador tomando como base um webservice pre- configurado na DLL ou dinamicamente.
+ </summary>
+	<param name="TipoAssinadorTJWebService">Indica a origem do webservice onde se encontra a chave remota para assinatura digital do documento: sem em produção, homologação ou livre (informado no próximo parâmetro).</param>
+	<param name="SegurancaWebService">Indica qual a forma de segurança na comunicação de dados com o WebService</param>
+	<param name="URLWebService">Usado no caso em que o primeiro parâmetro seja TipoURLAssinadorTJWebService.Livre. Neste caso deve-se informar a URL do webservice assinador de documentos.</param>
+	<param name="URLWebServiceSeguro">Informa qual a URL do WebService para comunicação segura de dados.</param>
+	<param name="NomeCertificadoAssinador">Nome do certificado digital (subject) armazenado no servidor de webservice que será usado na assinatura.</param>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.#ctor(System.String,System.String)">
+	<summary>
+ Construtor usado quando há um CSP e se conhece o seu providerName e containerName 
+ </summary>
+	<param name="providerName">Nome do provider, como está na registry.</param>
+	<param name="containerName">Nome do container que possui o par de chaves.</param>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+	<summary>
+ Cria um assinador diretamente a partir de um certificado
+ </summary>
+	<param name="cert">Certificado a partir do qual será criado o assinador</param>
+	<remarks></remarks>
+</member><member name="P:DGTECCertDigital.DGTECAssinador.UsaDataHoraDoDominio">
+	<summary>
+ Indica se a assinatura usará a hora do servidor de domínio mais próximo ao invés da
+ data e hora local da máquina. Por default esta propriedade é True.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.ObtemDataHoraServidorDeDominio">
+	<summary>
+ Obtem a data e hora do primeiro servidor de dominio disponível. Útil para assinar documentos com
+ uma hora mais confiável que a hora padrão do micro que faz a assinatura
+ </summary>
+	<returns>Hora do Servidor do primeiro servidor de domínio disponível</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.ObtemCadeiaCertificados">
+	<summary>
+ Obtem a cadeia de certificados para assinatura digital do documento.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.ObtemCertificadosWebService">
+	<summary>
+ Fornece certificados disponíveis com acesso via webservice para uso pela instância do assinador. Este método
+ só executará com sucesso caso a instância do assinador tenha sido preparada para acesso a certificados em máquinas
+ remotas através de webservices.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.AssinaDados(System.Byte[])">
+	<summary>
+ Calcula o HASH de um buffer usando SHA1 e assina
+ </summary>
+	<param name="Dados">Buffer a ser assinado</param>
+	<returns>Retorna HASH SHA1 assinado</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.AssinaDadosP7S(System.Byte[],System.Boolean)">
+	<summary>
+ Assina dados passados como parâmetro gerado um array de bytes no formato PKCS7
+ </summary>
+	<param name="Dados">Dados em forma de um array de bytes a serem assinados.</param>
+	<param name="Desatachado">Indica se os dados passados como parâmetro serão incluídos (false) ou não (true) no pacote gerado.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.AdicionaTimeStamp(System.Byte[],System.String,System.String,System.String)">
+	<summary>
+ Adiciona um carimbo de tempo fornecido por um serviço Web (HTTP-POST) a um pacote PKCS#7
+ padrão de assinatura digital. Este pacote pode ser gerado através da função AssinaDadosP7S
+ </summary>
+	<param name="SignedCms">Pacote PKCS#7 a ser acrescido as informações relativas ao carimbo de tempo.</param>
+	<param name="URLServidorTSA">URL do serviço web (HTTP-POST) que fornecerá o carimbo de tempo.</param>
+	<param name="Usuario">Usuário para autenticação no serviço Web indicado por URLServidorTSA.</param>
+	<param name="Senha">Senha para autenticação no serviço Web indicado por URLServidorTSA.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.AssinaArquivoGerandoP7S(System.String,System.String)">
+	<summary>
+ Gera arquivo PKCS#7 (com extensão P7S) a partir de um arquivo qualquer. O arquivo gerado corresponde a assinatura digital gerad pelo
+ certificado determinado na criação do objeto assinador. 
+ </summary>
+	<param name="NomeArquivo">Caminho completo para o arquivo a ser assinado</param>
+	<param name="NomeArquivoSaida">
+ Caminho completo para o arquivo de saída contendo a assinatura digital do arquivo de origem. 
+ Caso este parâmetro seja omitido será gerado o mesmo nome de arquivo acrescido de uma extensão extra .P7S
+ </param>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.VerificaArquivoAssinadoP7S(System.String,System.String)">
+	<summary>
+ Verifica a assinatura do arquivo para saber se o mesmo foi adulterado. Gera excessão em caso de erro na validação.
+ </summary>
+	<param name="NomeArquivo">Caminho completo do arquivo a ser verificado.</param>
+	<param name="NomeArquivoP7S">
+ Caminho completo do arquivo P7S contendo a assinatura digital. 
+ Caso seja omitido a verificação assumirá o mesmo nome do arquivo acrescido a extensão .P7S
+ </param>
+	<returns>Retorna a cadeia de certificados que assinou o documento para que sejam realizadas demais verificações de validade.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.AssinaHash(System.Byte[])">
+	<summary>
+ Assina um HASH previamente gerado
+ </summary>
+	<param name="Hash">HASH a ser assinado</param>
+	<returns>HASH assinado</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.VerificaDadosAssinados(System.Byte[],System.Byte[],System.Security.Cryptography.RSAParameters)">
+	<summary>
+ Verifica a assinatura de dados através de uma referencia a um par de chaves.
+ </summary>
+	<param name="Dados">Dados a serem verificados</param>
+	<param name="Assinatura">Sequencia de bytes representando a assinatura dos dados</param>
+	<param name="pk">Referencia ao par de chaves usados para assinar os dados</param>
+	<returns>Verificação da assinatura</returns>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.VerificaDadosAssinados(System.Byte[],System.Byte[],System.Security.Cryptography.X509Certificates.X509Certificate2)">
+	<summary>
+ Verifica a assinatura de dados através de um certificado digital.
+ </summary>
+	<param name="Dados">Dados assinados a serem verificados</param>
+	<param name="Assinatura">Sequencia de bytes representando a assinatura dos dados</param>
+	<param name="Cert">Certificado Digital para verificação da assinatura</param>
+	<returns>Verificação da assinatura</returns>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.VerificaDadosAssinados(System.Byte[],System.Byte[])">
+	<summary>
+ Verifica a assinatura de dados através do certificado digital contido no objeto Assinador
+ </summary>
+	<param name="Dados">Dados assinados a serem verificados</param>
+	<param name="Assinatura">Sequencia de bytes representando a assinatura dos dados</param>
+	<returns>Verificação da assinatura</returns>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.VerificaHashAssinado(System.Byte[],System.Byte[],System.Security.Cryptography.RSAParameters)">
+	<summary>
+ Verifica a assinatura de dados através de uma referencia a um par de chaves.
+ </summary>
+	<param name="Hash">Hash a ser verificado</param>
+	<param name="Assinatura">Sequencia de bytes representando o Hash assinado</param>
+	<param name="pk">Referencia ao par de chaves usados para assinar os dados</param>
+	<returns>Verificação da assinatura</returns>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.VerificaHashAssinado(System.Byte[],System.Byte[],System.Security.Cryptography.X509Certificates.X509Certificate2)">
+	<summary>
+ Verifica a assinatura do HASH através de um certificado digital.
+ </summary>
+	<param name="Hash">Hash a ser verificado</param>
+	<param name="Assinatura">Sequencia de bytes representando o Hash assinado</param>
+	<param name="Cert">Certificado Digital para verificação da assinatura</param>
+	<returns>Verificação da assinatura</returns>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.VerificaHashAssinado(System.Byte[],System.Byte[])">
+	<summary>
+ Verifica a assinatura do HASH através de um certificado digital.
+ </summary>
+	<param name="Hash">Hash a ser verificado</param>
+	<param name="Assinatura">Sequencia de bytes representando o Hash assinado</param>
+	<returns>Verificação da assinatura</returns>
+</member><member name="M:DGTECCertDigital.DGTECAssinador.ObtemCertificadoDigitalAutenticado(System.String,System.String)">
+	<summary>
+ Obtem dados do certificado autenticado pelo site de autenticação com certificado digital.
+ </summary>
+	<param name="CodAutentPublico">Código de autenticação obtido pelo </param>
+	<param name="IPRequerente"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:DGTECCertDigital.DGTECAssinador">
+	<summary>
+ Gera e verifica assinaturas digitais.
+ </summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.Culture">
+	<summary>
+  Substitui a propriedade CurrentUICulture do thread atual para todas as
+  pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.AssinadorTJWebServiceDIMEQ">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a http://dgtec-dimeq01:9001/AssinadorWebService.asmx.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.AssinadorTJWebServiceDIMEQSeguro">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a https://dgtec-dimeq01:9444/AssinadorWebService.asmx.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.AssinadorTJWebServiceHML">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a http://hwebserver.tjrj.jus.br/HAssinadorWS/AssinadorWebService.asmx.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.AssinadorTJWebServiceHMLSeguro">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a https://hwebserver.tjrj.jus.br/HAssinadorWS/AssinadorWebService.asmx.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.AssinadorTJWebServiceLOCAL">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a http://localhost:1712/AssinadorWebService.asmx.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.AssinadorTJWebServiceLOCALSeguro">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a .
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.AssinadorTJWebServicePRD">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a http://webserver.tjrj.jus.br/AssinadorWS/AssinadorWebService.asmx.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.AssinadorTJWebServicePRDSeguro">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a https://webserver.tjrj.jus.br/AssinadorWS/AssinadorWebService.asmx.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.ICPBrasilSubjectCertRoot">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a CN=Autoridade Certificadora Raiz Brasileira, S=DF, L=Brasilia, OU=Instituto Nacional de Tecnologia da Informacao - ITI, O=ICP-Brasil, C=BR.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.ICPBrasilSubjectCertRoot1">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a CN=Autoridade Certificadora Raiz Brasileira v1, OU=Instituto Nacional de Tecnologia da Informacao - ITI, O=ICP-Brasil, C=BR.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.MensagemErroCadeiaICPBrasilNaoCriada">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a A cadeia de certificação ICP-Brasil não pode ser criada..
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.MensagemErroCadeiaNaoICPBrasil">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a A cadeia de certificação não é ICP-Brasil..
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.NomeCertificadoAssinadorPadraoDIMEQ">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a CN=TESTE2.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.NomeCertificadoAssinadorPadraoHML">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a E=certificado@tj.rj.gov.br, CN=Assinadoreletronico, OU=DGTEC, O=Tribunal de Justiça do Estado do RJ, L=Rio de Janeiro, S=Rio de Janeiro, C=RJ.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.NomeCertificadoAssinadorPadraoLOCAL">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a CN=assinador3.
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.NomeCertificadoAssinadorPadraoPRD">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a .
+</summary>
+</member><member name="P:DGTECCertDigital.My.Resources.Resources.ServidorSNTP">
+	<summary>
+  Consulta uma seqüência de caracteres localizada semelhante a TJERJ221.tjrj.jus.br.
+</summary>
+</member><member name="T:DGTECCertDigital.My.Resources.Resources">
+	<summary>
+  Uma classe de recurso de tipo de alta segurança, para pesquisar seqüências de caracteres localizadas etc.
+</summary>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.MensagemErroCertificado(System.Security.Cryptography.X509Certificates.X509ChainStatusFlags,System.String)">
+	<summary>
+ Fornece tradução para os diversos erros que podem ocorrer durante o processo de validação de uma cadeia de certificados digitais.
+ </summary>
+	<param name="Status">Código do status do erro.</param>
+	<param name="MensagemPadrao">Mensagem padrão caso a mensagem não possa ser traduzida.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.GeraListaErros(System.Security.Cryptography.X509Certificates.X509Chain,System.Boolean)">
+	<summary>
+ Gera lista de erros de um X509Chain (Objeto de verificação de uma cadeia de certificados).
+ </summary>
+	<param name="Chain"></param>
+	<param name="IgnoraVerificacaoRevogacaoIndisponivel"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.GeraListaErros(System.Security.Cryptography.X509Certificates.X509Chain)">
+	<summary>
+ Gera lista de erros de um X509Chain (Objeto de verificação de uma cadeia de certificados).
+ </summary>
+	<param name="Chain"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.GeraListaErros(System.Security.Cryptography.X509Certificates.X509Chain,System.Boolean,System.Boolean)">
+	<summary>
+ Gera lista de erros de um X509Chain (Objeto de verificação de uma cadeia de certificados).
+ </summary>
+	<param name="Chain"></param>
+	<param name="IgnoraVerificacaoRevogacaoIndisponivel"></param>
+	<param name="AceitaSomenteCertificadoICPBrasil"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.VerificaErros(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean)">
+	<summary>
+ Verifica possíveis erros em um certificado digital.
+ </summary>
+	<param name="Cert">Certificado a ser verificado.</param>
+	<param name="VerificaRevogacao">Indica se o certificado e sua estrutura será validado quanto a revogação.</param>
+	<returns>Caso não exista erro retorna nothing. Caso contrário retorna a lista de mensagens de erro relativos a validação do certificado.</returns>
+	<remarks>
+		<example>
+			<code language="vbnet">
+ Dim Certificado As New X509Certificate2()
+ Certificado =
+  DGTECGerenciadorCertStore.ObtemCertificado(StoreName.My, False, False, "", False)
+ 
+ Dim ListaDeErros As List(Of String) = DGTECCertificado.VerificaErros(Certificado, VerificaRevogacao:=True)
+ If ListaDeErros Is Nothing Then
+     MsgBox("Não foram encontrados erros no certificado. Inclusive quanto a revogação do mesmo.")
+ Else
+     MsgBox("Foram encontrados os seguintes erros no certificado: " + vbCrLf + String.Join(vbCrLf, ListaDeErros.ToArray))
+ End If
+ </code>
+		</example>
+	</remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.VerificaErros(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,System.Boolean)">
+	<summary>
+ Verifica possíveis erros em um certificado digital.
+ </summary>
+	<param name="Cert">Certificado a ser verificado.</param>
+	<param name="VerificaRevogacao">Indica se o certificado e sua estrutura será validado quanto a revogação.</param>
+	<param name="IgnoraVerificacaoRevogacaoIndisponivel">Ignora erros de revogação caso não seja possível contatar servidor de revogação</param>
+	<returns>Caso não exista erro retorna nothing. Caso contrário retorna a lista de mensagens de erro relativos a validação do certificado.</returns>
+	<remarks>
+		<example>
+			<code language="vbnet">
+ Dim Certificado As New X509Certificate2()
+ Certificado =
+  DGTECGerenciadorCertStore.ObtemCertificado(StoreName.My, False, False, "", False)
+ 
+ Dim ListaDeErros As List(Of String) = DGTECCertificado.VerificaErros(Certificado, VerificaRevogacao:=True)
+ If ListaDeErros Is Nothing Then
+     MsgBox("Não foram encontrados erros no certificado. Inclusive quanto a revogação do mesmo.")
+ Else
+     MsgBox("Foram encontrados os seguintes erros no certificado: " + vbCrLf + String.Join(vbCrLf, ListaDeErros.ToArray))
+ End If
+ </code>
+		</example>
+	</remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.VerificaErros(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Verifica possíveis erros em um certificado digital.
+ </summary>
+	<param name="Cert">Certificado a ser verificado.</param>
+	<param name="VerificaRevogacao">Indica se o certificado e sua estrutura será validado quanto a revogação.</param>
+	<param name="IgnoraVerificacaoRevogacaoIndisponivel">Ignora erros de revogação caso não seja possível contatar servidor de revogação</param>
+	<param name="AceitaSomenteCertificadoICPBrasil">Indica se deve ser realizada a verificação se o certificado é ICP-Brasil.</param>
+	<returns>Caso não exista erro retorna nothing. Caso contrário retorna a lista de mensagens de erro relativos a validação do certificado.</returns>
+	<example>
+		<code language="vbnet">
+ Dim Certificado As New X509Certificate2()
+ Certificado =
+  DGTECGerenciadorCertStore.ObtemCertificado(StoreName.My, False, False, "", False)
+ 
+ Dim ListaDeErros As List(Of String) = DGTECCertificado.VerificaErros(Certificado, VerificaRevogacao:=True, AceitaSomenteCertificadoICPBrasil:=True)
+ If ListaDeErros Is Nothing Then
+     MsgBox("Não foram encontrados erros no certificado, quanto a revogação do mesmo e se é ICP-Brasil")
+ Else
+     MsgBox("Foram encontrados os seguintes erros no certificado: " + vbCrLf + String.Join(vbCrLf, ListaDeErros.ToArray))
+ End If
+ </code>
+	</example>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.ContemCertificadoICPBrasil(System.Security.Cryptography.X509Certificates.X509Chain,System.Boolean@)">
+	<summary>
+ Verifica se cadeia de certificados contem um certificado ICP-Brasil.
+ </summary>
+	<param name="Chain">Cadeia de certificados para verificação</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.VerificaICPBrasilSubject(System.String)">
+	<summary>
+ Procura nos recursos da DLL se o Subject passado como parâmetro é um dos nomes possíveis de certificado raiz ICP-Brasil.
+ </summary>
+	<param name="Subject"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.ObtemCadeiaDeCertificados(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+	<summary>
+ Obtem cadeia completa de certificados associados a um certificado digital
+ </summary>
+	<param name="Cert">Certificado Digital para se obter a cadeia</param>
+	<returns>Certificado</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.ObtemNomeDonoCertificado(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean)">
+	<summary>
+ Obtem o nome do dono do certificado conforme encontrado no certificado digital
+ </summary>
+	<param name="Cert">Certificado X509 de onde retornar a informação desejada.</param>
+	<param name="ComNumeroIdentificador">Valor opcional que quando False retorna com o nome sem o número de matrícula em anexo. Default = True</param>
+	<returns></returns>
+	<remarks>
+ Os certificado ICP-Brasil possuem junto ao nome, separado por dois pontos, um número identificador que no caso
+ do Tribunal de Justiça do Estado do Rio de Janeiro é o número de matrícula.
+ </remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.BytesAleatorios(System.Int32)">
+	<summary>
+ Gera array de bytes aleatórios de forma segura (realmente aleatória)
+ </summary>
+	<param name="QtdBytes">Numero de bytes a serm gerados. Por default 32</param>
+	<returns>Array de bytes aleatórios</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.DGTECCertificado.CriaCertificadoAutoAssinado(System.String,System.String,System.String,System.String,System.String,System.DateTime,System.DateTime)">
+	<summary>
+ Gera arquivos com certificado digital X509 auto-assinado (.cer) e sua chave privada num arquivo pkcs12 (.pfx)
+ Falta definir como parametro ou calcular automaticamente:
+ 1) Um numero serial decente (o store do windows substitui certificados com mesmo serial)
+ </summary>
+	<param name="NomeDoCertificado">Nome do possuidor do certificado</param>
+	<param name="AliasDoCertificado">Nome resumido do certificado (o windows chame de nome amigável)</param>
+	<param name="ArquivoDoCertificado">Caminho completo do arquivo que conterá o certificado X509 gerado (.cer)</param>
+	<param name="ArquivoDaChavePrivada">Caminho completo do arquivo que conterá o pacote PKCS12 gerado (.pfx)</param>
+	<param name="Senha">Senha do arquivo PKCS12 para acesso a chave privada lá guardada</param>
+	<param name="InicioDaValidade">Data de início da validade do certificado</param>'''
+ <param name="FimDaValidade">Data de fim da validade do certificado</param>
+	<remarks></remarks>
+</member><member name="T:DGTECCertDigital.DGTECCertificado">
+	<summary>
+ Classe para manipulação de certificados digitais.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.#ctor">
+	<remarks/>
+</member><member name="E:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCadeiaCertificadosCompleted">
+	<remarks/>
+</member><member name="E:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCertificadoCompleted">
+	<remarks/>
+</member><member name="E:DGTECCertDigital.AssinadorWS.AssinadorWebService.AssinaDadosCompleted">
+	<remarks/>
+</member><member name="E:DGTECCertDigital.AssinadorWS.AssinadorWebService.AssinaDadosP7SCompleted">
+	<remarks/>
+</member><member name="E:DGTECCertDigital.AssinadorWS.AssinadorWebService.AssinaHashCompleted">
+	<remarks/>
+</member><member name="E:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCertificadosDisponiveisCompleted">
+	<remarks/>
+</member><member name="E:DGTECCertDigital.AssinadorWS.AssinadorWebService.VerificaPDFAssinadoCompleted">
+	<remarks/>
+</member><member name="E:DGTECCertDigital.AssinadorWS.AssinadorWebService.RegistrarSistemaCompleted">
+	<remarks/>
+</member><member name="E:DGTECCertDigital.AssinadorWS.AssinadorWebService.RegistrarUsuarioCompleted">
+	<remarks/>
+</member><member name="E:DGTECCertDigital.AssinadorWS.AssinadorWebService.RegistraUsuarioCompleted">
+	<remarks/>
+</member><member name="E:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCertificadoDigitalAutenticadoCompleted">
+	<remarks/>
+</member><member name="E:DGTECCertDigital.AssinadorWS.AssinadorWebService.TempoTimeoutCompleted">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCadeiaCertificados(System.String)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCadeiaCertificadosAsync(System.String)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCadeiaCertificadosAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCertificado(System.String)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCertificadoAsync(System.String)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCertificadoAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.AssinaDados(System.String,System.Byte[])">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.AssinaDadosAsync(System.String,System.Byte[])">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.AssinaDadosAsync(System.String,System.Byte[],System.Object)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.AssinaDadosP7S(System.String,System.Byte[],System.Boolean,System.Boolean)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.AssinaDadosP7SAsync(System.String,System.Byte[],System.Boolean,System.Boolean)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.AssinaDadosP7SAsync(System.String,System.Byte[],System.Boolean,System.Boolean,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.AssinaHash(System.String,System.Byte[])">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.AssinaHashAsync(System.String,System.Byte[])">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.AssinaHashAsync(System.String,System.Byte[],System.Object)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCertificadosDisponiveis">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCertificadosDisponiveisAsync">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCertificadosDisponiveisAsync(System.Object)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.VerificaPDFAssinado(System.Byte[],System.String@,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.VerificaPDFAssinadoAsync(System.Byte[],System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.VerificaPDFAssinadoAsync(System.Byte[],System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.RegistrarSistema(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.RegistrarSistemaAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.RegistrarSistemaAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.RegistrarUsuario(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.RegistrarUsuarioAsync(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.RegistrarUsuarioAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.RegistraUsuario(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.RegistraUsuarioAsync(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.RegistraUsuarioAsync(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCertificadoDigitalAutenticado(System.String,System.String)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCertificadoDigitalAutenticadoAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.ObtemCertificadoDigitalAutenticadoAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.TempoTimeout">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.TempoTimeoutAsync">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.TempoTimeoutAsync(System.Object)">
+	<remarks/>
+</member><member name="M:DGTECCertDigital.AssinadorWS.AssinadorWebService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.AssinadorWebService">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF.GedId">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF.CodSitAutent">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF.DescrSitAutent">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF.ErroDetalhado">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF.IDAutenticacao">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF.Emissor">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF.NumSerial">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF.Hash">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF.DataAutenticacao">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF.DataUltimoAcesso">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF.IPAutenticacao">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF.URLRedirecionamento">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.CertificadoAutenticadoPF">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.Email">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.Nome">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.ComplementoNome">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.DataNascimento">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.CPF">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.PISPASEP">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.RG">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.UFOrgaoExpedidorRG">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.OrgaoExpedidorRG">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.INSS">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.TituloEleitoral">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.ZonaEleitoral">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.SecaoEleitoral">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.MunicipioEleitoral">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.UFEleitoral">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF.OAB">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.DGTECCertificadoICPBrasilPF">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.ObtemCadeiaCertificadosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.ObtemCadeiaCertificadosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.ObtemCadeiaCertificadosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.ObtemCertificadoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.ObtemCertificadoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.ObtemCertificadoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.AssinaDadosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.AssinaDadosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.AssinaDadosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.AssinaDadosP7SCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.AssinaDadosP7SCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.AssinaDadosP7SCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.AssinaHashCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.AssinaHashCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.AssinaHashCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.ObtemCertificadosDisponiveisCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.ObtemCertificadosDisponiveisCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.ObtemCertificadosDisponiveisCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.VerificaPDFAssinadoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.VerificaPDFAssinadoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.VerificaPDFAssinadoCompletedEventArgs.MensagemErro">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.VerificaPDFAssinadoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.RegistrarSistemaCompletedEventHandler">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.RegistrarUsuarioCompletedEventHandler">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.RegistraUsuarioCompletedEventHandler">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.ObtemCertificadoDigitalAutenticadoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.ObtemCertificadoDigitalAutenticadoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.ObtemCertificadoDigitalAutenticadoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.TempoTimeoutCompletedEventHandler">
+	<remarks/>
+</member><member name="P:DGTECCertDigital.AssinadorWS.TempoTimeoutCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:DGTECCertDigital.AssinadorWS.TempoTimeoutCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

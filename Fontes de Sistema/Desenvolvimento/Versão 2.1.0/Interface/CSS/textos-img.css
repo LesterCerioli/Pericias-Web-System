@@ -1,0 +1,316 @@
+.data-txt-hoje
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #afd4c1;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold
+}
+.txt-chamada
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 10px
+}
+A.txt-chamada:hover
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 10px;
+    TEXT-DECORATION: underline
+}
+.txt-chamada-principal
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 11px
+}
+A.txt-chamada-principal:hover
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: underline
+}
+A.h3-link
+{
+    WIDTH: 100%;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #89775f;
+    FONT-SIZE: 13px;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.h3-link:hover
+{
+    WIDTH: 100%;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 13px;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.h3-link-newsflash
+{
+    WIDTH: 100%;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #89775f;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal;
+    TEXT-DECORATION: none
+}
+A.h3-link-newsflash-vertodos
+{
+    COLOR: #89775f;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.h3-link-newsflash:hover
+{
+    WIDTH: 100%;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal;
+    TEXT-DECORATION: none
+}
+.data-topo
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #fff;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold
+}
+.txt-nome-areas
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #8b7861;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold
+}
+.white-bold-11px
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #fff;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold
+}
+.seja-bemvindo
+{
+    PADDING-LEFT: 10px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #989898;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold
+}
+.txt-nome-usuario
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #8b7861;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold
+}
+H1
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    MARGIN-BOTTOM: 8px;
+    COLOR: #495b6e;
+    FONT-SIZE: 15px;
+    FONT-WEIGHT: bold
+}
+H2
+{
+    MARGIN-TOP: 2px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    MARGIN-BOTTOM: 4px;
+    COLOR: #2e3c52;
+    FONT-SIZE: 14px;
+    FONT-WEIGHT: bold
+}
+H3
+{
+    BORDER-BOTTOM: #d6ccbd 1px dotted;
+    PADDING-BOTTOM: 3px;
+    WIDTH: 100%;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    MARGIN-BOTTOM: 4px;
+    COLOR: #89775f;
+    FONT-SIZE: 13px;
+    FONT-WEIGHT: bold;
+    PADDING-TOP: 3px
+}
+H4
+{
+    MARGIN-TOP: 2px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    MARGIN-BOTTOM: 4px;
+    COLOR: #2e3c52;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold
+}
+H5
+{
+    MARGIN-TOP: 2px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    MARGIN-BOTTOM: 4px;
+    COLOR: #89775f;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold
+}
+H5.data-noticias
+{
+    BORDER-BOTTOM: #d6ccbd 1px dotted
+}
+H6
+{
+    MARGIN-TOP: 2px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    MARGIN-BOTTOM: 4px;
+    COLOR: #2e3c52;
+    FONT-SIZE: 10px;
+    FONT-WEIGHT: bold
+}
+.txt-azul-escuro
+{
+    COLOR: #33464f
+}
+.thumbs-materia
+{
+    BORDER-BOTTOM: #999 0px solid;
+    TEXT-ALIGN: left;
+    BORDER-LEFT: #999 0px solid;
+    MARGIN: 2px 5px;
+    BORDER-TOP: #999 0px solid;
+    BORDER-RIGHT: #999 0px solid
+}
+.margin-icos
+{
+    BORDER-BOTTOM: 0px solid;
+    BORDER-LEFT: 0px solid;
+    MARGIN-LEFT: 5px;
+    BORDER-TOP: 0px solid;
+    BORDER-RIGHT: 0px solid
+}
+.txt-azul-marrom
+{
+    COLOR: #8a7860
+}
+.txt-legenda
+{
+    TEXT-ALIGN: center;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #2d4047;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: bold
+}
+.linha-tr
+{
+    BORDER-BOTTOM: #666 1px solid
+}
+.table_licitaco
+{
+    BORDER-BOTTOM: 0px;
+    BORDER-LEFT: 0px;
+    BACKGROUND-COLOR: #ffffff;
+    WIDTH: 100%;
+    BORDER-TOP: 0px;
+    BORDER-RIGHT: 0px
+}
+.table_licitaco_td
+{
+    PADDING-BOTTOM: 3px;
+    BACKGROUND-COLOR: #f4ede3;
+    PADDING-LEFT: 3px;
+    PADDING-RIGHT: 3px;
+    FONT-FAMILY: Verdana, Geneva, sans-serif;
+    COLOR: #000;
+    FONT-SIZE: 9px;
+    FONT-WEIGHT: bold;
+    PADDING-TOP: 3px
+}
+.table_licitaco_td_fundo
+{
+    BACKGROUND-COLOR: #f4ede3
+}
+.table_licitaco_td_titulo
+{
+    PADDING-BOTTOM: 3px;
+    BACKGROUND-COLOR: #efe6d6;
+    PADDING-LEFT: 3px;
+    PADDING-RIGHT: 3px;
+    FONT-FAMILY: Verdana, Geneva, sans-serif;
+    COLOR: #33464f;
+    FONT-SIZE: 9px;
+    FONT-WEIGHT: bold;
+    PADDING-TOP: 3px
+}
+.table_licitaco_td_titulo2
+{
+    PADDING-BOTTOM: 3px;
+    BACKGROUND-COLOR: #fbf8f0;
+    PADDING-LEFT: 3px;
+    WIDTH: 180px;
+    PADDING-RIGHT: 3px;
+    FONT-FAMILY: Verdana, Geneva, sans-serif;
+    COLOR: #000;
+    FONT-SIZE: 9px;
+    FONT-WEIGHT: bold;
+    PADDING-TOP: 3px
+}
+.table_licitaco_td2
+{
+    BACKGROUND-COLOR: #fbf8f0;
+    WIDTH: 370px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 10px
+}
+.tab-bord
+{
+    BORDER-BOTTOM: #fff 1px solid;
+    BORDER-LEFT: #fff 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 11px;
+    BORDER-TOP: #fff 1px solid;
+    BORDER-RIGHT: #fff 1px solid
+}
+.tab-chamada
+{
+    PADDING-BOTTOM: 3px;
+    PADDING-LEFT: 3px;
+    PADDING-RIGHT: 3px;
+    FONT-FAMILY: Verdana, Geneva, sans-serif;
+    COLOR: #33464f;
+    FONT-SIZE: 9px;
+    FONT-WEIGHT: bold;
+    PADDING-TOP: 3px
+}
+.tab-titulo-bold
+{
+    PADDING-BOTTOM: 3px;
+    PADDING-LEFT: 3px;
+    PADDING-RIGHT: 3px;
+    FONT-FAMILY: Verdana, Geneva, sans-serif;
+    COLOR: #000;
+    FONT-SIZE: 9px;
+    FONT-WEIGHT: bold;
+    PADDING-TOP: 3px
+}
+.tab-txt-peq
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    COLOR: #333;
+    FONT-SIZE: 10px
+}
+.legenda-img
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 9px
+}
+.highlight
+{
+    FONT-WEIGHT: bold
+}
+.ellipsis
+{
+    FONT-WEIGHT: bold
+}

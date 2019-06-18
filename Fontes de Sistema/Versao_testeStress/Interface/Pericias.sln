@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Interface_Interna", "Interface_Interna.vbproj", "{D69E5B05-4361-4901-9435-5A4AF8B6633F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WebService", "..\WebService\WebService.vbproj", "{8609396C-C47B-463F-8674-8542ECC12064}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InterfaceWF", "..\InterfaceWF\InterfaceWF.vbproj", "{F50F6982-8D70-4CD6-8578-B10C00952125}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Entidade", "..\Entidade\Entidade.vbproj", "{20574632-B715-4E92-94E7-EA7F698FC508}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BAL", "..\BAL\BAL.vbproj", "{015A216C-79A7-4757-B961-3BEAFB50AD4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{20F58386-67ED-4BD4-9D42-A919ED65ECE3}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		Pericias.vsmdi = Pericias.vsmdi
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProjetoTestStress", "..\ProjetoTestStress\ProjetoTestStress.vbproj", "{9A117164-0DD8-4964-9C6D-EFB5DFC6ED3C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tjerj266:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\BAL\\BAL.vbproj
+		SccProjectName1 = ../BAL
+		SccLocalPath1 = ..\\BAL
+		SccProjectUniqueName2 = ..\\Entidade\\Entidade.vbproj
+		SccProjectName2 = ../Entidade
+		SccLocalPath2 = ..\\Entidade
+		SccProjectUniqueName3 = Interface_Interna.vbproj
+		SccLocalPath3 = .
+		SccProjectUniqueName4 = ..\\InterfaceWF\\InterfaceWF.vbproj
+		SccProjectName4 = ../InterfaceWF
+		SccLocalPath4 = ..\\InterfaceWF
+		SccProjectUniqueName5 = ..\\WebService\\WebService.vbproj
+		SccProjectName5 = ../WebService
+		SccLocalPath5 = ..\\WebService
+		SccProjectUniqueName6 = ..\\ProjetoTestStress\\ProjetoTestStress.vbproj
+		SccProjectName6 = ../ProjetoTestStress
+		SccLocalPath6 = ..\\ProjetoTestStress
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Pericias.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D69E5B05-4361-4901-9435-5A4AF8B6633F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69E5B05-4361-4901-9435-5A4AF8B6633F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69E5B05-4361-4901-9435-5A4AF8B6633F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69E5B05-4361-4901-9435-5A4AF8B6633F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8609396C-C47B-463F-8674-8542ECC12064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8609396C-C47B-463F-8674-8542ECC12064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8609396C-C47B-463F-8674-8542ECC12064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8609396C-C47B-463F-8674-8542ECC12064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F50F6982-8D70-4CD6-8578-B10C00952125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F50F6982-8D70-4CD6-8578-B10C00952125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F50F6982-8D70-4CD6-8578-B10C00952125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F50F6982-8D70-4CD6-8578-B10C00952125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20574632-B715-4E92-94E7-EA7F698FC508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20574632-B715-4E92-94E7-EA7F698FC508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20574632-B715-4E92-94E7-EA7F698FC508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20574632-B715-4E92-94E7-EA7F698FC508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{015A216C-79A7-4757-B961-3BEAFB50AD4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{015A216C-79A7-4757-B961-3BEAFB50AD4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015A216C-79A7-4757-B961-3BEAFB50AD4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{015A216C-79A7-4757-B961-3BEAFB50AD4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A117164-0DD8-4964-9C6D-EFB5DFC6ED3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A117164-0DD8-4964-9C6D-EFB5DFC6ED3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A117164-0DD8-4964-9C6D-EFB5DFC6ED3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A117164-0DD8-4964-9C6D-EFB5DFC6ED3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

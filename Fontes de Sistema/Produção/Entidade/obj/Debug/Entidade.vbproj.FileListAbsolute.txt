@@ -1,0 +1,8 @@
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\Entidade\bin\Debug\Entidade.dll
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\Entidade\bin\Debug\Entidade.pdb
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\Entidade\bin\Debug\Entidade.xml
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\Entidade\obj\Debug\Entidade.Resources.resources
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\Entidade\obj\Debug\Entidade.vbproj.GenerateResource.Cache
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\Entidade\obj\Debug\Entidade.dll
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\Entidade\obj\Debug\Entidade.xml
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\Entidade\obj\Debug\Entidade.pdb

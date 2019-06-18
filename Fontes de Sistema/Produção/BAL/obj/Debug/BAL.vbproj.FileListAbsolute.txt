@@ -1,0 +1,17 @@
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\obj\Debug\BAL.vbprojResolveAssemblyReference.cache
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\obj\Debug\BAL.Resources.resources
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\obj\Debug\BAL.vbproj.GenerateResource.Cache
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\bin\Debug\BAL.dll.config
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\bin\Debug\BAL.dll
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\bin\Debug\BAL.pdb
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\bin\Debug\BAL.xml
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\bin\Debug\DataProtection.dll
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\bin\Debug\Entidade.dll
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\bin\Debug\EstruturaPadrao.dll
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\bin\Debug\ServicoDadosODPNET.dll
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\bin\Debug\Utilitarios.dll
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\bin\Debug\Entidade.pdb
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\bin\Debug\Entidade.xml
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\obj\Debug\BAL.dll
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\obj\Debug\BAL.xml
+E:\VSTS\PERICIAS\Fontes de Sistema\Produção\BAL\obj\Debug\BAL.pdb

@@ -1,0 +1,243 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DGTECMessageBoxProj
+</name>
+</assembly>
+<members>
+<member name="T:DGTECMessageBoxProj.DGTECMessageBoxButtons">
+	<summary>
+ Standard DGTECMessageBox buttons
+ </summary>
+</member><member name="T:DGTECMessageBoxProj.DGTECMessageBoxResult">
+	<summary>
+ Standard DGTECMessageBox results
+ </summary>
+</member><member name="F:DGTECMessageBoxProj.TimeoutResult.Default">
+	<summary>
+ On timeout the value associated with the default button is set as the result.
+ This is the default action on timeout.
+ </summary>
+</member><member name="F:DGTECMessageBoxProj.TimeoutResult.Cancel">
+	<summary>
+ On timeout the value associated with the cancel button is set as the result. If
+ the messagebox does not have a cancel button then the value associated with 
+ the default button is set as the result.
+ </summary>
+</member><member name="F:DGTECMessageBoxProj.TimeoutResult.Timeout">
+	<summary>
+ On timeout DGTECMessageBoxResult.Timeout is set as the result.
+ </summary>
+</member><member name="T:DGTECMessageBoxProj.TimeoutResult">
+	<summary>
+ Enumerates the kind of results that can be returned when a
+ message box times out
+ </summary>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.Name">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.Caption">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.Text">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.CustomIcon">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.Icon">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.Font">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.AllowSaveResponse">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.SaveResponseText">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.UseSavedResponse">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.PlayAlsertSound">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.Timeout">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.TimeoutResult">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:DGTECMessageBoxProj.DGTECMessageBox.DefualtButton">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:DGTECMessageBoxProj.DGTECMessageBox.Show">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:DGTECMessageBoxProj.DGTECMessageBox.Show(System.String,System.String)">
+	<summary>
+ Mostra a caixa de mensagem.
+ </summary>
+	<param name="texto">Texto da mensagem.</param>
+	<param name="rotulo">Título da mensagem.</param>
+	<returns>Retorna o resultado associado ao botão clicado na caixa de mensagem.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECMessageBoxProj.DGTECMessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons)">
+	<summary>
+ Mostra a caixa de mensagem.
+ </summary>
+	<param name="texto">Texto da mensagem.</param>
+	<param name="rotulo">Título da mensagem.</param>
+	<param name="msgButton">Botões do MessageBox .NET 2.0 que a caixa de mensagem irá conter.</param>
+	<returns>Retorna o resultado associado ao botão clicado na caixa de mensagem.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECMessageBoxProj.DGTECMessageBox.Show(System.String,System.String,DGTECMessageBoxProj.DGTECMessageBoxButtons)">
+	<summary>
+ Mostra a caixa de mensagem.
+ </summary>
+	<param name="texto">Texto da mensagem.</param>
+	<param name="rotulo">Título da mensagem.</param>
+	<param name="msgButton">Botão do DGTECMessageBoxButtons que a caixa de mensagem irá conter.</param>
+	<returns>Retorna o resultado associado ao botão clicado na caixa de mensagem.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECMessageBoxProj.DGTECMessageBox.Show(System.String,System.String,DGTECMessageBoxProj.DGTECMessageBoxButton)">
+	<summary>
+ Mostra a caixa de mensagem.
+ </summary>
+	<param name="texto">Texto da mensagem.</param>
+	<param name="rotulo">Título da mensagem.</param>
+	<param name="msgButton">Botão do DGTECMessageBox que a caixa de mensagem irá conter.</param>
+	<returns>Retorna o resultado associado ao botão clicado na caixa de mensagem.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECMessageBoxProj.DGTECMessageBox.Show(System.String,System.String,System.Collections.IList)">
+	<summary>
+ Mostra a caixa de mensagem.
+ </summary>
+	<param name="texto">Texto da mensagem.</param>
+	<param name="rotulo">Título da mensagem.</param>
+	<param name="msgButtons">Coleção de botões que a caixa de mensagem irá conter.</param>
+	<returns>Retorna o resultado associado ao botão clicado na caixa de mensagem.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECMessageBoxProj.DGTECMessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)">
+	<summary>
+ Mostra a caixa de mensagem.
+ </summary>
+	<param name="texto">Texto da mensagem.</param>
+	<param name="rotulo">Título da mensagem.</param>
+	<param name="msgButton">Botões do MessageBox .NET 2.0 que a caixa de mensagem irá conter.</param>
+	<param name="msgIcon">Ícone representativo da mensagem.</param>
+	<returns>Retorna o resultado associado ao botão clicado na caixa de mensagem.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECMessageBoxProj.DGTECMessageBox.Show(System.String,System.String,DGTECMessageBoxProj.DGTECMessageBoxButtons,System.Windows.Forms.MessageBoxIcon)">
+	<summary>
+ Mostra a caixa de mensagem.
+ </summary>
+	<param name="texto">Texto da mensagem.</param>
+	<param name="rotulo">Título da mensagem.</param>
+	<param name="msgButton">Botão do DGTECMessageBoxButtons que a caixa de mensagem irá conter.</param>
+	<param name="msgIcon">Ícone representativo da mensagem.</param>
+	<returns>Retorna o resultado associado ao botão clicado na caixa de mensagem.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECMessageBoxProj.DGTECMessageBox.Show(System.String,System.String,DGTECMessageBoxProj.DGTECMessageBoxButton,System.Windows.Forms.MessageBoxIcon)">
+	<summary>
+ Mostra a caixa de mensagem.
+ </summary>
+	<param name="texto">Texto da mensagem.</param>
+	<param name="rotulo">Título da mensagem.</param>
+	<param name="msgButton">Botão do DGTECMessageBox que a caixa de mensagem irá conter.</param>
+	<param name="msgIcon">Ícone representativo da mensagem.</param>
+	<returns>Retorna o resultado associado ao botão clicado na caixa de mensagem.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECMessageBoxProj.DGTECMessageBox.Show(System.String,System.String,System.Collections.IList,System.Windows.Forms.MessageBoxIcon)">
+	<summary>
+ Mostra a caixa de mensagem.
+ </summary>
+	<param name="texto">Texto da mensagem.</param>
+	<param name="rotulo">Título da mensagem.</param>
+	<param name="msgButtons">Coleção de botões que a caixa de mensagem irá conter.</param>
+	<param name="msgIcon">Ícone representativo da mensagem.</param>
+	<returns>Retorna o resultado associado ao botão clicado na caixa de mensagem.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECMessageBoxProj.DGTECMessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.String)">
+	<summary>
+ Mostra a caixa de mensagem.
+ </summary>
+	<param name="texto">Texto da mensagem.</param>
+	<param name="rotulo">Título da mensagem.</param>
+	<param name="msgButton">Botões do MessageBox .NET 2.0 que a caixa de mensagem irá conter.</param>
+	<param name="msgIcon">Ícone representativo da mensagem.</param>
+	<param name="defaultButton">Resultado do botão que virá com foco.</param>
+	<returns>Retorna o resultado associado ao botão clicado na caixa de mensagem.</returns>
+	<remarks></remarks>
+</member><member name="M:DGTECMessageBoxProj.DGTECMessageBox.Show(System.String,System.String,System.Collections.IList,System.Windows.Forms.MessageBoxIcon,System.String)">
+	<summary>
+ Mostra a caixa de mensagem.
+ </summary>
+	<param name="texto">Texto da mensagem.</param>
+	<param name="rotulo">Título da mensagem.</param>
+	<param name="msgButtons">Coleção de botões que a caixa de mensagem irá conter.</param>
+	<param name="msgIcon">Ícone representativo da mensagem.</param>
+	<param name="defaultButton">Resultado do botão que virá com foco.</param>
+	<returns>Retorna o resultado associado ao botão clicado na caixa de mensagem.</returns>
+	<remarks></remarks>
+</member><member name="T:DGTECMessageBoxProj.DGTECMessageBox">
+	<summary>
+ Classe que implementa a caixa de mensagens DGTECMessageBox.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DGTECMessageBoxProj.DGTECMessageBoxIcon">
+	<summary>
+ Standard DGTECMessageBox icons
+ </summary>
+</member><member name="P:DGTECMessageBoxProj.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DGTECMessageBoxProj.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DGTECMessageBoxProj.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

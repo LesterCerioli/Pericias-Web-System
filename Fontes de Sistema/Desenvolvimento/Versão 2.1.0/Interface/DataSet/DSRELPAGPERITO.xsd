@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSRELPAGPERITO" targetNamespace="http://tempuri.org/DSRELPAGPERITO.xsd" xmlns:mstns="http://tempuri.org/DSRELPAGPERITO.xsd" xmlns="http://tempuri.org/DSRELPAGPERITO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSRELPAGPERITO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSRELPAGPERITO" msprop:Generator_UserDSName="DSRELPAGPERITO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RELPAGPERITO" msprop:Generator_TableClassName="RELPAGPERITODataTable" msprop:Generator_TableVarName="tableRELPAGPERITO" msprop:Generator_TablePropName="RELPAGPERITO" msprop:Generator_RowDeletingName="RELPAGPERITORowDeleting" msprop:Generator_RowChangingName="RELPAGPERITORowChanging" msprop:Generator_RowEvHandlerName="RELPAGPERITORowChangeEventHandler" msprop:Generator_RowDeletedName="RELPAGPERITORowDeleted" msprop:Generator_UserTableName="RELPAGPERITO" msprop:Generator_RowChangedName="RELPAGPERITORowChanged" msprop:Generator_RowEvArgName="RELPAGPERITORowChangeEvent" msprop:Generator_RowClassName="RELPAGPERITORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOME_RELACAO" msprop:Generator_ColumnVarNameInTable="columnNOME_RELACAO" msprop:Generator_ColumnPropNameInRow="NOME_RELACAO" msprop:Generator_ColumnPropNameInTable="NOME_RELACAOColumn" msprop:Generator_UserColumnName="NOME_RELACAO" type="xs:string" minOccurs="0" />
+              <xs:element name="NOME_PERITO" msprop:Generator_ColumnVarNameInTable="columnNOME_PERITO" msprop:Generator_ColumnPropNameInRow="NOME_PERITO" msprop:Generator_ColumnPropNameInTable="NOME_PERITOColumn" msprop:Generator_UserColumnName="NOME_PERITO" type="xs:string" minOccurs="0" />
+              <xs:element name="CPF_CNPJ" msprop:Generator_ColumnVarNameInTable="columnCPF_CNPJ" msprop:Generator_ColumnPropNameInRow="CPF_CNPJ" msprop:Generator_ColumnPropNameInTable="CPF_CNPJColumn" msprop:Generator_UserColumnName="CPF_CNPJ" type="xs:string" minOccurs="0" />
+              <xs:element name="BANCO_AGENCIA_CONTA" msprop:Generator_ColumnVarNameInTable="columnBANCO_AGENCIA_CONTA" msprop:Generator_ColumnPropNameInRow="BANCO_AGENCIA_CONTA" msprop:Generator_ColumnPropNameInTable="BANCO_AGENCIA_CONTAColumn" msprop:Generator_UserColumnName="BANCO_AGENCIA_CONTA" type="xs:string" minOccurs="0" />
+              <xs:element name="OFICIO" msprop:Generator_ColumnVarNameInTable="columnOFICIO" msprop:Generator_ColumnPropNameInRow="OFICIO" msprop:Generator_ColumnPropNameInTable="OFICIOColumn" msprop:Generator_UserColumnName="OFICIO" type="xs:string" minOccurs="0" />
+              <xs:element name="PROCESSO" msprop:Generator_ColumnVarNameInTable="columnPROCESSO" msprop:Generator_ColumnPropNameInRow="PROCESSO" msprop:Generator_ColumnPropNameInTable="PROCESSOColumn" msprop:Generator_UserColumnName="PROCESSO" type="xs:string" minOccurs="0" />
+              <xs:element name="VALOR" msprop:Generator_ColumnVarNameInTable="columnVALOR" msprop:Generator_ColumnPropNameInRow="VALOR" msprop:Generator_ColumnPropNameInTable="VALORColumn" msprop:Generator_UserColumnName="VALOR" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
